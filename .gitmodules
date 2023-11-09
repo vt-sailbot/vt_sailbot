@@ -1,0 +1,15 @@
+[submodule "wind-sensor-node-23-24"]
+	path = wind_sensor
+	url = https://github.com/vt-sailbot/wind-sensor-node-23-24
+[submodule "simulation-node-23-24"]
+	path = simulation
+	url = https://github.com/vt-sailbot/simulation-node-23-24
+[submodule "telemetry-node-23-24"]
+	path = telemetry
+	url = https://github.com/vt-sailbot/telemetry-node-23-24
+[submodule "custom-messages-23-24"]
+	path = sailbot_msgs
+	url = https://github.com/vt-sailbot/custom-messages-23-24
+[submodule "sailcode-node-23-24"]
+	path = sailcode
+	url = https://github.com/vt-sailbot/sailcode-node-23-24
