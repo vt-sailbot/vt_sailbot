@@ -28,3 +28,9 @@
 [submodule "camera-node-23-24"]
 	path = camera
 	url = https://github.com/vt-sailbot/camera-node-23-24
+[submodule "imu-node-23-24"]
+	path = imu-node-23-24
+	url = https://github.com/vt-sailbot/imu-node-23-24
+[submodule "imu"]
+	path = imu
+	url = https://github.com/vt-sailbot/imu-node-23-24
