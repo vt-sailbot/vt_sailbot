@@ -23,6 +23,9 @@ Development Notes:
     `colcon build`
     This builds all of the scripts and prepares them so that you can use: `ros2 run` to run the node
 
+    If colcon build fails, this likely means you have the wrong version of setuptools from pip so you should try running the following and trying again:
+    `pip install setuptools==58.2.0`
+
     If ros2 run does not work the first time, then that means that you have not yet sourced the setup.bash file and added it to your bashrc file.
         Open your bashrc file which should be located at ~/.bashrc. And then add the following lines using your favorite test editor:
         `source {PATH TO COLCON WORKSPACE}/install/setup.bash`
