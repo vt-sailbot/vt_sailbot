@@ -46,3 +46,5 @@ If you are making a new node:
 
 Limitations:
     We are currently only supporting python for docker
+
+https://www.youtube.com/watch?v=y4F1a66VOvs
