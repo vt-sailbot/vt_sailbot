@@ -7,6 +7,9 @@
 [submodule "telemetry-node-23-24"]
 	path = telemetry
 	url = https://github.com/vt-sailbot/telemetry-node-23-24
+[submodule "telemetry-server-23-24"]
+	path = telemetry_server
+	url = https://github.com/vt-sailbot/telemetry-server-23-24
 [submodule "custom-messages-23-24"]
 	path = sailbot_msgs
 	url = https://github.com/vt-sailbot/custom-messages-23-24
