@@ -48,3 +48,7 @@ Limitations:
     We are currently only supporting python for docker
 
 https://www.youtube.com/watch?v=y4F1a66VOvs
+
+
+TODO:
+    Label each of the repositories as either telemetry server side, jetson side, or to be flashed on the teensy microcontroller
