@@ -1,3 +1,12 @@
+# This is the general dockerfile that can create an image from any ros package in this directory except (for now) uros 
+# which has its own, separate dockerfile to run
+# To run this dockerfile and create the image, all you need to do is use the following command: 
+# docker build -t [name of the image you would like to create] --build-arg NODE_NAME=[name of the folder that the ros package is in] .
+
+# The name of the image is arbitrary but the convention currently is to use the name: sailbot_[name of the folder that the ros package is in]
+# so for example if I am building the rc node, I would do: docker build -t sailbot_rc --build-arg NODE_NAME=rc .
+
+
 ARG ROS_DISTRO=humble
 
 FROM ros:${ROS_DISTRO} as base
@@ -28,6 +37,7 @@ RUN sudo apt-get update \
 # this is necessary for open cv (TODO: Maybe find a way to only install these libraries if we are installing opencv in the image)
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 RUN pip3 install setuptools==58.2.0
+
 RUN pip3 install -r /sailbot_ws/src/${NODE_NAME}/requirements.txt
 
 

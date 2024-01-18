@@ -1,0 +1,51 @@
+# In order to build this docker image, you need to use the following command:
+# docker build -f Dockerfile.uros -t sailbot_uros .
+
+# All of this is literally ripped straight from https://micro.ros.org/docs/tutorials/core/teensy_with_arduino/
+
+ARG ROS_DISTRO=humble
+
+FROM ros:${ROS_DISTRO} as base
+
+ENV ROS_DISTRO=${ROS_DISTRO}
+
+# ARG NODE_NAME
+# ENV NODE_NAME=${NODE_NAME}
+
+# RUN if [ -z "$NODE_NAME" ]; then echo 'Environment variable NODE_NAME must be specified. Exiting.'; exit 1; fi
+
+SHELL ["/bin/bash", "-c"]
+
+# install python dependencies
+RUN sudo apt-get update \
+ && sudo apt install python3-pip -y \
+ && sudo apt install git -y
+
+# this is necessary for open cv (TODO: Maybe find a way to only install these libraries if we are installing opencv in the image)
+# RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+RUN pip3 install setuptools==58.2.0
+
+# Create a workspace and download the micro-ROS tools
+RUN mkdir microros_ws
+RUN cd microros_ws
+WORKDIR /microros_ws
+RUN git clone -b ${ROS_DISTRO} https://github.com/micro-ROS/micro_ros_setup.git src/micro_ros_setup
+
+# Update dependencies using rosdep
+RUN sudo apt update && rosdep update
+RUN rosdep install --from-paths src --ignore-src -y
+
+# sorry this is so messy. Its sort of unavoidable because I need to source and run all these commands in the same "step".
+# If you have a cleaner implementation go for it and make a pr on github
+RUN source /opt/ros/${ROS_DISTRO}/setup.bash \
+    && colcon build
+
+RUN source /opt/ros/${ROS_DISTRO}/setup.bash \
+    && source install/local_setup.bash \
+    && ros2 run micro_ros_setup create_agent_ws.sh \
+    && ros2 run micro_ros_setup build_agent.sh 
+
+CMD source /opt/ros/${ROS_DISTRO}/setup.bash \
+    && source install/local_setup.bash \
+    && ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyACM0
+
