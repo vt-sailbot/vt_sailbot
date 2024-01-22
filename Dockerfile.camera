@@ -26,9 +26,9 @@ RUN sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo 
 
 RUN sudo apt update -y && sudo apt upgrade -y
 
-RUN sudo apt install ros-humble-librealsense2*
+RUN sudo apt install ros-humble-librealsense2* -y
 
-RUN sudo apt install ros-humble-realsense2-*
+RUN sudo apt install ros-humble-realsense2-* -y
 
 # RUN sudo apt-get install librealsense2-utils -y && sudo apt-get install librealsense2-dev -y
 
