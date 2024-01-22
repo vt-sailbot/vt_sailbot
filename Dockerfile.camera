@@ -1,0 +1,39 @@
+# Taken from here: https://github.com/IntelRealSense/realsense-ros?tab=readme-ov-file#installation
+# Run this command to build the docker image: 
+#   sudo docker build -f Dockerfile.camera .
+
+ARG ROS_DISTRO=humble
+
+FROM ros:${ROS_DISTRO} as base
+
+ENV ROS_DISTRO=${ROS_DISTRO}
+
+
+# https://stackoverflow.com/questions/63472872/building-from-dockerfile-and-getting-the-following-signatures-couldnt-be-verif
+# RUN for key in C8B3A55A6F3EFCDE; do \
+#         gpg --recv-keys "$key" \
+#         && gpg --export "$key" | apt-key add - ; \
+#     done
+
+# RUN gpg --recv-keys C8B3A55A6F3EFCDE && \
+#     gpg --export C8B3A55A6F3EFCDE | apt-key add -;
+
+RUN sudo apt update && sudo apt install curl
+
+RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+RUN sudo apt install python3-pip -y
+
+RUN sudo mkdir -p /etc/apt/keyrings
+
+RUN curl -sSf https://librealsense.intel.com/Debian/librealsense.pgp | sudo tee /etc/apt/keyrings/librealsense.pgp > /dev/null
+
+RUN echo "deb [signed-by=/etc/apt/keyrings/librealsense.pgp] https://librealsense.intel.com/Debian/apt-repo `lsb_release -cs` main" | sudo tee /etc/apt/sources.list.d/librealsense.list
+
+RUN sudo apt update -y && sudo apt upgrade -y
+
+RUN sudo apt install librealsense2-dkms librealsense2-utils -y
+
+RUN sudo apt update && sudo apt upgrade
+
+RUN sudo apt install ros-humble-realsense2-* -y
