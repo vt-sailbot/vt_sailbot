@@ -27,7 +27,7 @@ Development Notes:
     `pip install setuptools==58.2.0`
 
     If ros2 run does not work the first time, then that means that you have not yet sourced the setup.bash file and added it to your bashrc file.
-        Open your bashrc file which should be located at ~/.bashrc. And then add the following lines using your favorite test editor:
+        Open your bashrc file which should be located at ~/.bashrc. And then add the following lines using your favorite text editor:
         `source {PATH TO COLCON WORKSPACE}/install/setup.bash`
         `source /opt/ros/humble/setup.bash`
 
