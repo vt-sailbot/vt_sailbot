@@ -24,6 +24,12 @@ RUN sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key F6E65AC044F831A
 
 RUN sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo $(lsb_release -cs) main" -u
 
+RUN sudo apt update -y && sudo apt upgrade -y
+
+RUN sudo apt install ros-humble-librealsense2*
+
+RUN sudo apt install ros-humble-realsense2-*
+
 # RUN sudo apt-get install librealsense2-utils -y && sudo apt-get install librealsense2-dev -y
 
 # RUN sudo apt update -y && sudo apt upgrade -y
