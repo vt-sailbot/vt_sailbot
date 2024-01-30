@@ -17,7 +17,7 @@ If you would like to run a docker image then please run the following:
 Please note that the simulation node cannot be built at this time because it doesn't really work with docker
 
 # Development Notes:
-If you would like to compile and run locally in order to develop this as a colcon (colcon is the build system for ros2) workspace or use the simulation, \
+If you would like to compile and run locally in order to develop this as a colcon workspace (colcon is the build system for ros2) or use the simulation, \
 all you need to do is to create a new folder for the ros2 packages add a src directory inside of it and then add this repository inside of the source directory. \
 The file structure should look like sailbot_ws/src/{THE CONTENTS OF THIS REPOSITORY}. \
 After that, go back to the root directory of the colcon workspace and use:
