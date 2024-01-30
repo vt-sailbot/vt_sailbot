@@ -16,7 +16,7 @@ If you would like to run a docker image then please run the following:
 
 Please note that the simulation node cannot be built at this time because it doesn't really work with docker
 
-#Development Notes:
+# Development Notes:
 If you would like to compile and run locally in order to develop this as a ros2 workspace or use the simulation, \
 all you need to do is to create a new ros2 package and then replace the src directory of the ros2 package with this repository. \
 after that, go back to the root directory of the ros2 workspace and use:
@@ -36,7 +36,7 @@ Then run the following:
 This will refresh your bash terminal and allow you to access the new ros nodes that you just built!
 
 
-#If you are making a new node:
+# If You Are Making a New Node:
 Whenever you set the launch command in setup.py, name it with the following formula: launch_{NAME OF THE NODE}_node
 so for example your setup.py should contain something similar to this for the console scripts if the name of your python script is sailcode_node
 `launch_sailcode_node = sailcode.sailcode_node:main`
