@@ -18,7 +18,8 @@ Please note that the simulation node cannot be built at this time because it doe
 
 # Development Notes:
 If you would like to compile and run locally in order to develop this as a ros2 workspace or use the simulation, \
-all you need to do is to create a new folder for the ros2 packages add a src directory inside of it and then add this repository inside of the source directory. The file structure should look like sailbot_ws/src/{THE CONTENTS OF THIS REPOSITORY}.\
+all you need to do is to create a new folder for the ros2 packages add a src directory inside of it and then add this repository inside of the source directory. \
+The file structure should look like sailbot_ws/src/{THE CONTENTS OF THIS REPOSITORY}. \
 After that, go back to the root directory of the ros2 workspace and use:
 `colcon build`
 This builds all of the scripts and prepares them so that you can use: `ros2 run` to run the node
