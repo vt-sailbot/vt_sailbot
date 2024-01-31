@@ -4,10 +4,7 @@ FROM ros:${ROS_DISTRO} as base
 
 ENV ROS_DISTRO=${ROS_DISTRO}
 
-RUN if [ -z "$NODE_NAME" ]; then echo 'Environment variable NODE_NAME must be specified. Exiting.'; exit 1; fi
-
 SHELL ["/bin/bash", "-c"]
-
 
 # Create Colcon workspace and copy in all of the packages required for the current node
 RUN mkdir -p /sailbot_ws/src
