@@ -1,3 +1,5 @@
+# This repository contains every ros2 node that will be used in the 2023-2024 competition!
+
 # Development Notes:
 If you would like to compile and run locally in order to develop this as a colcon workspace (colcon is the build system for ros2) or use the simulation, \
 all you need to do is to create a new folder for the ros2 packages add a src directory inside of it and then add this repository inside of the source directory. \
@@ -35,8 +37,6 @@ git push
 ```
 
 # Docker Notes
-This repository contains every ros2 node that will be used in the 2023-2024 competition.
-
 We are using docker for the competition, so you will need to build these modules as docker images before you can use them on our jetson
 
 To build all images:
