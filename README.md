@@ -62,11 +62,11 @@ so for example your setup.py should contain something similar to this for the co
 also, always add a requirements.txt file for all of the pip package requirements for the node
 
 
-# Limitations:
-We are currently only supporting python for docker
+Limitations:
+    We are currently only supporting python for docker
+
+https://www.youtube.com/watch?v=y4F1a66VOvs
 
 
-
-# GENERAL TODO:
-Label each of the repositories as either telemetry server side, jetson side, or to be flashed on the teensy microcontroller.
-Maybe do away with the nested repositories? They are useful for modularity but there might be a better way to do it.
+TODO:
+    Label each of the repositories as either telemetry server side, jetson side, or to be flashed on the teensy microcontroller
