@@ -29,5 +29,5 @@ RUN source /opt/ros/${ROS_DISTRO}/setup.bash \
  && colcon build --symlink-install
 
 # Start the ROS node through ros2 run
-CMD source /opt/ros/${ROS_DISTRO}/setup.bash \ 
-    && source install/setup.bash
+# CMD source /opt/ros/${ROS_DISTRO}/setup.bash \ 
+#     && source install/setup.bash

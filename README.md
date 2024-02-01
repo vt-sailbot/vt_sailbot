@@ -36,6 +36,11 @@ git commit -m "Updating References"
 git push
 ```
 
+When cloning initially, it will ask you to enter your credentials multiple times for each repository. If you would like to only enter your credentials once, then you can use the following command:
+    `git config --global credential.helper store`
+
+This saves your credentials in plain text on your computer so be warned that it isn't the safest thing, but it is very convenient.
+
 # Docker Notes
 We are using docker for the competition, so you will need to build these modules as docker images before you can use them on our jetson
 
@@ -64,9 +69,6 @@ also, always add a requirements.txt file for all of the pip package requirements
 
 Limitations:
     We are currently only supporting python for docker
-
-https://www.youtube.com/watch?v=y4F1a66VOvs
-
 
 TODO:
     Label each of the repositories as either telemetry server side, jetson side, or to be flashed on the teensy microcontroller
