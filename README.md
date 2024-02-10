@@ -16,10 +16,17 @@ Open your bashrc file which should be located at ~/.bashrc. And then add the fol
 `source {PATH TO COLCON WORKSPACE}/install/setup.bash`
 `source /opt/ros/humble/setup.bash`
 
+If you are trying to run the simulation node and it fails because you do not have permissions to run docker, then run the following commands:
+`sudo groupadd docker`
+`sudo usermod -aG docker $USER`
+`newgrp docker`
+
 Then run the following:
 `source ~/.bashrc`
 This will refresh your bash terminal and allow you to access the new ros nodes that you just built!
 
+# Notes for Mac
+The only way we have been able to get this working on mac so far is by installing the utm VM from here: https://mac.getutm.app/ and following all of the steps on installing ubuntu 22.04.
 
 # Notes on Pushing New Changes to This Repository:
 Since this is a nested github repository, this repository only holds references to each other repository. This makes a lot of things easier in some ways but harder in others. \
