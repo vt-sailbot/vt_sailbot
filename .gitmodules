@@ -28,9 +28,6 @@
 [submodule "imu"]
 	path = imu
 	url = https://github.com/vt-sailbot/imu-node-23-24
-[submodule "telemetry_gui"]
-	path = telemetry_gui
-	url = https://github.com/vt-sailbot/telemetry-gui-23-24
 [submodule "sailbot_event_manager"]
 	path = sailbot_event_manager
 	url = https://github.com/vt-sailbot/sailbot-event-manager-23-24
