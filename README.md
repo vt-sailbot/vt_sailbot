@@ -58,7 +58,7 @@ To build a specific image:
     docker build -t {THE NAME OF THE DOCKER IMAGE} --build-arg NODE_NAME={THE NAME OF THE FOLDER YOU WOULD LIKE TO CONTAINERIZE} .
 
 For example:
-    `docker build -t sailbot_sailcode --build-arg NODE_NAME=sailcode .`
+    `docker build -t sailbot_autopilot --build-arg NODE_NAME=autopilot .`
 
 If you would like to run a docker image then please run the following:
     `docker run --privileged sailbot_{ENTER NODE NAME HERE}`
@@ -68,8 +68,8 @@ Please note that the simulation node cannot be built at this time because it doe
 
 # If You Are Making a New Node:
 Whenever you set the launch command in setup.py, name it with the following formula: launch_{NAME OF THE NODE}_node
-so for example your setup.py should contain something similar to this for the console scripts if the name of your python script is sailcode_node
-`launch_sailcode_node = sailcode.sailcode_node:main`
+so for example your setup.py should contain something similar to this for the console scripts if the name of your python script is autopilot_node
+`launch_autopilot_node = autopilot.autopilot_node:main`
 
 also, always add a requirements.txt file for all of the pip package requirements for the node
 
