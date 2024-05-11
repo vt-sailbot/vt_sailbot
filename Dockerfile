@@ -21,16 +21,15 @@ RUN if [ -z "$NODE_NAME" ]; then echo 'Environment variable NODE_NAME must be sp
 SHELL ["/bin/bash", "-c"]
 
 
-# Create Colcon workspace and copy in all of the packages required for the current node
+# Create Colcon workspace
 RUN mkdir -p /sailbot_ws/src
 WORKDIR /sailbot_ws/src
 RUN mkdir /sailbot_ws/src/${NODE_NAME}
 RUN mkdir /sailbot_ws/src/sailbot_msgs
-COPY ${NODE_NAME} /sailbot_ws/src/${NODE_NAME}
-COPY sailbot_msgs /sailbot_ws/src/sailbot_msgs
 
+# Install Python Dependencies
+COPY ${NODE_NAME}/requirements.txt /sailbot_ws/src/${NODE_NAME}/requirements.txt
 
-# install python dependencies
 RUN sudo apt-get update \
  && sudo apt install python3-pip -y
 
@@ -40,6 +39,9 @@ RUN pip3 install setuptools==58.2.0
 
 RUN pip3 install -r /sailbot_ws/src/${NODE_NAME}/requirements.txt
 
+# Copy in all of the packages required for the current node
+COPY ${NODE_NAME} /sailbot_ws/src/${NODE_NAME}
+COPY sailbot_msgs /sailbot_ws/src/sailbot_msgs
 
 # Build the base Colcon workspace, installing dependencies first.
 WORKDIR /sailbot_ws
