@@ -3,7 +3,7 @@ import json
 import time
 import os
 
-TELEMETRY_SERVER_URL = 'http://54.145.37.169:8082/'
+TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -11,8 +11,8 @@ def clear_screen():
     
 while True:
     
-    telemetry_list = json.loads(requests.get(TELEMETRY_SERVER_URL + "api/").text)
-    telemetry = telemetry_list[-1]["s1"].split("; ")
+    telemetry_list = json.loads(requests.get(TELEMETRY_SERVER_URL + "api/latest").text)
+    telemetry = telemetry_list["s1"].split("; ")
     gps_lat_lon = telemetry[0].split(", ")
     next_destination_lat_lon = telemetry[5].split(", ")
     
@@ -29,4 +29,4 @@ while True:
     # telemetry_string = "hi there"
     # print(requests.post(url= TELEMETRY_SERVER_URL + "api/", json={"s1": telemetry_string, "s2": "1"}).text)
     
-    time.sleep(1)
+    time.sleep(0.1)
