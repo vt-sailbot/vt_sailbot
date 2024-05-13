@@ -3,8 +3,10 @@ import json
 import time
 import os
 import sys
-import math
+import datetime
 
+
+DEGREE_SIGN = u'\N{DEGREE SIGN}'
 TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
 telemetry_file = None
 telemetry_start_time = time.time()
@@ -58,17 +60,30 @@ def update_telemetry_gui():
         if waypoint == "": continue     # sanity check don't remove this was causing issues
         current_route.append(tuple(waypoint.split(", ")))
     
+    time_since_startup = (time.time() - telemetry_start_time)
+    time_since_startup = datetime.time(
+        hour=int((time_since_startup // 3600) % (3600*24)), 
+        minute=int(time_since_startup // 60) % 3600, 
+        second=int(time_since_startup) % 60, 
+        microsecond=int(time_since_startup * 10**6) % 10**6
+    )
+    time_since_startup_str = time_since_startup.strftime('%H:%M:%S.{:02.0f}').format(time_since_startup.microsecond/10000.0)
+    
+    real_life_date_time = datetime.datetime.now()
+    real_life_date_time_str = real_life_date_time.strftime('%m-%d-%Y %H:%M:%S.{:02.0f}').format(real_life_date_time.microsecond/10000.0)
+    
     
     string_to_show = ""
-    string_to_show += f"Time: {time.time() - telemetry_start_time}                                                                       \n"
+    string_to_show += f"Time Today: {real_life_date_time_str}                                                                            \n"
+    string_to_show += f"Time Since Start Up: {time_since_startup_str}                                                                    \n"
     string_to_show += f"GPS Latitude: {gps_lat_lon[0]}, GPS Longitude: {gps_lat_lon[1]}                                                  \n"
     string_to_show += f"Current State: {telemetry[1]}                                                                                    \n"
-    string_to_show += f"Speed Over Ground (m/s): {telemetry[2]}                                                                          \n"
-    string_to_show += f"Bearing: {telemetry[3]}                                                                                          \n"
-    string_to_show += f"Heading: {telemetry[4]}                                                                                          \n"
+    string_to_show += f"Speed Over Ground: {(telemetry[2]) + ' m/s'}                                                                     \n"
+    string_to_show += f"Target Heading: {telemetry[3]  + DEGREE_SIGN}                                                                    \n"
+    string_to_show += f"Heading: {telemetry[4] + DEGREE_SIGN}                                                                            \n"
     string_to_show += f"Wind Speed (m/s): {telemetry[5]}, Wind Direction: {telemetry[6]}                                                 \n"
-    string_to_show += f"Target Mast Angle: {telemetry[7]}                                                                                \n"
-    string_to_show += f"Target Rudder Angle: {telemetry[8]}                                                                              \n"
+    string_to_show += f"Target Mast Angle: {telemetry[7] + DEGREE_SIGN}                                                                                \n"
+    string_to_show += f"Target Rudder Angle: {telemetry[8] + DEGREE_SIGN}                                                                              \n"
     string_to_show += f"Current Waypoint Latitude: {cur_waypoint_lat_lon[0]}, Current Waypoint Latitude: {cur_waypoint_lat_lon[1]}       \n"
     
     string_to_show += "\n"
