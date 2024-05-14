@@ -53,10 +53,10 @@ def update_telemetry_gui():
     telemetry = telemetry_list["s1"].split("; ")
     
     gps_lat_lon = telemetry[0].split(", ")
-    cur_waypoint_lat_lon = telemetry[9].split(", ")
+    cur_waypoint_lat_lon = telemetry[11].split(", ")
     
     current_route = []
-    for waypoint in telemetry[10:]:
+    for waypoint in telemetry[12:]:
         if waypoint == "": continue     # sanity check don't remove this was causing issues
         current_route.append(tuple(waypoint.split(", ")))
     
@@ -81,12 +81,12 @@ def update_telemetry_gui():
     string_to_show += f"Speed Over Ground: {(telemetry[2]) + ' m/s'}                                                                     \n"
     string_to_show += f"Target Heading: {telemetry[3]  + DEGREE_SIGN}                                                                    \n"
     string_to_show += f"Heading: {telemetry[4] + DEGREE_SIGN}                                                                            \n"
-    string_to_show += f"Wind Speed (m/s): {telemetry[5]}, Wind Direction: {telemetry[6]}                                                 \n"
-    string_to_show += f"Target Mast Angle: {telemetry[7] + DEGREE_SIGN}                                                                                \n"
-    string_to_show += f"Target Rudder Angle: {telemetry[8] + DEGREE_SIGN}                                                                              \n"
+    string_to_show += f"True Wind Speed (m/s): {telemetry[5]}, True Wind Angle {telemetry[6] + DEGREE_SIGN}                              \n"
+    string_to_show += f"Apparent Wind Speed (m/s): {telemetry[7]}, Apparent Wind Angle: {telemetry[8] + DEGREE_SIGN}                     \n"
+    string_to_show += f"Target Mast Angle: {telemetry[9] + DEGREE_SIGN}                                                                  \n"
+    string_to_show += f"Target Rudder Angle: {telemetry[10] + DEGREE_SIGN}                                                               \n"
     string_to_show += f"Current Waypoint Latitude: {cur_waypoint_lat_lon[0]}, Current Waypoint Latitude: {cur_waypoint_lat_lon[1]}       \n"
-    
-    string_to_show += "\n"
+    string_to_show += "                                                                                                                  \n"
     string_to_show += f"Current Route:                                                                                                   \n"
     string_to_show += f"------------------------------------                                                                             \n"
     for index, waypoint in enumerate(current_route):
