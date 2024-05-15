@@ -5,11 +5,17 @@ import os
 import sys
 import datetime
 
+from renderer import CV2DRenderer
+from utils import *
+
 
 DEGREE_SIGN = u'\N{DEGREE SIGN}'
 TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
+
+renderer = None
 telemetry_file = None
 telemetry_start_time = time.time()
+
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -46,12 +52,14 @@ def show_terminal_cursor():
 
 
 
-def update_telemetry_gui():
-    global telemetry_file, telemetry_start_time
-    
+def get_telemetry():
     telemetry_list = json.loads(requests.get(TELEMETRY_SERVER_URL + "api/latest").text)
-    telemetry = telemetry_list["s1"].split("; ")
-    
+    return str(telemetry_list["s1"]).split("; ")
+
+
+def update_telemetry_text(telemetry: list):
+    global telemetry_file, telemetry_start_time
+        
     gps_lat_lon = telemetry[0].split(", ")
     cur_waypoint_lat_lon = telemetry[11].split(", ")
     
@@ -59,6 +67,7 @@ def update_telemetry_gui():
     for waypoint in telemetry[12:]:
         if waypoint == "": continue     # sanity check don't remove this was causing issues
         current_route.append(tuple(waypoint.split(", ")))
+        
     
     time_since_startup = (time.time() - telemetry_start_time)
     time_since_startup = datetime.time(
@@ -95,12 +104,18 @@ def update_telemetry_gui():
     
     move_terminal_cursor(0, 0)
     print(string_to_show)
-    
     telemetry_file.write(string_to_show)
     
 
+# def update_telemetry_gui(telemetry: list):
+
+#     gps_lat_lon = telemetry[0].split(", ")
+#     cur_waypoint_lat_lon = telemetry[11].split(", ")
+    
+
+
 def main():
-    global telemetry_file
+    global telemetry_file, renderer
     if os.name == 'nt':
         import msvcrt
         import ctypes
@@ -113,10 +128,17 @@ def main():
     hide_terminal_cursor()
     
     telemetry_file = open("./telemetry_log.txt", "a")
+    
+    # renderer = CV2DRenderer()
+    # renderer.setup(map_bounds=np.array([[0, 0], [10, 10]]))
+    # renderer.render(state=State(), local_waypoints=[])
 
     
     while True:
-        update_telemetry_gui()
+        telemetry = get_telemetry()
+        update_telemetry_text(telemetry)
+        # update_telemetry_gui(telemetry)
+        
         time.sleep(0.05)
     
     
