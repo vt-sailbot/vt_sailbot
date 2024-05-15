@@ -71,8 +71,8 @@ def update_telemetry_text(telemetry: list):
     
     time_since_startup = (time.time() - telemetry_start_time)
     time_since_startup = datetime.time(
-        hour=int((time_since_startup // 3600) % (3600*24)), 
-        minute=int(time_since_startup // 60) % 3600, 
+        hour=int((time_since_startup // 3600) % 24), 
+        minute=int(time_since_startup // 60) % 60, 
         second=int(time_since_startup) % 60, 
         microsecond=int(time_since_startup * 10**6) % 10**6
     )
