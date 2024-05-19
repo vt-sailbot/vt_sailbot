@@ -278,7 +278,7 @@ class CV2DRenderer():
                    -1)
 
     def _draw_waypoint(self, img: np.ndarray, x_position, y_position):
-        cv2.circle(img, (x_position, y_position), radius=1, color=(255, 0, 0), thickness=-1)
+        cv2.circle(img, (int(x_position), int(y_position)), radius=5, color=(255, 0, 0), thickness=-1)
         
     def get_render_mode(self) -> str:
         return 'rgb_array'
@@ -290,7 +290,7 @@ class CV2DRenderer():
         self.map_bounds = map_bounds[:, 0:2]  # ignore z axis
         self.center = (self.map_bounds[0] + self.map_bounds[1]) / 2
 
-    def render(self, state, local_waypoints: tuple, draw_extra_fct=None):
+    def render(self, state, local_waypoints, draw_extra_fct=None):
         """
         Args:
             state (State): A State object (from utils.py) that represents the boat's current state (stuff like position, speed, wind, etc).
@@ -308,6 +308,8 @@ class CV2DRenderer():
         # prepare state
         state = RendererState(state)
         self._transform_state_to_fit_in_img(state)
+        local_waypoints = [self._translate_and_scale_to_fit_in_map(np.array(waypoint)) for waypoint in local_waypoints]
+        print(local_waypoints)
 
         # draw extra stuff
         if draw_extra_fct is not None:
