@@ -24,6 +24,8 @@ RUN mkdir /sailbot_ws/src/ntrip_client
 RUN sudo apt-get update \
  && sudo apt install python3-pip -y
 
+RUN pip3 install setuptools==58.2.0
+
 # Copy in all of the packages required for the current node
 COPY ntrip_client /sailbot_ws/src/ntrip_client
 

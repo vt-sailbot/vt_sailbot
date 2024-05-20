@@ -35,6 +35,7 @@ RUN sudo apt-get update \
 
 # this is necessary for open cv (TODO: Maybe find a way to only install these libraries if we are installing opencv in the image)
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+
 RUN pip3 install setuptools==58.2.0
 
 RUN pip3 install -r /sailbot_ws/src/${NODE_NAME}/requirements.txt
