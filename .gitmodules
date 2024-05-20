@@ -33,7 +33,7 @@
         url = https://github.com/vt-sailbot/autopilot-node-23-24
 [submodule "ntrip_client"]
 	path = ntrip_client
-	url = https://github.com/LORD-MicroStrain/ntrip_client.git
+	url = https://github.com/vt-sailbot/ntrip_client
 	branch = ros2
 [submodule "magnetometer-23-24"]
 	path = magnetometer
