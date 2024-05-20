@@ -28,9 +28,13 @@
 [submodule "sailbot_event_manager"]
 	path = sailbot_event_manager
 	url = https://github.com/vt-sailbot/sailbot-event-manager-23-24
-[submodule "magnetometer"]
-	path = magnetometer
-	url = https://github.com/vt-sailbot/magnetometer-node-23-24
 [submodule "autopilot"]
         path = autopilot
         url = https://github.com/vt-sailbot/autopilot-node-23-24
+[submodule "ntrip_client"]
+	path = ntrip_client
+	url = https://github.com/LORD-MicroStrain/ntrip_client.git
+	branch = ros2
+[submodule "magnetometer-23-24"]
+	path = magnetometer
+	url = https://github.com/vt-sailbot/magnetometer-23-24
