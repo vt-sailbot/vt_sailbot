@@ -1,0 +1,29 @@
+services:
+    autopilot:
+      image: "sailbot_autopilot:latest"
+      privileged: true
+      
+    telemetry:
+      image: "sailbot_telemetry:latest"
+      privileged: true
+
+    sailbot_event_manager:
+      image: "sailbot_event_manager:latest"
+      privileged: true
+
+    mcu:
+      image: "sailbot_mcu:latest"
+      privileged: true
+
+    gps:
+      image: "sailbot_gps:latest"
+      privileged: true
+
+    rc:
+      image: "sailbot_rc:latest"
+      privileged: true
+
+    wind_sensor:
+      image: "sailbot_wind_sensor:latest"
+      privileged: true
+        
