@@ -40,15 +40,21 @@ RUN pip3 install setuptools==58.2.0
 
 RUN pip3 install -r /sailbot_ws/src/${NODE_NAME}/requirements.txt
 
-# Copy in all of the packages required for the current node
-COPY ${NODE_NAME} /sailbot_ws/src/${NODE_NAME}
-COPY sailbot_msgs /sailbot_ws/src/sailbot_msgs
-
-# Build the base Colcon workspace, installing dependencies first.
 WORKDIR /sailbot_ws
+
+COPY sailbot_msgs ~/src/sailbot_msgs
+
 RUN source /opt/ros/${ROS_DISTRO}/setup.bash \
  && apt-get update -y \
  && rosdep install --from-paths src --ignore-src --rosdistro ${ROS_DISTRO} -y \
+ && colcon build --symlink-install
+
+
+# Copy in all of the packages required for the current node
+COPY ${NODE_NAME} ~/src/${NODE_NAME}
+
+# Build the base Colcon workspace, installing dependencies first.
+RUN source /opt/ros/${ROS_DISTRO}/setup.bash \
  && colcon build --symlink-install
 
 # Start the ROS node through ros2 run
