@@ -55,7 +55,8 @@ COPY ${NODE_NAME} ~/src/${NODE_NAME}
 
 # Build the base Colcon workspace, installing dependencies first.
 RUN source /opt/ros/${ROS_DISTRO}/setup.bash \
- && colcon build --symlink-install
+ && rosdep install --from-paths src --ignore-src --rosdistro ${ROS_DISTRO} -y \
+ && colcon build --symlink-install --packages-select ${NODE_NAME}
 
 # Start the ROS node through ros2 run
 CMD source /opt/ros/${ROS_DISTRO}/setup.bash \ 
