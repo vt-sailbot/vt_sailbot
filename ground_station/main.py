@@ -76,6 +76,16 @@ def get_telemetry() -> dict:
 def update_telemetry_text(telemetry: dict):
     global telemetry_file, telemetry_start_time
         
+    # Convert to the units that the sailors are happy with
+    heading_cw_north = (90 - telemetry["heading"]) % 360        # ccw from true east -> cw from true north
+    bearing_cw_north = (90 - telemetry["bearing"]) % 360        # ccw from true east -> cw from true north
+    apparent_wind_angle_cw_centerline_from = (180 - telemetry["apparent_wind_angle"]) % 360         # ccw centerline measuring the direction the wind is blowing towards -> cw centerline measuring the direction the wind is blowing from
+    apparent_wind_speed_knots = 1.94384 * telemetry["true_wind_speed"]                              # m/s -> knots
+    true_wind_angle_cw_centerline_from =  (180 - telemetry["true_wind_angle"]) % 360                # ccw centerline measuring the direction the wind is blowing towards -> cw centerline measuring the direction the wind is blowing from
+    true_wind_speed_knots = 1.94384 * telemetry["true_wind_speed"]                                  # m/s -> knots
+    boat_speed_knots = 1.94384 * telemetry["speed"]                                                 # m/s -> knots
+    
+    
     # Get Formatted Time
     time_since_startup = (time.time() - telemetry_start_time)
     time_since_startup = datetime.time(
@@ -91,23 +101,23 @@ def update_telemetry_text(telemetry: dict):
     
     # Construct String to Display to Command Line
     string_to_show = ""
-    string_to_show += f"Time Today: {real_life_date_time_str}                                                                                                     \n"
-    string_to_show += f"Time Since Start Up: {time_since_startup_str}                                                                                             \n"
-    string_to_show += f"GPS Latitude: {telemetry['position'][0]}, GPS Longitude: {telemetry['position'][1]}                                                       \n"
-    string_to_show += f"Current State: {telemetry['state']}                                                                                                       \n"
-    string_to_show += f"Speed Over Ground (knots): {(str(telemetry['speed']))}                                                                                   \n"
-    string_to_show += f"Target Heading: {str(telemetry['bearing'])  + DEGREE_SIGN}                                                                                \n"
-    string_to_show += f"Heading: {str(telemetry['heading']) + DEGREE_SIGN}                                                                                        \n"
-    string_to_show += f"True Wind Speed (knots): {telemetry['true_wind_speed']}, True Wind Angle {str(telemetry['true_wind_angle']) + DEGREE_SIGN}                                                     \n"
-    string_to_show += f"Apparent Wind Speed (knots): {telemetry['apparent_wind_speed']}, Apparent Wind Angle: {str(telemetry['apparent_wind_angle']) + DEGREE_SIGN}                                 \n"
-    string_to_show += f"Target Mast Angle: {str(telemetry['mast_angle']) + DEGREE_SIGN}                                                                           \n"
-    string_to_show += f"Target Rudder Angle: {str(telemetry['rudder_angle']) + DEGREE_SIGN}                                                                       \n"
-    string_to_show += f"Current Waypoint Latitude: {telemetry['current_waypoint'][0]}, Current Waypoint Latitude: {telemetry['current_waypoint'][1]}                                                   \n"
-    string_to_show += "                                                                                                                                           \n"
-    string_to_show += f"Current Route:                                                                                                                            \n"
-    string_to_show += f"------------------------------------                                                                                                      \n"
+    string_to_show += f"Time Today: {real_life_date_time_str}                                                                                                                           \n"
+    string_to_show += f"Time Since Start Up: {time_since_startup_str}                                                                                                                   \n"
+    string_to_show += f"GPS Latitude: {telemetry['position'][0]:.8f}, GPS Longitude: {telemetry['position'][1]:.8f}                                                                     \n"
+    string_to_show += f"Current State: {telemetry['state']}                                                                                                                             \n"
+    string_to_show += f"Speed Over Ground (kts): {boat_speed_knots:.2f}                                                                                                                 \n"
+    string_to_show += f"Target Heading: {bearing_cw_north:.2f}{DEGREE_SIGN}                                                                                                             \n"
+    string_to_show += f"Heading: {heading_cw_north:.2f}{DEGREE_SIGN}                                                                                                                    \n"
+    string_to_show += f"True Wind Speed (kts): {true_wind_speed_knots:.2f}, True Wind Angle {true_wind_angle_cw_centerline_from:.2f}{DEGREE_SIGN}                                       \n"
+    string_to_show += f"Apparent Wind Speed (kts): {apparent_wind_speed_knots:.2f}, Apparent Wind Angle: {apparent_wind_angle_cw_centerline_from:.2f}{DEGREE_SIGN}                      \n"
+    string_to_show += f"Target Mast Angle: {telemetry['mast_angle']:.2f}{DEGREE_SIGN}                                                                                                   \n"
+    string_to_show += f"Target Rudder Angle: {telemetry['rudder_angle']:.2f}{DEGREE_SIGN}                                                                                               \n"
+    string_to_show += f"Current Waypoint Latitude: {telemetry['current_waypoint'][0]:.8f}, Current Waypoint Latitude: {telemetry['current_waypoint'][1]:.8f}                            \n"
+    string_to_show += "                                                                                                                                                                 \n"
+    string_to_show += f"Current Route:                                                                                                                                                  \n"
+    string_to_show += f"------------------------------------                                                                                                                            \n"
     for index, waypoint in enumerate(telemetry["current_route"]):
-        string_to_show += f"Waypoint {index} Latitude: {waypoint[0]}, Waypoint {index} Longitude: {waypoint[1]}                                              \n"
+        string_to_show += f"Waypoint {index} Latitude: {waypoint[0]:.8f}, Waypoint {index} Longitude: {waypoint[1]:.8f}                                                                 \n"
     string_to_show += "\n\n\n"
     
     
@@ -150,20 +160,20 @@ def update_telemetry_gui(renderer: CV2DRenderer, reference_lat_lon, telemetry: d
 
 def main():
     global telemetry_file, renderer
-    if os.name == 'nt':
-        import msvcrt
-        import ctypes
+    # if os.name == 'nt':
+    #     import msvcrt
+    #     import ctypes
 
-        class _CursorInfo(ctypes.Structure):
-            _fields_ = [("size", ctypes.c_int),
-                        ("visible", ctypes.c_byte)]
+    #     class _CursorInfo(ctypes.Structure):
+    #         _fields_ = [("size", ctypes.c_int),
+    #                     ("visible", ctypes.c_byte)]
     
     clear_screen()
     hide_terminal_cursor()
     telemetry = get_telemetry()
     starting_position_lat_lon = telemetry["position"]
     
-    map_bounds = np.array([[0, -10], [20, 10]])
+    map_bounds = np.array([[-50, -50], [50, 50]])
     renderer = CV2DRenderer()
     renderer.setup(map_bounds)
     
