@@ -29,24 +29,24 @@ def move_terminal_cursor(y, x):
 
 
 def hide_terminal_cursor():
-    if os.name == 'nt':
-        ci = _CursorInfo()
-        handle = ctypes.windll.kernel32.GetStdHandle(-11)
-        ctypes.windll.kernel32.GetConsoleCursorInfo(handle, ctypes.byref(ci))
-        ci.visible = False
-        ctypes.windll.kernel32.SetConsoleCursorInfo(handle, ctypes.byref(ci))
-    elif os.name == 'posix':
+    # if os.name == 'nt':
+    #     ci = _CursorInfo()
+    #     handle = ctypes.windll.kernel32.GetStdHandle(-11)
+    #     ctypes.windll.kernel32.GetConsoleCursorInfo(handle, ctypes.byref(ci))
+    #     ci.visible = False
+    #     ctypes.windll.kernel32.SetConsoleCursorInfo(handle, ctypes.byref(ci))
+    if os.name == 'posix':
         sys.stdout.write("\033[?25l")
         sys.stdout.flush()
 
 def show_terminal_cursor():
-    if os.name == 'nt':
-        ci = _CursorInfo()
-        handle = ctypes.windll.kernel32.GetStdHandle(-11)
-        ctypes.windll.kernel32.GetConsoleCursorInfo(handle, ctypes.byref(ci))
-        ci.visible = True
-        ctypes.windll.kernel32.SetConsoleCursorInfo(handle, ctypes.byref(ci))
-    elif os.name == 'posix':
+    # if os.name == 'nt':
+    #     ci = _CursorInfo()
+    #     handle = ctypes.windll.kernel32.GetStdHandle(-11)
+    #     ctypes.windll.kernel32.GetConsoleCursorInfo(handle, ctypes.byref(ci))
+    #     ci.visible = True
+    #     ctypes.windll.kernel32.SetConsoleCursorInfo(handle, ctypes.byref(ci))
+    if os.name == 'posix':
         sys.stdout.write("\033[?25h")
         sys.stdout.flush()
 
