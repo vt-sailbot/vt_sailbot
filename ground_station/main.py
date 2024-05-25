@@ -9,7 +9,7 @@ import cv2
 from renderer import CV2DRenderer
 from utils import *
 
-
+RUN_WITH_SAILOR_STANDARDS = False
 DEGREE_SIGN = u'\N{DEGREE SIGN}'
 TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
 
@@ -80,12 +80,32 @@ def update_telemetry_text(telemetry: dict):
     heading_cw_north = (90 - telemetry["heading"]) % 360        # ccw from true east -> cw from true north
     bearing_cw_north = (90 - telemetry["bearing"]) % 360        # ccw from true east -> cw from true north
     apparent_wind_angle_cw_centerline_from = (180 - telemetry["apparent_wind_angle"]) % 360         # ccw centerline measuring the direction the wind is blowing towards -> cw centerline measuring the direction the wind is blowing from
-    apparent_wind_speed_knots = 1.94384 * telemetry["true_wind_speed"]                              # m/s -> knots
+    apparent_wind_speed_knots = 1.94384 * telemetry["apparent_wind_speed"]                          # m/s -> knots
     true_wind_angle_cw_centerline_from =  (180 - telemetry["true_wind_angle"]) % 360                # ccw centerline measuring the direction the wind is blowing towards -> cw centerline measuring the direction the wind is blowing from
     true_wind_speed_knots = 1.94384 * telemetry["true_wind_speed"]                                  # m/s -> knots
     boat_speed_knots = 1.94384 * telemetry["speed"]                                                 # m/s -> knots
     
-    
+    if RUN_WITH_SAILOR_STANDARDS:
+        speed_unit = "kts"
+        heading = heading_cw_north
+        bearing = bearing_cw_north
+        apparent_wind_angle = apparent_wind_angle_cw_centerline_from
+        apparent_wind_speed = apparent_wind_speed_knots
+        true_wind_angle = true_wind_angle_cw_centerline_from
+        true_wind_speed = true_wind_speed_knots
+        boat_speed = boat_speed_knots
+        
+    else:
+        speed_unit = "m/s"
+        heading = telemetry["heading"]
+        bearing = telemetry["bearing"]
+        apparent_wind_angle = telemetry["apparent_wind_angle"]
+        apparent_wind_speed = telemetry["apparent_wind_speed"]
+        true_wind_angle  = telemetry["true_wind_angle"]
+        true_wind_speed = telemetry["true_wind_speed"]
+        boat_speed = telemetry["speed"]
+        
+        
     # Get Formatted Time
     time_since_startup = (time.time() - telemetry_start_time)
     time_since_startup = datetime.time(
@@ -101,23 +121,23 @@ def update_telemetry_text(telemetry: dict):
     
     # Construct String to Display to Command Line
     string_to_show = ""
-    string_to_show += f"Time Today: {real_life_date_time_str}                                                                                                                           \n"
-    string_to_show += f"Time Since Start Up: {time_since_startup_str}                                                                                                                   \n"
-    string_to_show += f"GPS Latitude: {telemetry['position'][0]:.8f}, GPS Longitude: {telemetry['position'][1]:.8f}                                                                     \n"
-    string_to_show += f"Current State: {telemetry['state']}                                                                                                                             \n"
-    string_to_show += f"Speed Over Ground (kts): {boat_speed_knots:.2f}                                                                                                                 \n"
-    string_to_show += f"Target Heading: {bearing_cw_north:.2f}{DEGREE_SIGN}                                                                                                             \n"
-    string_to_show += f"Heading: {heading_cw_north:.2f}{DEGREE_SIGN}                                                                                                                    \n"
-    string_to_show += f"True Wind Speed (kts): {true_wind_speed_knots:.2f}, True Wind Angle {true_wind_angle_cw_centerline_from:.2f}{DEGREE_SIGN}                                       \n"
-    string_to_show += f"Apparent Wind Speed (kts): {apparent_wind_speed_knots:.2f}, Apparent Wind Angle: {apparent_wind_angle_cw_centerline_from:.2f}{DEGREE_SIGN}                      \n"
-    string_to_show += f"Target Mast Angle: {telemetry['mast_angle']:.2f}{DEGREE_SIGN}                                                                                                   \n"
-    string_to_show += f"Target Rudder Angle: {telemetry['rudder_angle']:.2f}{DEGREE_SIGN}                                                                                               \n"
-    string_to_show += f"Current Waypoint Latitude: {telemetry['current_waypoint'][0]:.8f}, Current Waypoint Latitude: {telemetry['current_waypoint'][1]:.8f}                            \n"
-    string_to_show += "                                                                                                                                                                 \n"
-    string_to_show += f"Current Route:                                                                                                                                                  \n"
-    string_to_show += f"------------------------------------                                                                                                                            \n"
+    string_to_show += f"Time Today: {real_life_date_time_str}                                                                                                                  \n"
+    string_to_show += f"Time Since Start Up: {time_since_startup_str}                                                                                                          \n"
+    string_to_show += f"GPS Latitude: {telemetry['position'][0]:.8f}, GPS Longitude: {telemetry['position'][1]:.8f}                                                            \n"
+    string_to_show += f"Current State: {telemetry['state']}                                                                                                                    \n"
+    string_to_show += f"Speed Over Ground: {boat_speed:.2f} {speed_unit}                                                                                                       \n"
+    string_to_show += f"Target Heading: {bearing:.2f}{DEGREE_SIGN}                                                                                                             \n"
+    string_to_show += f"Heading: {heading:.2f}{DEGREE_SIGN}                                                                                                                    \n"
+    string_to_show += f"True Wind Speed: {true_wind_speed:.2f} {speed_unit}, True Wind Angle {true_wind_angle:.2f}{DEGREE_SIGN}                                                \n"
+    string_to_show += f"Apparent Wind Speed: {apparent_wind_speed:.2f} {speed_unit}, Apparent Wind Angle: {apparent_wind_angle:.2f}{DEGREE_SIGN}                               \n"
+    string_to_show += f"Target Mast Angle: {telemetry['mast_angle']:.2f}{DEGREE_SIGN}                                                                                          \n"
+    string_to_show += f"Target Rudder Angle: {telemetry['rudder_angle']:.2f}{DEGREE_SIGN}                                                                                      \n"
+    string_to_show += f"Current Waypoint Latitude: {telemetry['current_waypoint'][0]:.8f}, Current Waypoint Latitude: {telemetry['current_waypoint'][1]:.8f}                   \n"
+    string_to_show += "                                                                                                                                                        \n"
+    string_to_show += f"Current Route:                                                                                                                                         \n"
+    string_to_show += f"------------------------------------                                                                                                                   \n"
     for index, waypoint in enumerate(telemetry["current_route"]):
-        string_to_show += f"Waypoint {index} Latitude: {waypoint[0]:.8f}, Waypoint {index} Longitude: {waypoint[1]:.8f}                                                                 \n"
+        string_to_show += f"Waypoint {index} Latitude: {waypoint[0]:.8f}, Waypoint {index} Longitude: {waypoint[1]:.8f}                                                        \n"
     string_to_show += "\n\n\n"
     
     
@@ -192,7 +212,7 @@ if __name__ == "__main__":
     try:
         main()
     finally:
-        # clear_screen()
+        clear_screen()
         show_terminal_cursor()
         telemetry_file.close()
         
