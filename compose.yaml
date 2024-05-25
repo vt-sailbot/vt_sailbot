@@ -26,4 +26,8 @@ services:
     wind_sensor:
       image: "sailbot_wind_sensor:latest"
       privileged: true
+
+    magnetometer:
+      image: "sailbot_magnetometer:latest"
+      privileged: true
         
