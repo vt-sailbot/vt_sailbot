@@ -205,6 +205,7 @@ def main():
         update_telemetry_text(telemetry)
         update_telemetry_gui(renderer, starting_position_lat_lon, telemetry)
         
+        
         time.sleep(0.05)
     
     
