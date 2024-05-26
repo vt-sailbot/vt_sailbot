@@ -118,7 +118,6 @@ def update_telemetry_text(telemetry: dict):
     
     real_life_date_time = datetime.datetime.now()
     real_life_date_time_str = real_life_date_time.strftime('%m-%d-%Y %H:%M:%S.{:02.0f}').format(real_life_date_time.microsecond/10000.0)
-    
     # Construct String to Display to Command Line
     string_to_show = ""
     string_to_show += f"Time Today: {real_life_date_time_str}                                                                                                                  \n"
@@ -213,7 +212,7 @@ if __name__ == "__main__":
     try:
         main()
     finally:
-        clear_screen()
+        # clear_screen()
         show_terminal_cursor()
         telemetry_file.close()
         
