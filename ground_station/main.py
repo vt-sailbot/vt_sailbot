@@ -9,7 +9,7 @@ import cv2
 from renderer import CV2DRenderer
 from utils import *
 
-RUN_WITH_SAILOR_STANDARDS = True
+RUN_WITH_SAILOR_STANDARDS = False
 DEGREE_SIGN = u'\N{DEGREE SIGN}'
 TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
 
