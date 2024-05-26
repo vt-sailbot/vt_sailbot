@@ -132,7 +132,7 @@ def update_telemetry_text(telemetry: dict):
     string_to_show += f"Apparent Wind Speed: {apparent_wind_speed:.2f} {speed_unit}, Apparent Wind Angle: {apparent_wind_angle:.2f}{DEGREE_SIGN}                               \n"
     string_to_show += f"Target Mast Angle: {telemetry['mast_angle']:.2f}{DEGREE_SIGN}                                                                                          \n"
     string_to_show += f"Target Rudder Angle: {telemetry['rudder_angle']:.2f}{DEGREE_SIGN}                                                                                      \n"
-    string_to_show += f"Current Waypoint Latitude: {telemetry['current_waypoint'][0]:.8f}, Current Waypoint Latitude: {telemetry['current_waypoint'][1]:.8f}                   \n"
+    string_to_show += f"Current Waypoint Index: {telemetry['current_waypoint_index']}                                                                                          \n"
     string_to_show += "                                                                                                                                                        \n"
     string_to_show += f"Current Route:                                                                                                                                         \n"
     string_to_show += f"------------------------------------                                                                                                                   \n"

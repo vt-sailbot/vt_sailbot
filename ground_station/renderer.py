@@ -309,7 +309,6 @@ class CV2DRenderer():
         state = RendererState(state)
         self._transform_state_to_fit_in_img(state)
         local_waypoints = [self._translate_and_scale_to_fit_in_map(np.array(waypoint)) for waypoint in local_waypoints]
-        print(local_waypoints)
 
         # draw extra stuff
         if draw_extra_fct is not None:
