@@ -137,12 +137,16 @@ def update_telemetry_text(telemetry: dict):
     string_to_show += f"------------------------------------                                                                                                                   \n"
     for index, waypoint in enumerate(telemetry["current_route"]):
         string_to_show += f"Waypoint {index} Latitude: {waypoint[0]:.8f}, Waypoint {index} Longitude: {waypoint[1]:.8f}                                                        \n"
-    string_to_show += "\n\n\n"
     
+    
+    trailing_white_space = ""
+    for i in range(20 - len(telemetry["current_route"])):
+        trailing_white_space += "                                                                                                                                              \n"
     
     # Display String and Write to Telemetry File
     move_terminal_cursor(0, 0)
-    print(string_to_show)
+    print(string_to_show + trailing_white_space)
+    
     telemetry_file.write(string_to_show)
 
     
