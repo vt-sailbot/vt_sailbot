@@ -5,11 +5,12 @@ import os
 import sys
 import datetime
 import cv2
+import geopy
 
 from renderer import CV2DRenderer
 from utils import *
 
-RUN_WITH_SAILOR_STANDARDS = False
+RUN_WITH_SAILOR_STANDARDS = True
 DEGREE_SIGN = u'\N{DEGREE SIGN}'
 TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
 
@@ -84,6 +85,7 @@ def update_telemetry_text(telemetry: dict):
     true_wind_angle_cw_centerline_from =  (180 - telemetry["true_wind_angle"]) % 360                # ccw centerline measuring the direction the wind is blowing towards -> cw centerline measuring the direction the wind is blowing from
     true_wind_speed_knots = 1.94384 * telemetry["true_wind_speed"]                                  # m/s -> knots
     boat_speed_knots = 1.94384 * telemetry["speed"]                                                 # m/s -> knots
+    # distance_to_next_waypoint = 
     
     if RUN_WITH_SAILOR_STANDARDS:
         speed_unit = "kts"
@@ -132,6 +134,7 @@ def update_telemetry_text(telemetry: dict):
     string_to_show += f"Target Mast Angle: {telemetry['mast_angle']:.2f}{DEGREE_SIGN}                                                                                          \n"
     string_to_show += f"Target Rudder Angle: {telemetry['rudder_angle']:.2f}{DEGREE_SIGN}                                                                                      \n"
     string_to_show += f"Current Waypoint Index: {telemetry['current_waypoint_index']}                                                                                          \n"
+    # string_to_show += f"Distance to next waypoint: {}"
     string_to_show += "                                                                                                                                                        \n"
     string_to_show += f"Current Route:                                                                                                                                         \n"
     string_to_show += f"------------------------------------                                                                                                                   \n"
@@ -155,9 +158,8 @@ def display_image(img):
     cv2.imshow("Simulation Real Time", img)
     cv2.waitKey(1)
         
-def update_telemetry_gui(renderer: CV2DRenderer, reference_lat_lon, telemetry: dict):
-    
-    local_y, local_x, _ = navpy.lla2ned(telemetry["position"][0], telemetry["position"][1], 0, reference_lat_lon[0], reference_lat_lon[1], 0)
+def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
+    local_y, local_x = 0, 0
     absolute_wind_angle = telemetry["true_wind_angle"] + telemetry["heading"]
     mast_dir_fix = -1 if 0 < telemetry["true_wind_angle"] < 180 else 1
     
@@ -175,10 +177,12 @@ def update_telemetry_gui(renderer: CV2DRenderer, reference_lat_lon, telemetry: d
     
     waypoints = []
     for waypoint in telemetry["current_route"]:
-        local_y, local_x, _ = navpy.lla2ned(waypoint[0], waypoint[1], 0, reference_lat_lon[0], reference_lat_lon[1], 0)
+        local_y, local_x, _ = navpy.lla2ned(waypoint[0], waypoint[1], 0, telemetry["position"][0], telemetry["position"][1], 0)
         waypoints.append((local_x, local_y))
-        
-    display_image(renderer.render(gui_state, waypoints))
+    gui_state["waypoints"] = np.array(waypoints)
+    
+    
+    display_image(renderer.render(gui_state))
 
 
 def main():
@@ -194,9 +198,8 @@ def main():
     clear_screen()
     hide_terminal_cursor()
     telemetry = get_telemetry()
-    starting_position_lat_lon = telemetry["position"]
     
-    map_bounds = np.array([[-50, -50], [50, 50]])
+    map_bounds = np.array([[-250, -250], [250, 250]])
     renderer = CV2DRenderer()
     renderer.setup(map_bounds)
     
@@ -206,7 +209,7 @@ def main():
     while True:
         telemetry = get_telemetry()
         update_telemetry_text(telemetry)
-        update_telemetry_gui(renderer, starting_position_lat_lon, telemetry)
+        update_telemetry_gui(renderer, telemetry)
         
         
         time.sleep(0.05)

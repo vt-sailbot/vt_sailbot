@@ -40,6 +40,7 @@ class State(TypedDict):
     dt_theta_sail: np.ndarray[1]
     wind: np.ndarray[2]
     water: np.ndarray[2]
+    waypoints: np.ndarray
     
     
     
