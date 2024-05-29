@@ -131,7 +131,7 @@ def update_telemetry_text(telemetry: dict):
     string_to_show += f"Time Today: {real_life_date_time_str}                                                                                                                  \n"
     string_to_show += f"Time Since Start Up: {time_since_startup_str}                                                                                                          \n"
     string_to_show += f"GPS Latitude: {telemetry['position'][0]:.8f}, GPS Longitude: {telemetry['position'][1]:.8f}                                                            \n"
-    string_to_show += f"Current State: {telemetry['state']}                                                                                                                    \n"
+    string_to_show += f"Autopilot Mode: {telemetry['state']}                                                                                                                    \n"
     string_to_show += f"Speed Over Ground: {boat_speed:.2f} {speed_unit}                                                                                                       \n"
     string_to_show += f"Target Heading: {bearing:.2f}{DEGREE_SIGN}                                                                                                             \n"
     string_to_show += f"Heading: {heading:.2f}{DEGREE_SIGN}                                                                                                                    \n"
