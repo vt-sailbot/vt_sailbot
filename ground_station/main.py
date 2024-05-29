@@ -1,3 +1,4 @@
+import geopy.distance
 import requests
 import json
 import time
@@ -10,7 +11,7 @@ import geopy
 from renderer import CV2DRenderer
 from utils import *
 
-RUN_WITH_SAILOR_STANDARDS = True
+RUN_WITH_SAILOR_STANDARDS = False
 DEGREE_SIGN = u'\N{DEGREE SIGN}'
 TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
 
@@ -84,8 +85,13 @@ def update_telemetry_text(telemetry: dict):
     apparent_wind_speed_knots = 1.94384 * telemetry["apparent_wind_speed"]                          # m/s -> knots
     true_wind_angle_cw_centerline_from =  (180 - telemetry["true_wind_angle"]) % 360                # ccw centerline measuring the direction the wind is blowing towards -> cw centerline measuring the direction the wind is blowing from
     true_wind_speed_knots = 1.94384 * telemetry["true_wind_speed"]                                  # m/s -> knots
-    boat_speed_knots = 1.94384 * telemetry["speed"]                                                 # m/s -> knots
-    # distance_to_next_waypoint = 
+    boat_speed_knots = 1.94384 * telemetry["speed"]                               # m/s -> knots
+    
+    current_waypoint_index = telemetry["current_waypoint_index"]
+    if telemetry["current_route"]:
+        distance_to_next_waypoint = geopy.distance.geodesic(telemetry["current_route"][current_waypoint_index], telemetry["position"])
+    else:
+        distance_to_next_waypoint = 0.
     
     if RUN_WITH_SAILOR_STANDARDS:
         speed_unit = "kts"
@@ -133,8 +139,8 @@ def update_telemetry_text(telemetry: dict):
     string_to_show += f"Apparent Wind Speed: {apparent_wind_speed:.2f} {speed_unit}, Apparent Wind Angle: {apparent_wind_angle:.2f}{DEGREE_SIGN}                               \n"
     string_to_show += f"Target Mast Angle: {telemetry['mast_angle']:.2f}{DEGREE_SIGN}                                                                                          \n"
     string_to_show += f"Target Rudder Angle: {telemetry['rudder_angle']:.2f}{DEGREE_SIGN}                                                                                      \n"
-    string_to_show += f"Current Waypoint Index: {telemetry['current_waypoint_index']}                                                                                          \n"
-    # string_to_show += f"Distance to next waypoint: {}"
+    string_to_show += f"Current Waypoint Index: {current_waypoint_index}                                                                                                       \n"
+    string_to_show += f"Distance to next waypoint: {distance_to_next_waypoint}                                                                                                                          \n"
     string_to_show += "                                                                                                                                                        \n"
     string_to_show += f"Current Route:                                                                                                                                         \n"
     string_to_show += f"------------------------------------                                                                                                                   \n"
