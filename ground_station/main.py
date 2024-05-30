@@ -92,7 +92,7 @@ def update_telemetry_text(telemetry: dict):
     if telemetry["current_route"]:
         distance_to_next_waypoint = geopy.distance.geodesic(telemetry["current_route"][current_waypoint_index], telemetry["position"])
     else:
-        distance_to_next_waypoint = 0.
+        distance_to_next_waypoint = geopy.distance.Distance(0.)
     
     if RUN_WITH_SAILOR_STANDARDS:
         speed_unit = "kts"
@@ -129,35 +129,35 @@ def update_telemetry_text(telemetry: dict):
     real_life_date_time_str = real_life_date_time.strftime('%m-%d-%Y %H:%M:%S.{:02.0f}').format(real_life_date_time.microsecond/10000.0)
     # Construct String to Display to Command Line
     string_to_show = ""
-    string_to_show += f"Time Today: {real_life_date_time_str}                                                                                                          \n"
-    string_to_show += f"Time Since Start Up: {time_since_startup_str}                                                                                                  \n"
-    string_to_show += f"GPS Latitude: {telemetry['position'][0]:.8f}, GPS Longitude: {telemetry['position'][1]:.8f}                                                    \n"
-    string_to_show += f"Autopilot Mode: {telemetry['state']}                                                                                                           \n"
-    string_to_show += f"Speed Over Ground: {boat_speed:.2f} {speed_unit}                                                                                               \n"
-    string_to_show += f"Target Heading: {bearing:.2f}{DEGREE_SIGN}                                                                                                     \n"
-    string_to_show += f"Heading: {heading:.2f}{DEGREE_SIGN}                                                                                                            \n"
-    string_to_show += f"True Wind Speed: {true_wind_speed:.2f} {speed_unit}, True Wind Angle {true_wind_angle:.2f}{DEGREE_SIGN}                                        \n"
-    string_to_show += f"Apparent Wind Speed: {apparent_wind_speed:.2f} {speed_unit}, Apparent Wind Angle: {apparent_wind_angle:.2f}{DEGREE_SIGN}                       \n"
-    string_to_show += f"Target Mast Angle: {telemetry['mast_angle']:.2f}{DEGREE_SIGN}                                                                                  \n"
-    string_to_show += f"Target Rudder Angle: {telemetry['rudder_angle']:.2f}{DEGREE_SIGN}                                                                              \n"
-    string_to_show += f"Current Waypoint Index: {current_waypoint_index}                                                                                               \n"
-    string_to_show += f"Distance to next waypoint: {distance_to_next_waypoint}                                                                                         \n"
-    string_to_show += "                                                                                                                                                \n"
+    string_to_show += f"Time Today: {real_life_date_time_str}                                                                                                  \n"
+    string_to_show += f"Time Since Start Up: {time_since_startup_str}                                                                                          \n"
+    string_to_show += f"GPS Latitude: {telemetry['position'][0]:.8f}, GPS Longitude: {telemetry['position'][1]:.8f}                                            \n"
+    string_to_show += f"Autopilot Mode: {telemetry['state']}                                                                                                   \n"
+    string_to_show += f"Speed Over Ground: {boat_speed:.2f} {speed_unit}                                                                                       \n"
+    string_to_show += f"Target Heading: {bearing:.2f}{DEGREE_SIGN}                                                                                             \n"
+    string_to_show += f"Heading: {heading:.2f}{DEGREE_SIGN}                                                                                                    \n"
+    string_to_show += f"True Wind Speed: {true_wind_speed:.2f} {speed_unit}, True Wind Angle {true_wind_angle:.2f}{DEGREE_SIGN}                                \n"
+    string_to_show += f"Apparent Wind Speed: {apparent_wind_speed:.2f} {speed_unit}, Apparent Wind Angle: {apparent_wind_angle:.2f}{DEGREE_SIGN}               \n"
+    string_to_show += f"Target Mast Angle: {telemetry['mast_angle']:.2f}{DEGREE_SIGN}                                                                          \n"
+    string_to_show += f"Target Rudder Angle: {telemetry['rudder_angle']:.2f}{DEGREE_SIGN}                                                                      \n"
+    string_to_show += f"Current Waypoint Index: {current_waypoint_index}                                                                                       \n"
+    string_to_show += f"Distance to next waypoint: {distance_to_next_waypoint.m:.2f} meters                                                                        \n"
+    string_to_show += "                                                                                                                                        \n"
     
-    string_to_show += f"Parameters:                                                                                                                                    \n"
-    string_to_show += f"------------------------------------                                                                                                           \n"
+    string_to_show += f"Parameters:                                                                                                                            \n"
+    string_to_show += f"------------------------------------                                                                                                   \n"
     for param_name, param_value in telemetry["parameters"].items():
-        string_to_show += f"{param_name}: {param_value}                                                                                                                \n"
+        string_to_show += f"{param_name}: {param_value}                                                 \n"
     
-    string_to_show += "                                                                                                                                                \n"
-    string_to_show += f"Current Route:                                                                                                                                 \n"
-    string_to_show += f"------------------------------------                                                                                                           \n"
+    string_to_show += "                                                                                                                                        \n"
+    string_to_show += f"Current Route:                                                                                                                         \n"
+    string_to_show += f"------------------------------------                                                                                                   \n"
     for index, waypoint in enumerate(telemetry["current_route"]):
-        string_to_show += f"Waypoint {index} Latitude: {waypoint[0]:.8f}, Waypoint {index} Longitude: {waypoint[1]:.8f}                                                \n"
+        string_to_show += f"Waypoint {index} Latitude: {waypoint[0]:.8f}, Waypoint {index} Longitude: {waypoint[1]:.8f}                                        \n"
     
     
     trailing_white_space = ""
-    for i in range(10 - len(telemetry["current_route"])):
+    for i in range(6 - len(telemetry["current_route"])):
         trailing_white_space += "                                                                                                                                      \n"
     
     # Display String and Write to Telemetry File
