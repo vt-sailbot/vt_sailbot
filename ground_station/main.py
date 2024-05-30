@@ -7,6 +7,7 @@ import sys
 import datetime
 import cv2
 import geopy
+import matplotlib.pyplot as plt
 
 from renderer import CV2DRenderer
 from utils import *
@@ -15,6 +16,7 @@ RUN_WITH_SAILOR_STANDARDS = False
 DEGREE_SIGN = u'\N{DEGREE SIGN}'
 TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
 
+pid_data_file = None
 telemetry_file = None
 telemetry_start_time = time.time()
 
@@ -199,8 +201,20 @@ def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
     display_image(renderer.render(gui_state))
 
 
+def update_heading_pid_graph(telemetry):
+    global pid_data_file
+
+    heading = telemetry["heading"]
+    desired_heading = telemetry["bearing"]
+    current_time = time.time() - telemetry_start_time
+    
+    pid_data_file.write(f"{current_time},{heading},{desired_heading}\n")
+
+
+
+
 def main():
-    global telemetry_file, renderer
+    global telemetry_file, pid_data_file, renderer
     # if os.name == 'nt':
     #     import msvcrt
     #     import ctypes
@@ -218,12 +232,18 @@ def main():
     renderer.setup(map_bounds)
     
     telemetry_file = open("./telemetry_log.txt", "a")
+    pid_data_file = open("./pid_data.csv", "w")
+    
+    pid_data_file.write("time,heading,desired_heading\n")
+    
+    plt.ion()
     
     
     while True:
         telemetry = get_telemetry()
         update_telemetry_text(telemetry)
         update_telemetry_gui(renderer, telemetry)
+        update_heading_pid_graph(telemetry)
         
         
         time.sleep(0.05)
