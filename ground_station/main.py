@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from renderer import CV2DRenderer
 from utils import *
 
-RUN_WITH_SAILOR_STANDARDS = False
+RUN_WITH_SAILOR_STANDARDS = True
 DEGREE_SIGN = u'\N{DEGREE SIGN}'
 TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
 
@@ -227,7 +227,7 @@ def main():
     hide_terminal_cursor()
     telemetry = get_telemetry()
     
-    map_bounds = np.array([[-250, -250], [250, 250]])
+    map_bounds = np.array([[-25, -50], [100, 75]])
     renderer = CV2DRenderer()
     renderer.setup(map_bounds)
     
