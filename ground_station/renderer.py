@@ -194,7 +194,7 @@ class CV2DRenderer():
         arrow_start = (420, 420)
         wind_speed = np.linalg.norm(state.wind)
         AWA = state.apparent_wind_angle + 90
-        arrow_end = (int(arrow_start[0] + wind_speed * np.cos(np.deg2rad(AWA))), int(arrow_start[1] + wind_speed * np.sin(np.deg2rad(AWA))))
+        arrow_end = (int(arrow_start[0] + 8 * wind_speed * np.cos(np.deg2rad(AWA))), int(arrow_start[1] + 8 * wind_speed * np.sin(np.deg2rad(AWA))))
         cv2.arrowedLine(img,
                         arrow_start,
                         arrow_end,
@@ -237,9 +237,8 @@ class CV2DRenderer():
                  lineType=cv2.LINE_AA)
 
     def _draw_boat_pos_velocity(self, img: np.ndarray, state: RendererState):
-        state.dt_p_boat
         dt_p_boat_start = state.p_boat
-        dt_p_boat_end = dt_p_boat_start + state.dt_p_boat * self.vector_scale
+        dt_p_boat_end = dt_p_boat_start + 3 * state.dt_p_boat * self.vector_scale
         cv2.arrowedLine(img,
                         tuple(dt_p_boat_start.astype(int)),
                         tuple(dt_p_boat_end.astype(int)),
@@ -303,12 +302,12 @@ class CV2DRenderer():
                    -1)
 
     def _draw_waypoint(self, img: np.ndarray, x_position, y_position, color):
-        cv2.circle(img, (int(x_position), int(y_position)), radius=3, color=color, thickness=-1)
+        cv2.circle(img, (int(x_position), int(y_position)), radius=5, color=color, thickness=-1)
         
         
-    def _draw_buoys(self, img: np.ndarray, state: RendererState):
-        for buoys in state.buoys:
-            cv2.circle(img, (int(buoys[0]), int(buoys[1])), radius=5, color=(0,165,255), thickness=-1)
+    def _draw_buoys(self, img: np.ndarray, buoys):
+        for buoy in buoys:
+            cv2.circle(img, (int(buoy[0]), int(buoy[1])), radius=5, color=(0,165,255), thickness=-1)
     
         
     def get_render_mode(self) -> str:
@@ -340,6 +339,7 @@ class CV2DRenderer():
         state = RendererState(state)
         self._transform_state_to_fit_in_img(state)
         waypoints = [self._translate_and_scale_to_fit_in_map(np.array(waypoint)) for waypoint in state.waypoints]
+        buoys = [self._translate_and_scale_to_fit_in_map(np.array(buoy)) for buoy in state.buoys]
 
         # draw extra stuff
         if draw_extra_fct is not None:
@@ -358,13 +358,13 @@ class CV2DRenderer():
         self._draw_sail_velocity(img, state)
         self._draw_boat_center(img, state)
         self._draw_wind(img, state)
-        self._draw_buoys(img, state)
+        self._draw_buoys(img, buoys)
 
         for index, (x, y) in enumerate(waypoints):
             if index == state.cur_waypoint:
                 self._draw_waypoint(img, x, y, (255, 0, 0))
             else:
-                self._draw_waypoint(img, x, y, (255, 255, 255))
+                self._draw_waypoint(img, x, y, (0, 0, 0))
             
         # flip vertically
         img = img[::-1, :, :]
