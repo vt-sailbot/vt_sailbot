@@ -42,6 +42,7 @@ class State(TypedDict):
     wind: np.ndarray[2]
     water: np.ndarray[2]
     waypoints: np.ndarray
+    cur_waypoint: int
     buoys: np.ndarray
     
     

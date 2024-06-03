@@ -1,9 +1,6 @@
 {
     "waypoints": [
-        [0.00005, 0.00005],
-        [0, 0.00015],
-        [-0.00005, 0.00005],
-        [0, 0]
+        [0.00005, 0.00005]
     ],
 
     "sail_lookup_table_wind_angles":    [0.0,  45.0, 90.0, 135.0, 180.0, 225.0, 270.0, 315.0, 360.0],
@@ -13,7 +10,7 @@
     "no_sail_zone_size":100,
 
     "rudder_p_gain": 1,
-    "rudder_d_gain": 0,
-    "rudder_i_gain": 0,
-    "rudder_n_gain": 0
+    "rudder_d_gain": 0.2,
+    "rudder_i_gain": 0.3,
+    "rudder_n_gain": 1
 }

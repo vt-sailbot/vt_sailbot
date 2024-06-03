@@ -48,6 +48,7 @@ class RendererState():
         # water
         self.water = state["water"]
         
+        self.cur_waypoint = state["cur_waypoint"]
         self.waypoints = state["waypoints"]
         
         self.buoys = state["buoys"]
@@ -301,8 +302,8 @@ class CV2DRenderer():
                    self.style["boat"]["center"]["color"],
                    -1)
 
-    def _draw_waypoint(self, img: np.ndarray, x_position, y_position):
-        cv2.circle(img, (int(x_position), int(y_position)), radius=3, color=(255, 0, 0), thickness=-1)
+    def _draw_waypoint(self, img: np.ndarray, x_position, y_position, color):
+        cv2.circle(img, (int(x_position), int(y_position)), radius=3, color=color, thickness=-1)
         
         
     def _draw_buoys(self, img: np.ndarray, state: RendererState):
@@ -359,8 +360,11 @@ class CV2DRenderer():
         self._draw_wind(img, state)
         self._draw_buoys(img, state)
 
-        for (x, y) in waypoints:
-            self._draw_waypoint(img, x, y)
+        for index, (x, y) in enumerate(waypoints):
+            if index == state.cur_waypoint:
+                self._draw_waypoint(img, x, y, (255, 0, 0))
+            else:
+                self._draw_waypoint(img, x, y, (255, 255, 255))
             
         # flip vertically
         img = img[::-1, :, :]

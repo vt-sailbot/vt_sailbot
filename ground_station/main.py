@@ -196,6 +196,7 @@ def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
     gui_state["wind"] = np.array([telemetry["true_wind_speed"] * np.cos(np.deg2rad(absolute_wind_angle)), telemetry["true_wind_speed"] * np.sin(np.deg2rad(absolute_wind_angle))])
     gui_state["water"] = np.array([0, 0])
     gui_state["buoys"] = np.array(BUOYS)
+    gui_state["cur_waypoint"] = telemetry["current_waypoint_index"]
     
     waypoints = []
     for waypoint in telemetry["current_route"]:
