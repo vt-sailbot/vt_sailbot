@@ -42,12 +42,15 @@ class RendererState():
                          + np.sign(state["dt_theta_sail"][0]) * np.pi / 2)  # is either -90 or 90 degrees
 
         # wind
+        self.apparent_wind_angle = state["apparent_wind"]
         self.wind = state["wind"]
 
         # water
         self.water = state["water"]
         
         self.waypoints = state["waypoints"]
+        
+        self.buoys = state["buoys"]
 
 
 class CV2DRenderer():
@@ -185,6 +188,25 @@ class CV2DRenderer():
                            self.style["boat"]["color"],
                            lineType=cv2.LINE_AA)
 
+    def _draw_apparent_wind_angle(self, img: np.ndarray, state: RendererState):
+        # arrow_start = (self.map_bounds[1][0] - 10, self.map_bounds[1][1] - 10)
+        arrow_start = (420, 420)
+        wind_speed = np.linalg.norm(state.wind)
+        AWA = state.apparent_wind_angle + 90
+        arrow_end = (int(arrow_start[0] + wind_speed * np.cos(np.deg2rad(AWA))), int(arrow_start[1] + wind_speed * np.sin(np.deg2rad(AWA))))
+        cv2.arrowedLine(img,
+                        arrow_start,
+                        arrow_end,
+                        self.style["wind"]["color"],
+                        self.style["wind"]["width"],
+                        tipLength=0.2,
+                        line_type=cv2.LINE_AA)
+        
+        # cv2.fillConvexPoly(img,
+        #                    sailboat_pts,
+        #                    self.style["boat"]["color"],
+        #                    lineType=cv2.LINE_AA)
+        
     def _draw_sail(self, img: np.ndarray, state: RendererState):
         sail_height = self.style["sail"]["height"]
         sail_start = state.p_boat
@@ -280,7 +302,13 @@ class CV2DRenderer():
                    -1)
 
     def _draw_waypoint(self, img: np.ndarray, x_position, y_position):
-        cv2.circle(img, (int(x_position), int(y_position)), radius=5, color=(255, 0, 0), thickness=-1)
+        cv2.circle(img, (int(x_position), int(y_position)), radius=3, color=(255, 0, 0), thickness=-1)
+        
+        
+    def _draw_buoys(self, img: np.ndarray, state: RendererState):
+        for buoys in state.buoys:
+            cv2.circle(img, (int(buoys[0]), int(buoys[1])), radius=5, color=(0,165,255), thickness=-1)
+    
         
     def get_render_mode(self) -> str:
         return 'rgb_array'
@@ -320,6 +348,7 @@ class CV2DRenderer():
         self._draw_borders(img)
         self._draw_water(img, state)
         self._draw_boat(img, state)
+        self._draw_apparent_wind_angle(img, state)
         self._draw_boat_heading_velocity(img, state)
         self._draw_boat_pos_velocity(img, state)
         self._draw_rudder(img, state)
@@ -328,6 +357,7 @@ class CV2DRenderer():
         self._draw_sail_velocity(img, state)
         self._draw_boat_center(img, state)
         self._draw_wind(img, state)
+        self._draw_buoys(img, state)
 
         for (x, y) in waypoints:
             self._draw_waypoint(img, x, y)

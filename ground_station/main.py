@@ -20,6 +20,10 @@ pid_data_file = None
 telemetry_file = None
 telemetry_start_time = time.time()
 
+# MAP_BOUNDS = [[-25, -50], [100, 75]]
+MAP_BOUNDS = [[-25, -25], [25, 25]]
+BUOYS = [[0.00075, 0.00075], [-0.000075, -0.000075]]
+
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -171,7 +175,7 @@ def update_telemetry_text(telemetry: dict):
     
 
 def display_image(img):
-    cv2.imshow("Simulation Real Time", img)
+    cv2.imshow("Ground Station GUI", img)
     cv2.waitKey(1)
         
 def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
@@ -188,16 +192,33 @@ def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
     gui_state["dt_theta_rudder"] = np.array([0, 0, 0])
     gui_state["theta_sail"] = np.array([mast_dir_fix * np.deg2rad(telemetry["mast_angle"]), 0, 0])
     gui_state["dt_theta_sail"] = np.array([0, 0, 0])
+    gui_state["apparent_wind"] = telemetry["apparent_wind_angle"]
     gui_state["wind"] = np.array([telemetry["true_wind_speed"] * np.cos(np.deg2rad(absolute_wind_angle)), telemetry["true_wind_speed"] * np.sin(np.deg2rad(absolute_wind_angle))])
     gui_state["water"] = np.array([0, 0])
+    gui_state["buoys"] = np.array(BUOYS)
     
     waypoints = []
     for waypoint in telemetry["current_route"]:
         local_y, local_x, _ = navpy.lla2ned(waypoint[0], waypoint[1], 0, telemetry["position"][0], telemetry["position"][1], 0)
+        local_x = np.clip(local_x, MAP_BOUNDS[0][0], MAP_BOUNDS[1][0])
+        local_y = np.clip(local_y, MAP_BOUNDS[0][1], MAP_BOUNDS[1][1])
+        
         waypoints.append((local_x, local_y))
     gui_state["waypoints"] = np.array(waypoints)
     
     
+    buoys = []
+    for buoy in BUOYS:
+        # print(buoy[0], buoy[1])
+        # print(telemetry["position"][0], telemetry["position"][1])
+        local_y, local_x, _ = navpy.lla2ned(buoy[0], buoy[1], 0, telemetry["position"][0], telemetry["position"][1], 0)
+        # print(local_x, local_y)
+        local_x = np.clip(local_x, MAP_BOUNDS[0][0], MAP_BOUNDS[1][0])
+        local_y = np.clip(local_y, MAP_BOUNDS[0][1], MAP_BOUNDS[1][1])
+        
+        buoys.append((local_x, local_y))
+    gui_state["buoys"] = np.array(buoys)
+
     display_image(renderer.render(gui_state))
 
 
@@ -227,7 +248,7 @@ def main():
     hide_terminal_cursor()
     telemetry = get_telemetry()
     
-    map_bounds = np.array([[-25, -50], [100, 75]])
+    map_bounds = np.array(MAP_BOUNDS)
     renderer = CV2DRenderer()
     renderer.setup(map_bounds)
     
@@ -253,7 +274,7 @@ if __name__ == "__main__":
     try:
         main()
     finally:
-        # clear_screen()
+        clear_screen()
         show_terminal_cursor()
         telemetry_file.close()
         

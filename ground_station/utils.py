@@ -38,9 +38,11 @@ class State(TypedDict):
     dt_theta_rudder: np.ndarray[1]
     theta_sail: np.ndarray[1]
     dt_theta_sail: np.ndarray[1]
+    apparent_wind: np.ndarray[2]
     wind: np.ndarray[2]
     water: np.ndarray[2]
     waypoints: np.ndarray
+    buoys: np.ndarray
     
     
     
