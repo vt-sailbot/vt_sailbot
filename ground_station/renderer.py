@@ -362,10 +362,13 @@ class CV2DRenderer():
 
         for index, (x, y) in enumerate(waypoints):
             if index == state.cur_waypoint:
-                self._draw_waypoint(img, x, y, (255, 0, 0))
+                continue
             else:
                 self._draw_waypoint(img, x, y, (0, 0, 0))
-            
+        
+        x,y = waypoints[state.cur_waypoint]
+        self._draw_waypoint(img, x, y, (255, 0, 0))
+        
         # flip vertically
         img = img[::-1, :, :]
 
