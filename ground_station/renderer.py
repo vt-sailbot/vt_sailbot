@@ -359,15 +359,16 @@ class CV2DRenderer():
         self._draw_boat_center(img, state)
         self._draw_wind(img, state)
         self._draw_buoys(img, buoys)
-
-        for index, (x, y) in enumerate(waypoints):
-            if index == state.cur_waypoint:
-                continue
-            else:
-                self._draw_waypoint(img, x, y, (0, 0, 0))
         
-        x,y = waypoints[state.cur_waypoint]
-        self._draw_waypoint(img, x, y, (255, 0, 0))
+        if waypoints:
+            for index, (x, y) in enumerate(waypoints):
+                if index == state.cur_waypoint:
+                    continue
+                else:
+                    self._draw_waypoint(img, x, y, (0, 0, 0))
+            
+            x,y = waypoints[state.cur_waypoint]
+            self._draw_waypoint(img, x, y, (255, 0, 0))
         
         # flip vertically
         img = img[::-1, :, :]

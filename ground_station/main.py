@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from renderer import CV2DRenderer
 from utils import *
 
-RUN_WITH_SAILOR_STANDARDS = False
+RUN_WITH_SAILOR_STANDARDS = True
 DEGREE_SIGN = u'\N{DEGREE SIGN}'
 TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
 
@@ -21,8 +21,9 @@ telemetry_file = None
 telemetry_start_time = time.time()
 
 # MAP_BOUNDS = [[-25, -50], [100, 75]]
+MAP_BOUNDS = [[-75, -75], [75, 75]]
 # 75, -75 is usually good
-MAP_BOUNDS = [[-30, 0], [75, 30]]
+# MAP_BOUNDS = [[-30, 0], [75, 30]]
 BUOYS = [
     # [42.8449667, -70.9772667],
     # [42.8447667, -70.9771167],
@@ -91,6 +92,8 @@ def update_telemetry_text(telemetry: dict):
     global telemetry_file, telemetry_start_time
         
     # Convert to the units that the sailors are happy with
+    velocity_vector = telemetry["velocity_vector"]
+    print(velocity_vector)
     heading_cw_north = (90 - telemetry["heading"]) % 360        # ccw from true east -> cw from true north
     bearing_cw_north = (90 - telemetry["bearing"]) % 360        # ccw from true east -> cw from true north
     apparent_wind_angle_cw_centerline_from = (180 - telemetry["apparent_wind_angle"]) % 360         # ccw centerline measuring the direction the wind is blowing towards -> cw centerline measuring the direction the wind is blowing from
@@ -196,11 +199,12 @@ def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
     
     true_wind_vector = np.array([TWS * np.cos(np.deg2rad(TWA-90)), TWS * np.sin(np.deg2rad(TWA-90))])
     apparent_wind_vector = np.array([AWS * np.cos(np.deg2rad(AWA-90)), AWS * np.sin(np.deg2rad(AWA-90))])
-    velocity_vector = (true_wind_vector - apparent_wind_vector)
+    # velocity_vector = (true_wind_vector - apparent_wind_vector)
+    velocity_vector = telemetry["velocity_vector"]
     
     gui_state = State()
     gui_state["p_boat"] = np.array([local_x, local_y, 0])
-    gui_state["dt_p_boat"] = velocity_vector
+    gui_state["dt_p_boat"] = np.array(velocity_vector)
     gui_state["theta_boat"] = np.array([0, 0, np.deg2rad(telemetry["heading"])])
     gui_state["dt_theta_boat"] = np.array([0, 0, 0])
     gui_state["theta_rudder"] = np.array([0, 0, 0])
