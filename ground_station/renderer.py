@@ -420,8 +420,8 @@ class CV2DRenderer():
         
         self._draw_borders(img)
         self._draw_water(img, state)
-        self._draw_decision_zone_lines(img, state)
-        self._draw_no_go_zone_lines(img, state)
+        # self._draw_decision_zone_lines(img, state)
+        # self._draw_no_go_zone_lines(img, state)
         self._draw_boat(img, state)
         self._draw_apparent_wind_angle(img, state)
         self._draw_boat_heading_velocity(img, state)

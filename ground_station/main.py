@@ -21,15 +21,16 @@ telemetry_file = None
 telemetry_start_time = time.time()
 
 # MAP_BOUNDS = [[-25, -50], [100, 75]]
-MAP_BOUNDS = [[-75, -75], [75, 75]]
+MAP_BOUNDS = [[-150, -150], [150, 150]]
 # 75, -75 is usually good
 # MAP_BOUNDS = [[-30, 0], [75, 30]]
-BUOYS = [
-    # [42.8449667, -70.9772667],
-    # [42.8447667, -70.9771167],
-    # [42.8449167, -70.9761667],
-    # [42.8455167, -70.9765333]
-]
+BUOYS =  [[42.845033, -70.977105], [42.846733, -70.974783], [42.848148, -70.976775], [42.846820, -70.978182]]
+# [
+#     # [42.8449667, -70.9772667],
+#     # [42.8447667, -70.9771167],
+#     # [42.8449167, -70.9761667],
+#     # [42.8455167, -70.9765333]
+# ]
 
 
 def clear_screen():
@@ -116,7 +117,10 @@ def update_telemetry_text(telemetry: dict):
     current_waypoint_index = telemetry["current_waypoint_index"]
     
     
-    distance_to_next_waypoint = get_distance_to_waypoint(telemetry["position"], telemetry["current_route"][current_waypoint_index])
+    if telemetry["current_route"]:
+        distance_to_next_waypoint = get_distance_to_waypoint(telemetry["position"], telemetry["current_route"][current_waypoint_index])
+    else:
+        distance_to_next_waypoint = get_distance_to_waypoint(telemetry["position"], None)
 
     
     if RUN_WITH_SAILOR_STANDARDS:
@@ -203,11 +207,11 @@ def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
     absolute_wind_angle = telemetry["true_wind_angle"] + telemetry["heading"]
     mast_dir_fix = -1 if 0 < telemetry["true_wind_angle"] < 180 else 1\
         
-    tack_distance = telemetry["parameters"]["tack_distance"]
-    no_sail_zone_size = telemetry["parameters"]["no_sail_zone_size"]
-    cur_waypoint = telemetry["current_route"][telemetry["current_waypoint_index"]]
-    distance_to_next_waypoint = get_distance_to_waypoint(telemetry["position"], cur_waypoint)
-    decision_zone_size = get_decision_zone_size(tack_distance, no_sail_zone_size, distance_to_next_waypoint)
+    # tack_distance = telemetry["parameters"]["tack_distance"]
+    # no_sail_zone_size = telemetry["no_sail_zone_size"]
+    # cur_waypoint = telemetry["current_route"][telemetry["current_waypoint_index"]]
+    # distance_to_next_waypoint = get_distance_to_waypoint(telemetry["position"], cur_waypoint)
+    # decision_zone_size = get_decision_zone_size(tack_distance, no_sail_zone_size, distance_to_next_waypoint)
     
     # TWS = telemetry["true_wind_speed"]
     # TWA = telemetry["true_wind_angle"]
@@ -233,8 +237,8 @@ def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
     gui_state["water"] = np.array([0, 0])
     gui_state["buoys"] = np.array(BUOYS)
     gui_state["cur_waypoint"] = telemetry["current_waypoint_index"]
-    gui_state["no_go_zone_size"] = telemetry["parameters"]["no_sail_zone_size"]
-    gui_state["decision_zone_size"] = decision_zone_size
+    gui_state["no_go_zone_size"] = 120
+    gui_state["decision_zone_size"] = 40
     
     waypoints = []
     for waypoint in telemetry["current_route"]:
