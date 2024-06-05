@@ -25,9 +25,7 @@ class RendererState():
 
         # position
         self.p_boat = np.array([state["p_boat"][0], state["p_boat"][1]])
-        self.dt_p_boat = rotate_vector(
-            np.array([state["dt_p_boat"][0], state["dt_p_boat"][1]]),
-            self.theta_boat)
+        self.dt_p_boat = 6 * np.array([state["dt_p_boat"][0], state["dt_p_boat"][1]])
 
         # rudder
         self.theta_rudder = np.pi + self.theta_boat + state["theta_rudder"][0]
@@ -61,6 +59,8 @@ class CV2DRenderer():
         self.vector_scale = vector_scale
         self.map_bounds = None
         self.center = None
+        
+        self.trail_positions = []
 
         self.style = {
             "background": WHITE,
@@ -131,7 +131,7 @@ class CV2DRenderer():
         state.p_boat = self._translate_and_scale_to_fit_in_map(state.p_boat)
 
         # scale vectors
-        state.dt_p_boat = self._scale_to_fit_in_img(state.dt_p_boat)
+        # state.dt_p_boat = self._scale_to_fit_in_img(state.dt_p_boat)
         state.dt_theta_boat = self._scale_to_fit_in_img(state.dt_theta_boat)
         state.dt_rudder = self._scale_to_fit_in_img(state.dt_rudder)
         state.dt_sail = self._scale_to_fit_in_img(state.dt_sail)
@@ -189,6 +189,30 @@ class CV2DRenderer():
                            self.style["boat"]["color"],
                            lineType=cv2.LINE_AA)
 
+    def _draw_trail(self, img: np.ndarray, state: RendererState):
+        self.trail_positions.append(state.p_boat)
+        for trail_dot_pos in self.trail_positions:
+            cv2.circle(img,
+                    tuple(trail_dot_pos.astype(int)),
+                    1,
+                    (125, 125, 125),
+                    -1)
+        
+    def _draw_no_sail_zone(self, img: np.ndarray, state: RendererState):
+        pass
+    def _draw_desired_heading_line(self, img: np.ndarray, state: RendererState, next_waypoint: tuple):
+        line_start = state.p_boat
+        line_end = next_waypoint
+        
+        cv2.line(img,
+                 tuple(line_start.astype(int)),
+                 tuple(line_end.astype(int)),
+                 BLACK,
+                 1,
+                 lineType=cv2.LINE_AA)
+        
+        
+        
     def _draw_apparent_wind_angle(self, img: np.ndarray, state: RendererState):
         # arrow_start = (self.map_bounds[1][0] - 10, self.map_bounds[1][1] - 10)
         arrow_start = (420, 420)
@@ -254,6 +278,7 @@ class CV2DRenderer():
             angle_to_vec(state.theta_boat) * spike_coeff * boat_size
         state.dt_p_boat
         dt_theta_boat_start = front_of_boat
+        print(f"s: {state.dt_p_boat}")
         dt_theta_boat_end = dt_theta_boat_start + state.dt_theta_boat * self.vector_scale
         cv2.arrowedLine(img,
                         tuple(dt_theta_boat_start.astype(int)),
@@ -336,7 +361,9 @@ class CV2DRenderer():
         img = self._create_empty_img()
 
         # prepare state
+        print(state["dt_p_boat"])
         state = RendererState(state)
+        print(state.dt_p_boat)
         self._transform_state_to_fit_in_img(state)
         waypoints = [self._translate_and_scale_to_fit_in_map(np.array(waypoint)) for waypoint in state.waypoints]
         buoys = [self._translate_and_scale_to_fit_in_map(np.array(buoy)) for buoy in state.buoys]
@@ -346,6 +373,11 @@ class CV2DRenderer():
             draw_extra_fct(img, state)
 
         # draw map
+        self._draw_trail(img, state)
+        
+        if waypoints:
+            self._draw_desired_heading_line(img, state, waypoints[state.cur_waypoint])
+        
         self._draw_borders(img)
         self._draw_water(img, state)
         self._draw_boat(img, state)
