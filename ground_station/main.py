@@ -66,6 +66,19 @@ def show_terminal_cursor():
         sys.stdout.flush()
 
 
+def get_decision_zone_size(tack_distance, no_sail_zone_size, distance_to_waypoint):
+    inner = (tack_distance/distance_to_waypoint) * np.sin(np.deg2rad(no_sail_zone_size/2))
+    inner = np.clip(inner, -1, 1)
+    return np.clip(np.rad2deg(np.arcsin(inner)), 0, no_sail_zone_size/2)
+
+def get_distance_to_waypoint(cur_position, next_waypoint):
+    if next_waypoint:
+        return geopy.distance.geodesic(next_waypoint, cur_position)
+    else:
+        return geopy.distance.Distance(0.)
+    
+
+
 
 def get_telemetry() -> dict:
     """
@@ -102,10 +115,9 @@ def update_telemetry_text(telemetry: dict):
     
     current_waypoint_index = telemetry["current_waypoint_index"]
     
-    if telemetry["current_route"]:
-        distance_to_next_waypoint = geopy.distance.geodesic(telemetry["current_route"][current_waypoint_index], telemetry["position"])
-    else:
-        distance_to_next_waypoint = geopy.distance.Distance(0.)
+    
+    distance_to_next_waypoint = get_distance_to_waypoint(telemetry["position"], telemetry["current_route"][current_waypoint_index])
+
     
     if RUN_WITH_SAILOR_STANDARDS:
         speed_unit = "kts"
@@ -189,16 +201,22 @@ def display_image(img):
 def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
     local_y, local_x = 0, 0
     absolute_wind_angle = telemetry["true_wind_angle"] + telemetry["heading"]
-    mast_dir_fix = -1 if 0 < telemetry["true_wind_angle"] < 180 else 1
+    mast_dir_fix = -1 if 0 < telemetry["true_wind_angle"] < 180 else 1\
+        
+    tack_distance = telemetry["parameters"]["tack_distance"]
+    no_sail_zone_size = telemetry["parameters"]["no_sail_zone_size"]
+    cur_waypoint = telemetry["current_route"][telemetry["current_waypoint_index"]]
+    distance_to_next_waypoint = get_distance_to_waypoint(telemetry["position"], cur_waypoint)
+    decision_zone_size = get_decision_zone_size(tack_distance, no_sail_zone_size, distance_to_next_waypoint)
     
-    TWS = telemetry["true_wind_speed"]
-    TWA = telemetry["true_wind_angle"]
-    AWS = telemetry["apparent_wind_speed"]
-    AWA = telemetry["apparent_wind_angle"]
+    # TWS = telemetry["true_wind_speed"]
+    # TWA = telemetry["true_wind_angle"]
+    # AWS = telemetry["apparent_wind_speed"]
+    # AWA = telemetry["apparent_wind_angle"]
     
-    true_wind_vector = np.array([TWS * np.cos(np.deg2rad(TWA-90)), TWS * np.sin(np.deg2rad(TWA-90))])
-    apparent_wind_vector = np.array([AWS * np.cos(np.deg2rad(AWA-90)), AWS * np.sin(np.deg2rad(AWA-90))])
-    # velocity_vector = (true_wind_vector - apparent_wind_vector)
+    # true_wind_vector = np.array([TWS * np.cos(np.deg2rad(TWA-90)), TWS * np.sin(np.deg2rad(TWA-90))])
+    # apparent_wind_vector = np.array([AWS * np.cos(np.deg2rad(AWA-90)), AWS * np.sin(np.deg2rad(AWA-90))])
+    # # velocity_vector = (true_wind_vector - apparent_wind_vector)
     velocity_vector = telemetry["velocity_vector"]
     
     gui_state = State()
@@ -215,6 +233,8 @@ def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
     gui_state["water"] = np.array([0, 0])
     gui_state["buoys"] = np.array(BUOYS)
     gui_state["cur_waypoint"] = telemetry["current_waypoint_index"]
+    gui_state["no_go_zone_size"] = telemetry["parameters"]["no_sail_zone_size"]
+    gui_state["decision_zone_size"] = decision_zone_size
     
     waypoints = []
     for waypoint in telemetry["current_route"]:

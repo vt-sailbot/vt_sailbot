@@ -45,5 +45,8 @@ class State(TypedDict):
     cur_waypoint: int
     buoys: np.ndarray
     
+    no_go_zone_size: float
+    decision_zone_size: float
+    
     
     

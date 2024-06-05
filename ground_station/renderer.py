@@ -50,6 +50,9 @@ class RendererState():
         self.waypoints = state["waypoints"]
         
         self.buoys = state["buoys"]
+        
+        self.no_go_zone_size = state["no_go_zone_size"]
+        self.decision_zone_isze = state["decision_zone_size"]
 
 
 class CV2DRenderer():
@@ -170,6 +173,46 @@ class CV2DRenderer():
                         tipLength=0.2,
                         line_type=cv2.LINE_AA)
 
+    def _draw_no_go_zone_lines(self, img: np.ndarray, state: RendererState):
+        line_start = (420, 420)
+        line_end1 = line_start + rotate_vector(np.array([0,1]), -state.no_go_zone_size/2)
+        line_end2 = line_start + rotate_vector(np.array([0,1]), state.no_go_zone_size/2)
+        
+        
+        cv2.line(img,
+                 tuple(line_start.astype(int)),
+                 tuple(line_end1.astype(int)),
+                 (0, 0, 139),
+                 1,
+                 lineType=cv2.LINE_AA)
+        cv2.line(img,
+                 tuple(line_start.astype(int)),
+                 tuple(line_end2.astype(int)),
+                 (0, 0, 139),
+                 1,
+                 lineType=cv2.LINE_AA)
+        
+        
+    # def _draw_decision_zone_lines(self, img: np.ndarray, state: RendererState):
+    #     line_start = state.p_boat
+    #     line_end1 = state.p_boat + 
+    #     line_end2 = state.p_boat + 
+        
+        
+    #     cv2.line(img,
+    #              tuple(line_start.astype(int)),
+    #              tuple(line_end1.astype(int)),
+    #              RED,
+    #              1,
+    #              lineType=cv2.LINE_AA)
+    #     cv2.line(img,
+    #              tuple(line_start.astype(int)),
+    #              tuple(line_end2.astype(int)),
+    #              RED,
+    #              1,
+    #              lineType=cv2.LINE_AA)
+        
+        
     def _draw_boat(self, img: np.ndarray, state: RendererState):
         boat_size = self.style["boat"]["size"]
         phi = self.style["boat"]["phi"]
@@ -220,8 +263,8 @@ class CV2DRenderer():
         AWA = state.apparent_wind_angle + 90
         arrow_end = (int(arrow_start[0] + 8 * wind_speed * np.cos(np.deg2rad(AWA))), int(arrow_start[1] + 8 * wind_speed * np.sin(np.deg2rad(AWA))))
         cv2.arrowedLine(img,
+                        arrow_end  ,
                         arrow_start,
-                        arrow_end,
                         self.style["wind"]["color"],
                         self.style["wind"]["width"],
                         tipLength=0.2,
@@ -377,6 +420,8 @@ class CV2DRenderer():
         
         self._draw_borders(img)
         self._draw_water(img, state)
+        self._draw_decision_zone_lines(img, state)
+        self._draw_no_go_zone_lines(img, state)
         self._draw_boat(img, state)
         self._draw_apparent_wind_angle(img, state)
         self._draw_boat_heading_velocity(img, state)
