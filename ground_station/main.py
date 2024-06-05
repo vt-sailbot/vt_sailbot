@@ -92,8 +92,6 @@ def update_telemetry_text(telemetry: dict):
     global telemetry_file, telemetry_start_time
         
     # Convert to the units that the sailors are happy with
-    velocity_vector = telemetry["velocity_vector"]
-    print(velocity_vector)
     heading_cw_north = (90 - telemetry["heading"]) % 360        # ccw from true east -> cw from true north
     bearing_cw_north = (90 - telemetry["bearing"]) % 360        # ccw from true east -> cw from true north
     apparent_wind_angle_cw_centerline_from = (180 - telemetry["apparent_wind_angle"]) % 360         # ccw centerline measuring the direction the wind is blowing towards -> cw centerline measuring the direction the wind is blowing from
@@ -148,6 +146,7 @@ def update_telemetry_text(telemetry: dict):
     string_to_show += f"Time Since Start Up: {time_since_startup_str}                                                                                          \n"
     string_to_show += f"GPS Latitude: {telemetry['position'][0]:.8f}, GPS Longitude: {telemetry['position'][1]:.8f}                                            \n"
     string_to_show += f"Autopilot Mode: {telemetry['state']}                                                                                                   \n"
+    string_to_show += f"Fully Autonomous Maneuver: {telemetry['full_autonomy_maneuver']}                                                                           \n"
     string_to_show += f"Speed Over Ground: {boat_speed:.2f} {speed_unit}                                                                                       \n"
     string_to_show += f"Target Heading: {bearing:.2f}{DEGREE_SIGN}                                                                                             \n"
     string_to_show += f"Heading: {heading:.2f}{DEGREE_SIGN}                                                                                                    \n"

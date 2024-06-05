@@ -278,7 +278,6 @@ class CV2DRenderer():
             angle_to_vec(state.theta_boat) * spike_coeff * boat_size
         state.dt_p_boat
         dt_theta_boat_start = front_of_boat
-        print(f"s: {state.dt_p_boat}")
         dt_theta_boat_end = dt_theta_boat_start + state.dt_theta_boat * self.vector_scale
         cv2.arrowedLine(img,
                         tuple(dt_theta_boat_start.astype(int)),
@@ -361,9 +360,7 @@ class CV2DRenderer():
         img = self._create_empty_img()
 
         # prepare state
-        print(state["dt_p_boat"])
         state = RendererState(state)
-        print(state.dt_p_boat)
         self._transform_state_to_fit_in_img(state)
         waypoints = [self._translate_and_scale_to_fit_in_map(np.array(waypoint)) for waypoint in state.waypoints]
         buoys = [self._translate_and_scale_to_fit_in_map(np.array(buoy)) for buoy in state.buoys]
