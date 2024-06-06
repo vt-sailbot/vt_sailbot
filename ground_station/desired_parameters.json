@@ -1,20 +1,15 @@
 {
-    "waypoints": [
-    [0.0001, 0],
-    [0.0002, -0.0001],
-    [0.0002, 0.0001],
-    [0.0001, 0]
-],
+    "waypoints": [[42.845774, -70.977055], [42.845778, -70.976528], [42.84467430, -70.97712020]],
 
     "sail_lookup_table_wind_angles":    [0.0,  45.0, 90.0, 135.0, 180.0, 225.0, 270.0, 315.0, 360.0],
-    "sail_lookup_table_sail_positions": [80.0, 60.0, 40.0, 20.0,  10.0,  20.0,  40.0,  60.0,  80.0],
-    "forced_jibe_only": true,
-    "waypoint_accuracy": 1.0,
-    "no_sail_zone_size":120,
-    "tack_distance": 3,
+    "sail_lookup_table_sail_positions": [70.0, 50.0, 30.0, 10.0,  0.0,   10.0,  30.0,  50.0,  70.0],
+    "forced_jibe_only": false,
+    "waypoint_accuracy": 20.0,
+    "no_sail_zone_size": 100,
+    "tack_distance": 100,
 
-    "rudder_p_gain": 1,
-    "rudder_d_gain": 0.2,
-    "rudder_i_gain": 0.3,
-    "rudder_n_gain": 1
+    "rudder_p_gain": 0.6,
+    "rudder_i_gain": 0.1,
+    "rudder_d_gain": 0,
+    "rudder_n_gain": 10
 }

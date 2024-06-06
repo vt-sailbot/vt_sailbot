@@ -21,10 +21,10 @@ telemetry_file = None
 telemetry_start_time = time.time()
 
 # MAP_BOUNDS = [[-25, -50], [100, 75]]
-MAP_BOUNDS = [[-150, -150], [150, 150]]
+MAP_BOUNDS = [[-300, -300], [300, 300]]
 # 75, -75 is usually good
 # MAP_BOUNDS = [[-30, 0], [75, 30]]
-BUOYS =  [[42.845033, -70.977105], [42.846733, -70.974783], [42.848148, -70.976775], [42.846820, -70.978182]]
+BUOYS =  [[42.845474, -70.977055], [42.846278, -70.976928], [42.8446333, -70.9771833]]
 # [
 #     # [42.8449667, -70.9772667],
 #     # [42.8447667, -70.9771167],
@@ -317,7 +317,7 @@ if __name__ == "__main__":
     try:
         main()
     finally:
-        clear_screen()
+        # clear_screen()
         show_terminal_cursor()
         telemetry_file.close()
         
