@@ -23,13 +23,12 @@ SHELL ["/bin/bash", "-c"]
 
 # Create Colcon workspace
 RUN mkdir -p /sailbot_ws/src
-WORKDIR /sailbot_ws/src
+WORKDIR /sailbot_ws/
+
 RUN mkdir /sailbot_ws/src/${NODE_NAME}
 RUN mkdir /sailbot_ws/src/sailbot_msgs
 
 # Install Python Dependencies
-COPY ${NODE_NAME}/requirements.txt /sailbot_ws/src/${NODE_NAME}/requirements.txt
-
 RUN sudo apt-get update \
  && sudo apt install python3-pip -y
 
@@ -38,12 +37,12 @@ RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 RUN pip3 install setuptools==58.2.0
 
+COPY ${NODE_NAME}/requirements.txt /sailbot_ws/src/${NODE_NAME}/requirements.txt
 RUN pip3 install -r /sailbot_ws/src/${NODE_NAME}/requirements.txt
 
-WORKDIR /sailbot_ws
+
 
 COPY sailbot_msgs ~/src/sailbot_msgs
-
 RUN source /opt/ros/${ROS_DISTRO}/setup.bash \
  && apt-get update -y \
  && rosdep install --from-paths src --ignore-src --rosdistro ${ROS_DISTRO} -y \

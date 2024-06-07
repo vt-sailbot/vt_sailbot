@@ -1,9 +1,8 @@
-import math
 import time
 import geopy
 import geopy.distance
-from .discrete_pid import Discrete_PID
 
+from .discrete_pid import Discrete_PID
 from .autopilot_util import *
 from . import constants
 

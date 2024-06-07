@@ -1,8 +1,0 @@
-pyserial
-sparkfun-ublox-gps
-RPi.GPIO
-spidev
-Pillow
-pygeodesy
-geopy
-pyproj

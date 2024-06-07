@@ -1,16 +1,15 @@
-import math
+import numpy as np
+from enum import Enum
+
+import navpy
+import geopy
 import geopy.distance
 import pygeodesy.utm
 import utm
-from pygeodesy.ellipsoidalKarney import LatLon
-import navpy
-from enum import Enum
-import numpy as np
-from . import constants
 import pyproj
-import geopy
+from pygeodesy.ellipsoidalKarney import LatLon
 
-
+from . import constants
 
 
 

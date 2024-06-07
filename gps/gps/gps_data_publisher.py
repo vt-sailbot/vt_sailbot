@@ -2,17 +2,15 @@
 
 # ADAPTED FROM: https://github.com/FrankBu0616/ros2_zed_f9r_gps
 
+import serial, time
+
 from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 import rclpy
-import time
-import serial
-from pygeodesy import utm
-from pygeodesy.ellipsoidalKarney import LatLon
+
 from serial.tools import list_ports
 from rclpy.node import Node
 from ublox_gps import UbloxGps
 from sensor_msgs.msg import NavSatFix
-# from sailbot_msgs.msg import GPSPosition
 from geometry_msgs.msg import Vector3
 
 import numpy as np
