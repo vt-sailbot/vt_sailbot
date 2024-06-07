@@ -19,6 +19,16 @@ def rgba(color, alpha, background=np.array([255, 255, 255])):
 def angle_to_vec(angle):
     return np.array([np.cos(angle), np.sin(angle)])
 
+def cartesian_vector_to_polar(x, y):
+    """
+        Converts a cartesian vector (x and y coordinates) to polar form (magnitude and direction).
+        Outputs a tuple of magnitude and direction of the inputted vector
+    """
+    magnitude = np.sqrt(x**2 + y**2)
+    direction = np.arctan2(y, x) # radians
+    direction = direction * (180/np.pi)  # angle from -180 to 180 degrees
+    direction = direction % 360  # angle from 0 to 360 degrees
+    return magnitude, direction
 
 def rotate_vector(vector: np.ndarray, angle: float):
     assert vector.shape == (2,)

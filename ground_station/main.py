@@ -204,8 +204,11 @@ def display_image(img):
         
 def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
     local_y, local_x = 0, 0
-    absolute_wind_angle = telemetry["true_wind_angle"] + telemetry["heading"]
-    mast_dir_fix = -1 if 0 < telemetry["true_wind_angle"] < 180 else 1\
+    mast_dir_fix = -1 if 0 < telemetry["true_wind_angle"] < 180 else 1
+    
+    absolute_true_wind_angle = telemetry["true_wind_angle"] + telemetry["heading"]
+    absolute_apparent_wind_angle = telemetry["apparent_wind_angle"] + telemetry["heading"]
+    
         
     # tack_distance = telemetry["parameters"]["tack_distance"]
     # no_sail_zone_size = telemetry["no_sail_zone_size"]
@@ -232,8 +235,10 @@ def update_telemetry_gui(renderer: CV2DRenderer, telemetry: dict):
     gui_state["dt_theta_rudder"] = np.array([0, 0, 0])
     gui_state["theta_sail"] = np.array([mast_dir_fix * np.deg2rad(telemetry["mast_angle"]), 0, 0])
     gui_state["dt_theta_sail"] = np.array([0, 0, 0])
-    gui_state["apparent_wind"] = telemetry["apparent_wind_angle"]
-    gui_state["wind"] = np.array([telemetry["true_wind_speed"] * np.cos(np.deg2rad(absolute_wind_angle)), telemetry["true_wind_speed"] * np.sin(np.deg2rad(absolute_wind_angle))])
+    gui_state["apparent_wind"] = np.array([telemetry["true_wind_speed"] * np.cos(np.deg2rad(absolute_apparent_wind_angle)), telemetry["apparent_wind_speed"] * np.sin(np.deg2rad(absolute_apparent_wind_angle))])
+    gui_state["wind"] = np.array([telemetry["true_wind_speed"] * np.cos(np.deg2rad(absolute_true_wind_angle)), telemetry["true_wind_speed"] * np.sin(np.deg2rad(absolute_true_wind_angle))])
+    # print(absolute_apparent_wind_angle)
+    # print(absolute_true_wind_angle)
     gui_state["water"] = np.array([0, 0])
     gui_state["buoys"] = np.array(BUOYS)
     gui_state["cur_waypoint"] = telemetry["current_waypoint_index"]
