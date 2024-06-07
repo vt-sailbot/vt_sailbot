@@ -1,0 +1,2651 @@
+---------------LOG BEGINS------------------time=15:14:17
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:21
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to40.50000000001757and set the mast to 85since the wind is =0.0time=15:14:21
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:21
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to40.50000000001757and set the mast to 85since the wind is =0.0time=15:14:21
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:21
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to1.373289258310706e-05and set the mast to 85since the wind is =0.0time=15:14:21
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:21
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to1.373289258310706e-05and set the mast to 85since the wind is =0.0time=15:14:21
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:21
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to1.373289258310706e-05and set the mast to 15.5since the wind is =270.0time=15:14:21
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:21
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to1.3703322841251974e-05and set the mast to 15.5since the wind is =270.0time=15:14:21
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:21
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to1.3703322841251974e-05and set the mast to 15.5since the wind is =270.0time=15:14:21
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:21
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.009764069533778752and set the mast to 15.5since the wind is =270.0time=15:14:21
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:21
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.009764069533778752and set the mast to 15.5since the wind is =270.0time=15:14:21
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:21
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.009764069533778752and set the mast to 15.5since the wind is =270.0time=15:14:21
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.00976378632045396and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.00976378632045396and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.04430663300014146and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.04430663300014146and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.04430663300014146and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.044307762828890415and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.044307762828890415and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.022966820446077917and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.022966820446077917and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.022966820446077917and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.022968713541516195and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to0.022968713541516195and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.002844579915515055and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.002844579915515055and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.002844579915515055and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.0028409212339056467and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.0028409212339056467and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.04686863119484314and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.04686863119484314and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.04686863119484314and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.04686576998540204and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.04686576998540204and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.07983390963383953and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.07983390963383953and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:22
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.07983390963383953and set the mast to 15.5since the wind is =270.0time=15:14:22
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.07982914581827458and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.07982914581827458and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.14080326691202458and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.14080326691202458and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.14080326691202458and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.1407999144102007and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.1407999144102007and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.1950723753477007and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.1950723753477007and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.1950723753477007and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.1950664098375711and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.1950664098375711and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.3687053258531961and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.3687053258531961and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.3687053258531961and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.36870093181500463and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.36870093181500463and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.5238873942173484and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.5238873942173484and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.5238873942173484and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.5238831979546063and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.5238831979546063and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.65043196504445and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.65043196504445and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:23
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.65043196504445and set the mast to 15.5since the wind is =270.0time=15:14:23
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.6504259942046531and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.6504259942046531and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.8131152031890281and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.8131152031890281and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.8131152031890281and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.8131116831662012and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.8131116831662012and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.9257581675412012and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.9257581675412012and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.9257581675412012and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.9257529497369006and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-0.9257529497369006and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.052310872100182and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.052310872100182and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.052310872100182and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.0523067826439245and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.0523067826439245and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.0846248978782995and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.0846248978782995and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.0846248978782995and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.0846192125411107and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.0846192125411107and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1027924303145482and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1027924303145482and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:24
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1027924303145482and set the mast to 15.5since the wind is =270.0time=15:14:24
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.102785738735912and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.102785738735912and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1303751552398182and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1303751552398182and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1303751552398182and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.13036907243891and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.13036907243891and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1612910084740662and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1612910084740662and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1612910084740662and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1612869508673527and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1612869508673527and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1891327150275088and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1891327150275088and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1891327150275088and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1891285284050468and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.1891285284050468and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.232391773033953and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.232391773033953and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.232391773033953and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.232385120528224and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.232385120528224and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.3141371346883801and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.3141371346883801and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:25
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.3141371346883801and set the mast to 15.5since the wind is =270.0time=15:14:25
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.3141328220394626and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.3141328220394626and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.3557160739925875and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.3557160739925875and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.3557160739925875and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.355709652427177and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.355709652427177and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.4076520962748333and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.4076520962748333and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.4076520962748333and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.4076478942759223and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.4076478942759223and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.4468690856821722and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.4468690856821722and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.4468690856821722and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.4468629327715092and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.4468629327715092and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5006547418535405and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5006547418535405and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5006547418535405and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.500650615712098and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.500650615712098and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5242620659074106and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5242620659074106and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:26
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5242620659074106and set the mast to 15.5since the wind is =270.0time=15:14:26
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5242555464292735and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5242555464292735and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.559201225140211and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.559201225140211and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.559201225140211and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5591969080685146and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5591969080685146and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.590663582873202and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.590663582873202and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.590663582873202and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5906572614879053and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.5906572614879053and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.6441011701793116and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.6441011701793116and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.6441011701793116and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.644097100351317and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.644097100351317and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.6810752497653794and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.6810752497653794and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.6810752497653794and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.6810690118861316and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.6810690118861316and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.747641582686913and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.747641582686913and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:27
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.747641582686913and set the mast to 15.5since the wind is =270.0time=15:14:27
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.7476373748995058and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.7476373748995058and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.7941370086885684and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.7941370086885684and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.7941370086885684and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.7941307567847076and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.7941307567847076and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.84850392573002and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.84850392573002and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.84850392573002and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.8484997017017804and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.8484997017017804and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.8773342353931866and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.8773342353931866and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.8773342353931866and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.877329957459642and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.877329957459642and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9082152724010484and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9082152724010484and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9082152724010484and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9082089992660256and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9082089992660256and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9585813137191508and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9585813137191508and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:28
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9585813137191508and set the mast to 15.5since the wind is =270.0time=15:14:28
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.958577198860928and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.958577198860928and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9901537369468656and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9901537369468656and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9901537369468656and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9901473673460741and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-1.9901473673460741and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.040483060705449and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.040483060705449and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.040483060705449and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.040479539432738and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.040479539432738and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.073140977421019and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.073140977421019and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.073140977421019and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.0731337211265526and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.0731337211265526and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.1353346488609275and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.1353346488609275and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.1353346488609275and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.1353304819216903and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.1353304819216903and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.1635127023806744and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.1635127023806744and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:29
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.1635127023806744and set the mast to 15.5since the wind is =270.0time=15:14:29
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.1635065367429376and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.1635065367429376and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.202878790160906and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.202878790160906and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.202878790160906and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2028745352579078and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2028745352579078and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.228696983988377and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.228696983988377and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.228696983988377and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2286908184826726and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2286908184826726and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2552342449963447and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2552342449963447and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2552342449963447and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2552300216159495and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2552300216159495and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.267070078988996and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.267070078988996and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.267070078988996and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2670638623243176and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2670638623243176and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.288915211201271and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.288915211201271and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:30
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.288915211201271and set the mast to 15.5since the wind is =270.0time=15:14:30
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2889110803872055and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.2889110803872055and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.309464669254393and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.309464669254393and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.309464669254393and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.309458526128168and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.309458526128168and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.3443813166555114and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.3443813166555114and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.3443813166555114and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.344377146394865and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.344377146394865and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.3705062967854897and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.3705062967854897and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.3705062967854897and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.370500139472162and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.370500139472162and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.413957933661615and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.413957933661615and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.413957933661615and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4139537102030233and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4139537102030233and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4427218681620073and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4427218681620073and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:31
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4427218681620073and set the mast to 15.5since the wind is =270.0time=15:14:31
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4427156958978826and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4427156958978826and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.476201108495539and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.476201108495539and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.476201108495539and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4761969701135453and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4761969701135453and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4953131810510456and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4953131810510456and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4953131810510456and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4953069182681475and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.4953069182681475and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.5246152373599444and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.5246152373599444and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.5246152373599444and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.524611012202112and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.524611012202112and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.543347279291956and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.543347279291956and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.543347279291956and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.543343104947365and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.543343104947365and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.560999049771584and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.560999049771584and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:32
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.560999049771584and set the mast to 15.5since the wind is =270.0time=15:14:32
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.5609928520976664and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.5609928520976664and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.5924114617168073and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.5924114617168073and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.5924114617168073and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.592405203212283and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.592405203212283and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6334826263079862and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6334826263079862and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6334826263079862and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6334785472761753and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6334785472761753and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6609191905867218and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6609191905867218and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6609191905867218and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.660913043124654and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.660913043124654and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6997794676852007and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6997794676852007and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6997794676852007and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6997753974775036and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.6997753974775036and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.7248219367841444and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.7248219367841444and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:33
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.7248219367841444and set the mast to 15.5since the wind is =270.0time=15:14:33
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.724817819250208and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.724817819250208and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.7486283966427862and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.7486283966427862and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.7486283966427862and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.7486222361967405and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.7486222361967405and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.778097639028772and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.778097639028772and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.778097639028772and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.7780914146183617and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.7780914146183617and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.805179579901565and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.805179579901565and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.805179579901565and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8051754683224175and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8051754683224175and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.825923606750152and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.825923606750152and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.825923606750152and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8259195140006907and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8259195140006907and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.848686390221394and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.848686390221394and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:34
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.848686390221394and set the mast to 15.5since the wind is =270.0time=15:14:34
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8486802671864635and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8486802671864635and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.884248504491151and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.884248504491151and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.884248504491151and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8842443638277357and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8842443638277357and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.910087411923439and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.910087411923439and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.910087411923439and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9100812324899237and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9100812324899237and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.951717127265314and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.951717127265314and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.951717127265314and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.951711071508245and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.951711071508245and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.989785564916448and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.989785564916448and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.989785564916448and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9897824030443187and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9897824030443187and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.007202599577522and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.007202599577522and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:35
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.007202599577522and set the mast to 15.5since the wind is =270.0time=15:14:35
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.007196404586361and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.007196404586361and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0386516352992516and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0386516352992516and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0386516352992516and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0386454098491016and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0386454098491016and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0594278805522266and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0594278805522266and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0594278805522266and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0594236632976703and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0594236632976703and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.068729998746889and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.068729998746889and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.068729998746889and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0687258306371406and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0687258306371406and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.076993042551203and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.076993042551203and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.076993042551203and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0769869400054657and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0769869400054657and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0907862258941377and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0907862258941377and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:36
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0907862258941377and set the mast to 15.5since the wind is =270.0time=15:14:36
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.090782167600639and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.090782167600639and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1003746053447796and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1003746053447796and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1003746053447796and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.100368472414891and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.100368472414891and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1124122346219223and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1124122346219223and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1124122346219223and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.112408220768387and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.112408220768387and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1195516228679963and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1195516228679963and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1195516228679963and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.119545475305537and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.119545475305537and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.132117954553584and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.132117954553584and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.132117954553584and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.132113802578462and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.132113802578462and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1409738184476024and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1409738184476024and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:37
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1409738184476024and set the mast to 15.5since the wind is =270.0time=15:14:37
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1409676972053204and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1409676972053204and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1531762543342268and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1531762543342268and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1531762543342268and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.153172149542448and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.153172149542448and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1620321654115884and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1620321654115884and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1620321654115884and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1620260878714617and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1620260878714617and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.176779811015993and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.176779811015993and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.176779811015993and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.176775716791198and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.176775716791198and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.18618047142987and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.18618047142987and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.18618047142987and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1861743506830122and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1861743506830122and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.198698764745512and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.198698764745512and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:38
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.198698764745512and set the mast to 15.5since the wind is =270.0time=15:14:38
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.198694712811334and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.198694712811334and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2072892257507872and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2072892257507872and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2072892257507872and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.207283055719688and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.207283055719688and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2208168386786724and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2208168386786724and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2208168386786724and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2208126969505853and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2208126969505853and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.229013533132226and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.229013533132226and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.229013533132226and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2290075147976722and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2290075147976722and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2406003797879066and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2406003797879066and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2406003797879066and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.240596313294162and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.240596313294162and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.245105285462131and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.245105285462131and set the mast to 15.5since the wind is =270.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:39
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.245105285462131and set the mast to 15.5since the wind is =90.0time=15:14:39
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2451020550226333and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.2451020550226333and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1668267559503676and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1668267559503676and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1668267559503676and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1668238703702767and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.1668238703702767and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0896792475675423and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0896792475675423and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0896792475675423and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0896760509107706and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0896760509107706and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0113984630201456and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0113984630201456and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0113984630201456and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0113962581844333and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-3.0113962581844333and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9616579464168553and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9616579464168553and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9616579464168553and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9616552866283397and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9616552866283397and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9387693918529494and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9387693918529494and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:40
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9387693918529494and set the mast to 15.5since the wind is =90.0time=15:14:40
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.938768057743192and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.938768057743192and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9314644383584265and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9314644383584265and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9314644383584265and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9314628465682007and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9314628465682007and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9316642625838254and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9316642625838254and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9316642625838254and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9316631410985763and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9316631410985763and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.93992577537592and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.93992577537592and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.93992577537592and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9399236497241588and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9399236497241588and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9442128953296276and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9442128953296276and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9442128953296276and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9442113663873726and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9442113663873726and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9385282304010443and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9385282304010443and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:41
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9385282304010443and set the mast to 15.5since the wind is =90.0time=15:14:41
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9385261674145053and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9385261674145053and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9238708634594275and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9238708634594275and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9238708634594275and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.923869765717515and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.923869765717515and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9117687830514996and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9117687830514996and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9117687830514996and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9117672401357226and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.9117672401357226and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8940311866689257and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8940311866689257and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8940311866689257and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8940300469421487and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8940300469421487and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8852203850769143and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8852203850769143and set the mast to 15.5since the wind is =90.0time=15:14:42
+
+Our next destination is: fin_dest={'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False}time=15:14:42
+
+
+Sailing normally towards ->{'lat': 0.0, 'lon': 1.0, 'mid': False, 'jibe': False} we set the rudder angle to-2.8852203850769143and set the mast to 15.5since the wind is =90.0time=15:14:42

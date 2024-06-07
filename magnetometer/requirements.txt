@@ -1,0 +1,3 @@
+# adafruit-circuitpython-mmc56x3
+# Adafruit-Blinka
+pyserial

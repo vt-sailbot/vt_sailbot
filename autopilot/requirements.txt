@@ -1,0 +1,12 @@
+atomics
+pyserial
+pynmeagps
+bleak
+geojson
+turfpy
+pygeodesy
+navpy
+utm
+geopy
+pyproj
+

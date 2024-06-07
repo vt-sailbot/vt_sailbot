@@ -1,0 +1,2 @@
+crsf-parser
+pyserial
