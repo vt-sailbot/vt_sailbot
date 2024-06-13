@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'launch_mcu_node = mcu.mcu_publisher:main'
+            'mcu_node = mcu.mcu_node:main'
         ],
     },
 )

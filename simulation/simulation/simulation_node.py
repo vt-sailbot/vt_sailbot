@@ -54,13 +54,13 @@ class SimNode(Node):
         # NOTE: All units are in standard SI units and angle is measured in degrees
         self.desired_route_listener = self.create_subscription(WaypointList, '/desired_route', self.desired_route_callback, 10)
         
-        self.position_publisher = self.create_publisher(msg_type=NavSatFix, topic="/gps_data/position", qos_profile=sensor_qos_profile)
-        self.velocity_publisher = self.create_publisher(msg_type=Vector3, topic="/gps_data/velocity", qos_profile=sensor_qos_profile)
-        self.heading_publisher = self.create_publisher(msg_type=Float32, topic="/gps_data/heading", qos_profile=sensor_qos_profile)
+        self.position_publisher = self.create_publisher(msg_type=NavSatFix, topic="/position", qos_profile=sensor_qos_profile)
+        self.velocity_publisher = self.create_publisher(msg_type=Vector3, topic="/velocity", qos_profile=sensor_qos_profile)
+        self.heading_publisher = self.create_publisher(msg_type=Float32, topic="/heading", qos_profile=sensor_qos_profile)
         self.apparent_wind_vector_publisher = self.create_publisher(msg_type=Vector3, topic="/apparent_wind_vector", qos_profile=sensor_qos_profile)
         
         self.rudder_angle_listener = self.create_subscription(msg_type=Float32, topic="/actions/rudder_angle", callback=self.rudder_angle_callback, qos_profile=sensor_qos_profile)
-        self.mast_angle_listener = self.create_subscription(msg_type=Float32, topic="/actions/mast_angle", callback=self.mast_angle_callback, qos_profile=sensor_qos_profile)
+        self.sail_angle_listener = self.create_subscription(msg_type=Float32, topic="/actions/sail_angle", callback=self.sail_angle_callback, qos_profile=sensor_qos_profile)
         
         self.termination_listener = self.create_subscription(msg_type=Bool, topic="/should_terminate", callback=self.should_terminate_callback, qos_profile=10)
         
@@ -83,7 +83,7 @@ class SimNode(Node):
         self.display_image(self.env.render())
         self.publish_observation_data(obs)
         
-        self.desired_rudder_angle, self.desired_mast_angle = None, None
+        self.desired_rudder_angle, self.desired_sail_angle = None, None
         self.apparent_wind_vector = Vector3(x=1.)
         self.true_wind_vector = Vector3(x=1.)
         self.route = None
@@ -103,19 +103,19 @@ class SimNode(Node):
     def rudder_angle_callback(self, msg: Float32):
         self.desired_rudder_angle = np.array(msg.data)
 
-        if self.desired_mast_angle != None:
+        if self.desired_sail_angle != None:
             self.step_simulation()
-            self.desired_rudder_angle, self.desired_mast_angle = None, None
+            self.desired_rudder_angle, self.desired_sail_angle = None, None
 
-    def mast_angle_callback(self, msg: Float32):
+    def sail_angle_callback(self, msg: Float32):
         
         _, true_wind_angle = self.cartesian_vector_to_polar(self.true_wind_vector.x, self.true_wind_vector.y)
-        mast_dir_fix = -1 if 0 < true_wind_angle < 180 else 1
-        self.desired_mast_angle = np.array(mast_dir_fix * msg.data)
+        sail_dir_fix = -1 if 0 < true_wind_angle < 180 else 1
+        self.desired_sail_angle = np.array(sail_dir_fix * msg.data)
 
         if self.desired_rudder_angle != None:
             self.step_simulation()
-            self.desired_rudder_angle, self.desired_mast_angle = None, None
+            self.desired_rudder_angle, self.desired_sail_angle = None, None
             
             
     def should_terminate_callback(self, msg: Bool):
@@ -167,7 +167,7 @@ class SimNode(Node):
         print()
         print(f"true wind angle: {true_wind_angle}")
         print(f"true wind speed: {true_wind_speed}")
-        print(f'current rudder angle: {np.rad2deg(obs["theta_rudder"])[0]}; current mast angle: {np.rad2deg(obs["theta_sail"])[0]}')
+        print(f'current rudder angle: {np.rad2deg(obs["theta_rudder"])[0]}; current sail angle: {np.rad2deg(obs["theta_sail"])[0]}')
 
 
 
@@ -175,11 +175,11 @@ class SimNode(Node):
         global sim_time
 
         assert self.desired_rudder_angle != None
-        assert self.desired_mast_angle != None
+        assert self.desired_sail_angle != None
 
-        print(f"desired rudder angle: {self.desired_rudder_angle}; desired mast angle: {self.desired_mast_angle}")
+        print(f"desired rudder angle: {self.desired_rudder_angle}; desired sail angle: {self.desired_sail_angle}")
         
-        action = {"theta_rudder": np.deg2rad(self.desired_rudder_angle), "theta_sail": np.deg2rad(self.desired_mast_angle)}
+        action = {"theta_rudder": np.deg2rad(self.desired_rudder_angle), "theta_sail": np.deg2rad(self.desired_sail_angle)}
         obs, reward, terminated, truncated, info = self.env.step(action)
 
         sim_time += 1

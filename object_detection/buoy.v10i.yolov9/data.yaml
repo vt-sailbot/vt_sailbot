@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Buoy']
+
+roboflow:
+  workspace: sailbot-5c9lp
+  project: buoy-op5wz
+  version: 10
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sailbot-5c9lp/buoy-op5wz/dataset/10

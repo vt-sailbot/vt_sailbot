@@ -1,9 +1,8 @@
-import time
 import geopy
 import geopy.distance
 
 from .discrete_pid import Discrete_PID
-from .autopilot_util import *
+from .utils import *
 from . import constants
 
 # TODO rename cur_waypoint_index to waypoint_index or something better
@@ -11,15 +10,15 @@ from . import constants
 # TODO try combining jibing and tacking into 1 maneuver so that we don't rewrite a lot of the same code
 
 
-class SailbotAutoController:
+class SailbotAutopilot:
     """
     Controls the boat based on a hard coded policy.
     This class contains all of the code to control a sailboat given an observation.
 
     The main method you should care about is the step method at the very bottom 
-    which takes in all of the observations and outputs the correct mast and rudder angle to navigate to the next waypoint
+    which takes in all of the observations and outputs the correct sail and rudder angle to navigate to the next waypoint
 
-    This method is used by the autopilot_node to control the boat through a ros topic
+    This class is used by the autopilot_node to control the boat through a ros topic
     """
     
     def __init__(self):
@@ -28,7 +27,7 @@ class SailbotAutoController:
             Kp=constants.rudder_p_gain, Ki=constants.rudder_i_gain, Kd=constants.rudder_d_gain, n=constants.rudder_n_gain, 
         )
         
-        self.route = None
+        self.waypoints = None
         self.cur_waypoint_index = 0
         
         self.current_state = States.NORMAL
@@ -47,83 +46,14 @@ class SailbotAutoController:
         # when the boat receives this is should clear out its current route and 
         self.__init__()
     
-    def set_new_route(self, waypoints: list[Position]):
-        self.route = Route(waypoints=waypoints)
-        self.cur_waypoint_index = 0
-
-    
-    
-    
-    def run_tack_step(self, tack_angle, tack_direction, heading):
-        '''
-        This executes one tack step if the boat is currently in the tacking state.
-        
-        Exit codes:
-            0: normally exited but still needs to continue attempting to tack for the subsequent steps to reach the desired tack angle
-            1: completed the tack successfully and should return to normal sailing
             
-        Returns the desired rudder angle and exit code
-        '''
-        
-        # if tack_direction != -1 and tack_direction != 1: raise Exception("Incorrect Arguments Passed into run_tack_step")
-        
-        # rudder_angle = constants.rudder_hard_over
-        
-        
-        # if constants.perform_forced_jibe_instead_of_tack:
-        #     rudder_angle = constants.rudder_hard_over * tack_direction
-        # else:
-        if constants.perform_forced_jibe_instead_of_tack:
-            rudder_angle = -1 * constants.rudder_hard_over * tack_direction
-        else:
-            rudder_angle = constants.rudder_hard_over * tack_direction
-
-        # # check if it has been too long since we started
-        # if (time.time() - start_tack_time) > constants.action_time_limit:
-        #     print("TACK FAILED")
-        #     return rudder_angle, -1
-
-        tack_complete = abs((heading - tack_angle)) % 360 < constants.tack_tolerance
-
-        return rudder_angle, tack_complete
-    
-    
-    
-    def run_jibe_step(self, jibe_direction, jibe_angle, heading, start_jibe_time):
-        '''
-        This executes one jibe step if the boat is currently in the jibing state.
-        The jibe_direction is -1 for counter-clockwise and 1 for clockwise.
-        
-        Exit codes:
-            0: normally exited but still needs to continue attempting to jibe for the subsequent steps to reach the desired jibe angle
-            1: completed the jibe successfully and should return to normal sailing
-            -1: failed to jibe because it took too long
-            
-        Returns the desired rudder angle and exit code
-        '''
-        
-        if jibe_direction != -1 and jibe_direction != 1: raise Exception("Incorrect Arguments Passed into run_jibe_step")
-        
-        rudder_angle = constants.rudder_hard_over
-        if jibe_direction == -1: rudder_angle *= -1
-
-        # check if it has been too long since we started
-        if (time.time() - start_jibe_time) > constants.action_time_limit:
-            print("JIBE FAILED")
-            return rudder_angle, -1
-
-        jibe_complete = abs((heading - jibe_angle)) % 360 < constants.jibe_tolerance
-
-        return rudder_angle, jibe_complete
-        
-        
 
     def get_optimal_sail_angle(self, apparent_wind_angle: float):
         """
         Runs a single step by using the sail lookup table. No side effects. Apparent wind angle is measured ccw from the right hand side of the boat.
         
         Doesn't return an exit code because there is no reason why this should fail and this part of the code doesn't figure out if the boat has reached the waypoint
-        Returns the desired mast angle and rudder angle as a tuple given the current observations
+        Returns the desired sail angle and rudder angle as a tuple given the current observations
         """
     
         # 180 means wind pushing you backwards, 90 for the sail means let the sails all the way out
@@ -139,16 +69,16 @@ class SailbotAutoController:
         left = wind_angles.index(left)
         right = wind_angles.index(right)
         
-        mast_angle = 0
+        sail_angle = 0
         if (left == right):
             for i in range(len(sail_positions)):
                 if float(apparent_wind_angle) == wind_angles[i]:
-                    mast_angle = sail_positions[i]
+                    sail_angle = sail_positions[i]
         else:
             slope = (sail_positions[right] - sail_positions[left])/(wind_angles[right] - wind_angles[left])
-            mast_angle = slope * (float(apparent_wind_angle) - wind_angles[left]) + sail_positions[left]
+            sail_angle = slope * (float(apparent_wind_angle) - wind_angles[left]) + sail_positions[left]
         
-        return mast_angle
+        return sail_angle
         
         
     def get_optimal_rudder_angle(self, heading, desired_heading):
@@ -245,10 +175,9 @@ class SailbotAutoController:
             - heading as a float in degrees measured ccw from true east
             - apparent wind vector as a numpy array with 2 elements (x, y) in meters/ second. This captures data about AWA and AWS
         
-        returns the mast angle, rudder angle, and exit code
+        returns the sail angle, rudder angle, and exit code
         """
-        # if not self.route: return None, None
-        
+
         boat_speed = np.sqrt(velocity_vector[0]**2 + velocity_vector[1]**2)
         heading = heading_
 
@@ -260,24 +189,19 @@ class SailbotAutoController:
         
         global_true_wind_angle = true_wind_angle + heading
 
-        if self.route:
-            self.route.recalculate_route(cur_position, true_wind_angle, self.cur_waypoint_index)
-            desired_pos = self.route.waypoints[self.cur_waypoint_index]
+        if self.waypoints:
+            desired_pos = self.waypoints[self.cur_waypoint_index]
         else:
-            # NOTE: This should only be called when the boat is in semi auto mode so that
             desired_pos = Position(90, 90)  # we are never reaching this position
 
         distance_to_desired_pos = get_distance_between_positions(cur_position, desired_pos)
-        print(cur_position.get_lat_lon())
-        print(desired_pos.get_lat_lon())
 
         
-        # Handle State Transitions for the Finite State Machine (FSM)
         
         # Has Reached The Waypoint
         if geopy.distance.geodesic(cur_position.get_lat_lon(), desired_pos.get_lat_lon()).m < constants.waypoint_accuracy: 
             
-            if len(self.route.waypoints) <= self.cur_waypoint_index + 1:    # Has Reached The Final Waypoint
+            if len(self.waypoints) <= self.cur_waypoint_index + 1:    # Has Reached The Final Waypoint
                 self.reset()
                 return None, None              
             
@@ -285,8 +209,6 @@ class SailbotAutoController:
             
         
         
-        
-        # Code for Sailing Normally
         if self.current_state == States.NORMAL:
                         
             desired_heading = get_bearing(current_pos=cur_position, destination_pos=desired_pos)
@@ -302,53 +224,44 @@ class SailbotAutoController:
                 self.tack_direction = optimal_rudder_angle / abs(optimal_rudder_angle)
             
             rudder_angle = self.get_optimal_rudder_angle(heading, desired_heading)
-            mast_angle = self.get_optimal_sail_angle(apparent_wind_angle)
+            sail_angle = self.get_optimal_sail_angle(apparent_wind_angle)
+            
             
             
 
-            print(f"optimal rudder angle: {rudder_angle}")
-
-        
-        
-        # # Code for Executing a Jibe
-        # elif self.current_state == States.JIBE:
-        #     desired_angle = get_bearing(cur_position, desired_pos)
-        #     rudder_angle, jibe_exit_code = self.run_jibe_step(self.jibe_direction, desired_angle, heading, self.start_jibe_time)
-        #     mast_angle = self.get_optimal_sail_angle(apparent_wind_angle)
-            
-        #     if jibe_exit_code == 1:
-        #         self.current_state = States.NORMAL
-            
-        #     elif jibe_exit_code == -1:
-        #         print("ERROR: Jibe failed. Retrying jibe")
-                
-            
-            
-        # Code for Executing a Tack  
         elif self.current_state == States.TACK:
-            # desired_angle = get_bearing(cur_position, desired_pos)
             print(f"tacking: {self.desired_tacking_angle}")
-            rudder_angle, tack_exit_code = self.run_tack_step(self.desired_tacking_angle, self.tack_direction, heading)
-            mast_angle = self.get_optimal_sail_angle(apparent_wind_angle)
 
-            if tack_exit_code == 1:
-                self.current_state = States.NORMAL
+            sail_angle = self.get_optimal_sail_angle(apparent_wind_angle)
+
+            rudder_angle = constants.rudder_hard_over * self.tack_direction
+            if constants.perform_forced_jibe_instead_of_tack:
+                rudder_angle *= -1
+
+            if abs((heading - self.desired_tacking_angle)) % 360 < constants.tack_tolerance: # if we have finished the tack
+                self.current_state == States.NORMAL
             
-            # elif tack_exit_code == -1:
-            #     print("ERROR: Tack failed. Retrying tack")
-                
+        
+        else: Exception("Unsupported State Transitioned Into")
+        
+        return rudder_angle, sail_angle
+    
+    
+    
+    def run_rc_control(self, joystick_left_y, joystick_right_x):
+        # https://stackoverflow.com/questions/929103/convert-a-number-range-to-another-range-maintaining-ratio 
+        sail_angle = (((joystick_left_y + 100) * (constants.MAX_SAIL_ANGLE - constants.MIN_SAIL_ANGLE)) / 200) + constants.MIN_SAIL_ANGLE
+        rudder_angle = (((joystick_right_x + 100) * (constants.MAX_RUDDER_ANGLE - constants.MIN_RUDDER_ANGLE)) / 200) + constants.MIN_RUDDER_ANGLE
+    
+        return sail_angle, rudder_angle
 
-        return mast_angle, rudder_angle
-    
-    
-    
-    
+
     def run_hold_best_sail_step(self, apparent_wind_vector):
         # TODO refactor so that I don't have to convert in here
         _, apparent_wind_angle = cartesian_vector_to_polar(apparent_wind_vector[0], apparent_wind_vector[1])
         
-        mast_angle = self.get_optimal_sail_angle(apparent_wind_angle)
-        return mast_angle, None
+        sail_angle = self.get_optimal_sail_angle(apparent_wind_angle)
+        return sail_angle, None
     
     
     def run_hold_heading_step(self, heading, desired_heading):
@@ -360,6 +273,6 @@ class SailbotAutoController:
         # TODO refactor so that I don't have to convert in here
         _, apparent_wind_angle = cartesian_vector_to_polar(apparent_wind_vector[0], apparent_wind_vector[1])
         
-        mast_angle = self.get_optimal_sail_angle(apparent_wind_angle)
+        sail_angle = self.get_optimal_sail_angle(apparent_wind_angle)
         rudder_angle = self.get_optimal_rudder_angle(heading, desired_heading)
-        return mast_angle, rudder_angle
+        return sail_angle, rudder_angle

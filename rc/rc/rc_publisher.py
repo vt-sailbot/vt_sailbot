@@ -41,12 +41,8 @@ class RCPublisher(Node):
         
         self.create_timer(0.025, self.timer_callback)
         
-        self.sensor_serial = None
-        try:
-            serial_port = getPort(RC_VID, RC_PID, RC_SERIAL_NUMBER)
-            self.sensor_serial = serial.Serial(serial_port, BAUD_RATE)
-        except:
-            self.on_disconnect()
+        serial_port = getPort(RC_VID, RC_PID, RC_SERIAL_NUMBER)
+        self.sensor_serial = serial.Serial(serial_port, BAUD_RATE)
 
         self.crsf_parser = CRSFParser(self.save_frame)
         self.crsf_frame_rc_data = None
@@ -61,26 +57,8 @@ class RCPublisher(Node):
         
         self.rc_data_publisher = self.create_publisher(RCData, '/rc_data', sensor_qos_profile)
         self.termination_listener = self.create_subscription(msg_type=Bool, topic="/should_terminate", callback=self.should_terminate_callback, qos_profile=10)
-        
-    def on_disconnect(self):
-        """
-        uses the fact that this is a mutually exclusive callback group to block subsequent timer_callback calls
-        see the following: https://docs.ros.org/en/foxy/How-To-Guides/Using-callback-groups.html#basics-of-callback-groups
-        """
-        
-        disconnected = True
-        while disconnected:
-            try:
-                serial_port = getPort(RC_VID, RC_PID, RC_SERIAL_NUMBER)
-                self.sensor_serial = serial.Serial(serial_port, BAUD_RATE)
-                disconnected = False
-            except:
-                if self.sensor_serial:
-                    self.sensor_serial.close()
-                print("Reconnecting...")
-                time.sleep(1)
-    
-    
+
+
     def save_frame(self, frame: crsf_frame, status: PacketValidationStatus) -> crsf_frame:
         """
         this frame will come back as a crsf frame with the following declaration:
@@ -183,14 +161,9 @@ class RCPublisher(Node):
         
         
     def timer_callback(self):
-        try:
-            num_unread_bytes = self.sensor_serial.in_waiting
-            values = self.sensor_serial.read(num_unread_bytes)
-        except Exception as e:
-            print(e)
-            self.on_disconnect()
-            return
-        
+        num_unread_bytes = self.sensor_serial.in_waiting
+        values = self.sensor_serial.read(num_unread_bytes)
+    
         self.serial_stream.extend(values)
 
         # parse the data into self.crsf_frame
