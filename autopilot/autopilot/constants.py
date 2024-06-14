@@ -2,7 +2,7 @@
 
 # maps wind angles to sail positions for optimal sailing
 # default value
-lookup_table = {
+SAIL_LOOKUP_TABLE = {
     0: 80, 
     45: 60, 
     90: 40,
@@ -14,56 +14,29 @@ lookup_table = {
     360: 80
 }
         
+PERFORM_FORCED_JIBE_INSTEAD_OF_TACK = False
+WAYPOINT_ACCURACY = 5 # meters
+TACK_DISTANCE = 17  # rough distance to sail before changing tacks based on dynamic tacking system. Ask Chris for more info
 
-perform_forced_jibe_instead_of_tack = False
-waypoint_accuracy = 5   # meters
-tack_distance = 17  # rough distance to sail before changing tacks based on dynamic tacking system. Ask Chris for more info
+RUDDER_P_GAIN = 1
+RUDDER_I_GAIN = 0.3
+RUDDER_D_GAIN = 0.2
+RUDDER_N_GAIN = 1
 
-rudder_i_gain = 0.3
-rudder_p_gain = 1
-rudder_d_gain = 0.2
-rudder_n_gain = 1
+RUDDER_HARD_OVER = 35
 
+NO_SAIL_ZONE_SIZE = 100  # in degrees. With a no sail zone size of 40 degrees, this means that the boat shouldn't sail 20 degrees cw or ccw of true north
+AUTOPILOT_REFRESH_RATE = 5 # how many hz the autopilot publishes at
 
-rudder_hard_over = 35
-
-no_sail_zone_size = 100 # in degrees. With a no sail zone size of 40 degrees, this means that the boat shouldn't sail 20 degrees cw or ccw of true north
-autopilot_refresh_rate = 5 # how many hz the autopilot publishes at
-
-float_equivalence_tolerance = 0.01
-jibe_tolerance = 3
-tack_tolerance = 3
+FLOAT_EQUIVALENCE_TOLERANCE = 0.01
+JIBE_TOLERANCE = 3
+TACK_TOLERANCE = 3
 
 MIN_SAIL_ANGLE = 0
 MAX_SAIL_ANGLE = 90
 
-MIN_RUDDER_ANGLE = -35
-MAX_RUDDER_ANGLE = 35
+MIN_RUDDER_ANGLE = -25
+MAX_RUDDER_ANGLE = 25
 
 TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
 TIMEOUT_TIME_LIMIT = 10
-
-# obstacle_size = 1 # meters in radius
-# # nogo = 80 #nogo zone
-
-# action_time_limit = 210 #about 3.5 minutes
-# route_cycle_count = 3
-# stall_speed = 0.01 # m/s (0.51 m/s is around 1 knot)  TODO change this later I just set it really low for now!!
-# sailing_time_step = 1
-# tack_dist_reduction_step = 0.000015 #about 8 meters in degrees on the equator, needs updating for claytor, maybe have someone walk around with their 
-# #phone to get GPS coordinates or smth idk
-
-# heading_offset = 0
-
-# address = "ff:1b:d1:04:80:04"
-# DIR_ID = '00002a73-0000-1000-8000-00805f9b34fb'
-# SPEED_ID = '00002a72-0000-1000-8000-00805f9b34fb'
-
-# arduino_vid = 0x2341
-# arduino_pid = 0x0042
-
-# gps_vid = 0x067b
-# gps_pid = 0x2303
-
-# imu_vid = 0x10c4
-# imu_pid = 0xea60

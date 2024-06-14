@@ -37,7 +37,7 @@ class AutopilotNode(Node):
 
         self.sailbot_autopilot = SailbotAutopilot()
 
-        self.create_timer(1 / constants.autopilot_refresh_rate, self.update_ros_topic)
+        self.create_timer(1 / constants.AUTOPILOT_REFRESH_RATE, self.update_ros_topic)
 
         sensor_qos_profile = QoSProfile(
             reliability=QoSReliabilityPolicy.BEST_EFFORT,

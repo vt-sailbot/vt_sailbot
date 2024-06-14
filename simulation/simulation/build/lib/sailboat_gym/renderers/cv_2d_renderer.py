@@ -299,7 +299,7 @@ class CV2DRenderer(AbcRender):
         return ['rgb_array']
 
     def setup(self, map_bounds):
-        map_bounds = np.array([[-30, -30, 0], [30, 30, 0]])
+        map_bounds = np.array([[-75, -75, 0], [75, 75, 0]])
         self.map_bounds = map_bounds[:, 0:2]  # ignore z axis
         self.center = (self.map_bounds[0] + self.map_bounds[1]) / 2
 

@@ -20,9 +20,10 @@ class AutopilotMode(Enum):
     
 class States(Enum):
     NORMAL = 0
-    TACK = 1
-    STALL = 2
-    JIBE = 3
+    CW_TACK = 1
+    CCW_TACK = 2
+    STALL = 3
+    JIBE = 4
 
 class Maneuvers(Enum):
     AUTOPILOT_DISABLED = 0
@@ -36,7 +37,7 @@ class Maneuvers(Enum):
   
     
 def check_float_equivalence(float1, float2):
-    return abs(float1 - float2) <= constants.float_equivalence_tolerance
+    return abs(float1 - float2) <= constants.FLOAT_EQUIVALENCE_TOLERANCE
 
 
 def cartesian_vector_to_polar(x, y):
@@ -54,13 +55,7 @@ def get_distance_between_angles(angle1, angle2):
     # https://stackoverflow.com/questions/1878907/how-can-i-find-the-smallest-difference-between-two-angles-around-a-point
     return -1 * ((float(angle1) - float(angle2) + 180) % 360 - 180)
     
-def angle_between_vectors(v1: np.ndarray, v2: np.ndarray):
-    v1_normalized = v1/ np.linalg.norm(v1)
-    v2_normalized = v2/ np.linalg.norm(v2)
-    
-    return np.rad2deg(np.arccos(np.clip(np.dot(v1_normalized, v2_normalized), -1, 1)))
-    
-    
+
 def get_bearing(current_pos: Position, destination_pos: Position):
     '''
     utility function to get the bearing towards a specific destination point, from our current location.
@@ -79,26 +74,6 @@ def get_bearing(current_pos: Position, destination_pos: Position):
 
 def get_distance_between_positions(pos1: Position, pos2: Position):
     return geopy.distance.geodesic(pos1.get_lat_lon(), pos2.get_lat_lon()).m
-
-def is_angle_between_boundaries(angle, boundary1, boundary2):
-    # TODO make the names of these a little bit less cringeworthy
-    angle = np.deg2rad(angle)
-    boundary1 = np.deg2rad(boundary1)
-    boundary2 = np.deg2rad(boundary2)
-    
-    angle_vector = np.array([np.cos(angle), np.sin(angle)])
-    boundary1_vector = np.array([np.cos(boundary1), np.sin(boundary1)])
-    boundary2_vector = np.array([np.cos(boundary2), np.sin(boundary2)])
-    
-    print(f"angle vector: {angle_vector}")
-    print(f"boundary1 vector: {boundary1_vector}")
-    print(f"boundary2 vector: {boundary2_vector}")
-    print(f"(a, n) + (n, b): {angle_between_vectors(boundary1_vector, angle_vector) + angle_between_vectors(angle_vector, boundary2_vector)}")
-    print(f"(a, b): {angle_between_vectors(boundary1_vector, boundary2_vector)}")
-    print()
-    
-    return check_float_equivalence(angle_between_vectors(boundary1_vector, angle_vector) + angle_between_vectors(angle_vector, boundary2_vector), angle_between_vectors(boundary1_vector, boundary2_vector))
-    
 
 
 
@@ -154,26 +129,42 @@ def does_line_violate_no_sail_zone(start_point: list, end_point: list, true_wind
     # find the angle between these two vectors
     angle_between = np.arccos(np.dot(up_wind_vector, normalized_displacement))
     
-    if -constants.no_sail_zone_size < angle_between < constants.no_sail_zone_size:
+    if -constants.NO_SAIL_ZONE_SIZE < angle_between < constants.NO_SAIL_ZONE_SIZE:
         return True
     
     return False
 
 
+
+
+def angle_between_vectors(v1: np.ndarray, v2: np.ndarray):
+    v1_normalized = v1/ np.linalg.norm(v1)
+    v2_normalized = v2/ np.linalg.norm(v2)
+    
+    return np.rad2deg(np.arccos(np.clip(np.dot(v1_normalized, v2_normalized), -1, 1)))
+    
+    
+def is_angle_between_boundaries(angle, boundary1, boundary2):
+    # TODO make the names of these a little bit less cringeworthy
+    angle = np.deg2rad(angle)
+    boundary1 = np.deg2rad(boundary1)
+    boundary2 = np.deg2rad(boundary2)
+    
+    angle_vector = np.array([np.cos(angle), np.sin(angle)])
+    boundary1_vector = np.array([np.cos(boundary1), np.sin(boundary1)])
+    boundary2_vector = np.array([np.cos(boundary2), np.sin(boundary2)])
+    
+    print(f"angle vector: {angle_vector}")
+    print(f"boundary1 vector: {boundary1_vector}")
+    print(f"boundary2 vector: {boundary2_vector}")
+    print(f"(a, n) + (n, b): {angle_between_vectors(boundary1_vector, angle_vector) + angle_between_vectors(angle_vector, boundary2_vector)}")
+    print(f"(a, b): {angle_between_vectors(boundary1_vector, boundary2_vector)}")
+    print()
+    
+    return check_float_equivalence(angle_between_vectors(boundary1_vector, angle_vector) + angle_between_vectors(angle_vector, boundary2_vector), angle_between_vectors(boundary1_vector, boundary2_vector))
+    
+    
 def get_maneuver_from_desired_heading(heading, desired_heading, true_wind_angle):
-    
-    # # This is the (0, 0) for our coordinate scheme. We have to pick something and it might as well be this (this is mostly arbitrary)
-    # local_coordinate_reference = current_position.get_lon_lat()
-    
-    # cur_waypoint_position = current_position.get_local_coordinates(local_coordinate_reference)
-    # next_waypoint_position = desired_position.get_local_coordinates(local_coordinate_reference)
-
-    # heading_vector = np.array([np.cos(np.deg2rad(heading)), np.sin(np.deg2rad(heading))])
-    # next_bearing_vector = next_waypoint_position - cur_waypoint_position
-
-    # _, prev_course_angle = cartesian_vector_to_polar(heading_vector[0], heading_vector[1])
-    # _, new_course_angle = cartesian_vector_to_polar(next_bearing_vector[0], next_bearing_vector[1])
-    
     
     # wind ccw from true east (in other words the polar angle not relative to where the boat is facing)
     polar_downwind_angle = (true_wind_angle + heading) % 360
@@ -194,60 +185,59 @@ def get_maneuver_from_desired_heading(heading, desired_heading, true_wind_angle)
         return Maneuvers.JIBE
     
     elif is_angle_between_boundaries(polar_upwind_angle, heading, desired_heading): 
-        return Maneuvers.JIBE if constants.perform_forced_jibe_instead_of_tack else Maneuvers.TACK
+        return Maneuvers.TACK
         
     else: 
         return Maneuvers.STANDARD
 
 
 
-def get_maneuver_at_position(heading, current_position:Position, desired_position:Position, true_wind_angle):
-    """
-    takes in the following:
-        - heading angle measured ccw from true east
-        - the index of the current waypoint that we are headed towards
-        - the true wind angle measured ccw from the centerline of the boat. This is measured from on the boat.
+# def get_maneuver_at_position(heading, current_position:Position, desired_position:Position, true_wind_angle):
+#     """
+#     takes in the following:
+#         - heading angle measured ccw from true east
+#         - the index of the current waypoint that we are headed towards
+#         - the true wind angle measured ccw from the centerline of the boat. This is measured from on the boat.
         
-    returns either "tack", "jibe", or "standard" denoting the type of maneuver that the boat should perform once it reaches the waypoint
-    TODO: doesn't work for the first waypoint so fix that
-    """
+#     returns either "tack", "jibe", or "standard" denoting the type of maneuver that the boat should perform once it reaches the waypoint
+#     TODO: doesn't work for the first waypoint so fix that
+#     """
     
-    # This is the (0, 0) for our coordinate scheme. We have to pick something and it might as well be this (this is mostly arbitrary)
-    local_coordinate_reference = current_position.get_lon_lat()
+#     # This is the (0, 0) for our coordinate scheme. We have to pick something and it might as well be this (this is mostly arbitrary)
+#     local_coordinate_reference = current_position.get_lon_lat()
     
-    cur_waypoint_position = current_position.get_local_coordinates(local_coordinate_reference)
-    next_waypoint_position = desired_position.get_local_coordinates(local_coordinate_reference)
+#     cur_waypoint_position = current_position.get_local_coordinates(local_coordinate_reference)
+#     next_waypoint_position = desired_position.get_local_coordinates(local_coordinate_reference)
 
-    heading_vector = np.array([np.cos(np.deg2rad(heading)), np.sin(np.deg2rad(heading))])
-    next_bearing_vector = next_waypoint_position - cur_waypoint_position
+#     heading_vector = np.array([np.cos(np.deg2rad(heading)), np.sin(np.deg2rad(heading))])
+#     next_bearing_vector = next_waypoint_position - cur_waypoint_position
 
-    _, prev_course_angle = cartesian_vector_to_polar(heading_vector[0], heading_vector[1])
-    _, new_course_angle = cartesian_vector_to_polar(next_bearing_vector[0], next_bearing_vector[1])
+#     _, prev_course_angle = cartesian_vector_to_polar(heading_vector[0], heading_vector[1])
+#     _, new_course_angle = cartesian_vector_to_polar(next_bearing_vector[0], next_bearing_vector[1])
     
+#     # wind ccw from true east (in other words the polar angle not relative to where the boat is facing)
+#     polar_downwind_angle = (true_wind_angle + heading) % 360
     
-    # wind ccw from true east (in other words the polar angle not relative to where the boat is facing)
-    polar_downwind_angle = (true_wind_angle + heading) % 360
-    
-    #Calculate median into the wind angle (nominal angle at which course is heading straight into the wind)
-    #True wind                    0     45    90   135  179 | 180  225  270  315  360
-    #median into wind angle       180   225   270  315  359 | 0    45   90   135  180
-    polar_upwind_angle = (polar_downwind_angle + 180) % 360
+#     #Calculate median into the wind angle (nominal angle at which course is heading straight into the wind)
+#     #True wind                    0     45    90   135  179 | 180  225  270  315  360
+#     #median into wind angle       180   225   270  315  359 | 0    45   90   135  180
+#     polar_upwind_angle = (polar_downwind_angle + 180) % 360
 
-    print()
-    print(f"previous course angle: {prev_course_angle}")
-    print(f"new course angle: {new_course_angle}")
-    print(f"downwind angle: {polar_downwind_angle}")
-    print(f"upwind_angle: {polar_upwind_angle}")
-    print()
+#     print()
+#     print(f"previous course angle: {prev_course_angle}")
+#     print(f"new course angle: {new_course_angle}")
+#     print(f"downwind angle: {polar_downwind_angle}")
+#     print(f"upwind_angle: {polar_upwind_angle}")
+#     print()
     
-    if is_angle_between_boundaries(polar_downwind_angle, prev_course_angle, new_course_angle): 
-        return Maneuvers.JIBE
+#     if is_angle_between_boundaries(polar_downwind_angle, prev_course_angle, new_course_angle): 
+#         return Maneuvers.JIBE
     
-    elif is_angle_between_boundaries(polar_upwind_angle, prev_course_angle, new_course_angle): 
-        return Maneuvers.JIBE if constants.perform_forced_jibe_instead_of_tack else Maneuvers.TACK
+#     elif is_angle_between_boundaries(polar_upwind_angle, prev_course_angle, new_course_angle): 
+#         return Maneuvers.TACK
         
-    else: 
-        return Maneuvers.STANDARD
+#     else: 
+#         return Maneuvers.STANDARD
 
 # class Route:
     

@@ -22,7 +22,7 @@ import navpy
 
 # this is the wind direction measured as (what seems like) counter clockwise from true east
 WIND_DIRECTION = np.deg2rad(-90)
-WIND_SPEED = 3
+WIND_SPEED = 5
 
 sim_time = 0
 
