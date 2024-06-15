@@ -37,7 +37,7 @@ class MagnetometerPublisher(Node):
             depth=1
         )
         
-        self.heading_publisher = self.create_publisher(Float32, '/gps_data/heading', sensor_qos_profile)
+        self.heading_publisher = self.create_publisher(Float32, '/heading', sensor_qos_profile)
 
         self.create_timer(0.2, self.publish)
 

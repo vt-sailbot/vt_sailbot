@@ -57,9 +57,9 @@ class AutopilotNode(Node):
         self.waypoints_list_listener = self.create_subscription(WaypointList, '/waypoints_list', self.waypoints_list_callback, 10)
         self.cur_waypoint_index_publisher = self.create_publisher(Int32, '/cur_waypoint_index', 10)
         
-        self.position_listener = self.create_subscription(msg_type=NavSatFix, topic="/gps_data/position", callback=self.position_callback, qos_profile=sensor_qos_profile)
-        self.velocity_listener = self.create_subscription(msg_type=Vector3, topic="/gps_data/velocity", callback=self.velocity_callback, qos_profile=sensor_qos_profile)
-        self.heading_listener = self.create_subscription(msg_type=Float32, topic="/gps_data/heading", callback=self.heading_callback, qos_profile=sensor_qos_profile)
+        self.position_listener = self.create_subscription(msg_type=NavSatFix, topic="/position", callback=self.position_callback, qos_profile=sensor_qos_profile)
+        self.velocity_listener = self.create_subscription(msg_type=Vector3, topic="/velocity", callback=self.velocity_callback, qos_profile=sensor_qos_profile)
+        self.heading_listener = self.create_subscription(msg_type=Float32, topic="/heading", callback=self.heading_callback, qos_profile=sensor_qos_profile)
 
         self.apparent_wind_vector_listener = self.create_subscription(msg_type=Vector3, topic="/apparent_wind_vector", callback=self.apparent_wind_vector_callback, qos_profile=sensor_qos_profile)
         
@@ -145,6 +145,7 @@ class AutopilotNode(Node):
         self.autopilot_mode = AutopilotMode[mode.data]
         
 
+        
         
     def autopilot_parameters_callback(self, parameters: AutopilotParameters):
         constants.waypoint_accuracy = parameters.waypoint_accuracy

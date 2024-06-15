@@ -45,9 +45,9 @@ class TelemetryNode(Node):
         self.full_autonomy_maneuver_listener = self.create_subscription(msg_type=String, topic="/full_autonomy_maneuver", callback=self.full_autonomy_maneuver_callback, qos_profile=sensor_qos_profile)
         self.autopilot_mode_listener = self.create_subscription(msg_type=String, topic="/autopilot_mode", callback=self.autopilot_mode_callback, qos_profile=sensor_qos_profile)
         
-        self.position_listener = self.create_subscription(msg_type=NavSatFix, topic="/gps_data/position", callback=self.position_callback, qos_profile=sensor_qos_profile)
-        self.velocity_listener = self.create_subscription(msg_type=Vector3, topic="/gps_data/velocity", callback=self.velocity_callback, qos_profile=sensor_qos_profile)
-        self.heading_listener = self.create_subscription(msg_type=Float32, topic="/gps_data/heading", callback=self.heading_callback, qos_profile=sensor_qos_profile)
+        self.position_listener = self.create_subscription(msg_type=NavSatFix, topic="/position", callback=self.position_callback, qos_profile=sensor_qos_profile)
+        self.velocity_listener = self.create_subscription(msg_type=Vector3, topic="/velocity", callback=self.velocity_callback, qos_profile=sensor_qos_profile)
+        self.heading_listener = self.create_subscription(msg_type=Float32, topic="/heading", callback=self.heading_callback, qos_profile=sensor_qos_profile)
         self.apparent_wind_vector_listener = self.create_subscription(msg_type=Vector3, topic="/apparent_wind_vector", callback=self.apparent_wind_vector_callback, qos_profile=sensor_qos_profile)
         
         self.sail_angle_listener = self.create_subscription(msg_type=Float32, topic="/actions/sail_angle", callback=self.sail_angle_callback, qos_profile=sensor_qos_profile)
