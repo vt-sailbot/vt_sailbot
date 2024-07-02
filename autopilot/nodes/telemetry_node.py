@@ -8,12 +8,13 @@ from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 from std_msgs.msg import Float32, Bool, String, Int32
 from geometry_msgs.msg import Vector3
 from sensor_msgs.msg import NavSatFix
-from sailbot_msgs.msg import WaypointList, AutopilotParameters
+from sailbot_msgs.msg import WaypointList 
+
 
 import numpy as np
 import array, time, json, requests
 
-TELEMETRY_SERVER_URL = 'http://107.23.136.207:8082/'
+TELEMETRY_SERVER_URL = 'http://3.141.26.89:8080/'
 
 # TODO: MOST IMPORTANT MAKE THE IP AN ARGUMENT INTO THE ROS NODE AND DOCKER CONTAINER
 
@@ -34,8 +35,8 @@ class TelemetryNode(Node):
             depth=1
         )
         
-        self.autopilot_parameter_listener = self.create_subscription(AutopilotParameters, '/autopilot_parameters', callback=self.autopilot_parameters_callback, qos_profile=10)
-        self.autopilot_parameters_publisher = self.create_publisher(msg_type=AutopilotParameters, topic='/autopilot_parameters', qos_profile=10)
+        # self.autopilot_parameter_listener = self.create_subscription(String, '/autopilot_parameters', callback=self.autopilot_parameters_callback, qos_profile=10)
+        self.autopilot_parameters_publisher = self.create_publisher(msg_type=String, topic='/autopilot_parameters', qos_profile=10)
         
         self.desired_heading_listener = self.create_subscription(Float32, '/desired_heading', self.desired_heading_callback, 10)
         self.waypoints_list_listener = self.create_subscription(WaypointList, '/waypoints_list', self.waypoints_list_callback, 10)
@@ -52,8 +53,6 @@ class TelemetryNode(Node):
         
         self.sail_angle_listener = self.create_subscription(msg_type=Float32, topic="/actions/sail_angle", callback=self.sail_angle_callback, qos_profile=sensor_qos_profile)
         self.rudder_angle_listener = self.create_subscription(msg_type=Float32, topic="/actions/rudder_angle", callback=self.rudder_angle_callback, qos_profile=sensor_qos_profile)
-
-
 
         # Default values in case these are never sent through ROS
         # If these values aren't changing then the ros node thats supposed to be sending these values may not be working correctly
@@ -83,15 +82,16 @@ class TelemetryNode(Node):
     def desired_heading_callback(self, desired_heading: Float32):
         self.desired_heading = desired_heading.data
     
-    def autopilot_parameters_callback(self, autopilot_parameters: AutopilotParameters):
-        parameter_names = list(autopilot_parameters._fields_and_field_types.keys())
-        self.autopilot_parameters = {parameter_names[i]: getattr(autopilot_parameters, parameter_names[i]) for i in range(len(parameter_names))}
-        
-        for key in self.autopilot_parameters.keys():
-            if type(self.autopilot_parameters[key]) == array.array:
-                self.autopilot_parameters[key] = list(self.autopilot_parameters[key])
-        
-        print(self.autopilot_parameters)
+    # def autopilot_parameters_callback(self, autopilot_parameters: String):
+    #     new_parameters_json: dict = json.loads(autopilot_parameters.data)
+    #     for new_parameter_name, new_parameter_value in new_parameters_json.items():
+    #         if new_parameter_name not in self.parameters.keys():
+    #             print("WARNING: Attempted to set an autopilot parameter that the autopilot doesn't know")
+    #             print("If you would like to make a new autopilot parameter, please edit parameters.yaml")
+    #             continue
+            
+    #         self.parameters[new_parameter_name] = new_parameter_value
+    #     print(self.autopilot_parameters)
         
         
     def waypoints_list_callback(self, waypointsList: WaypointList):
@@ -109,7 +109,6 @@ class TelemetryNode(Node):
     def position_callback(self, position: NavSatFix):
         self.position = position
 
-    # TODO change this so that the telemetry stores both the vector and speed internally
     def velocity_callback(self, velocity_vector: Vector3):
         self.velocity_vector = np.array([velocity_vector.x, velocity_vector.y])
         self.speed = np.sqrt(velocity_vector.x**2 + velocity_vector.y**2)
@@ -137,12 +136,13 @@ class TelemetryNode(Node):
     
     
     def update_everything(self):
-        self.update_telemetry_server()
+        self.update_boat_status()
         self.update_autopilot_parameters_from_telemetry()
+        self.update_waypoints_from_telemetry()
     
     
     
-    def update_telemetry_server(self):
+    def update_boat_status(self):
         """
         FORMAT:
             position (Lat Lon tuple); current state; speed; bearing; heading; wind speed; wind direction; sail angle; rudder angle; cur_waypoint; the entire waypoint list for the current route
@@ -169,36 +169,33 @@ class TelemetryNode(Node):
             "parameters": self.autopilot_parameters
         }
 
-        requests.post(url=TELEMETRY_SERVER_URL + "api/", json={"s1": json.dumps(telemetry_dict), "s2": f"{self.time}"}).text
+        requests.post(url=TELEMETRY_SERVER_URL + "/boat_status/set", json={"value": telemetry_dict})
         self.time+=1
 
 
 
     
-    def get_raw_response(self):
+    def get_raw_response(self, route):
         try:
-            return json.loads(requests.get(TELEMETRY_SERVER_URL + "api/wp/one", timeout=constants.TIMEOUT_TIME_LIMIT).text)
+            return requests.get(TELEMETRY_SERVER_URL + route, timeout=10).json()
         except Exception as e:
             print(e)
             time.sleep(1)
             print("retrying connection")
             return self.get_raw_response()
+    
+    def update_waypoints_from_telemetry(self):
+        waypoints_list = self.get_raw_response("/waypoints/get")
+        print(f"waypoints_list: {waypoints_list}")
         
-        
-    def update_autopilot_parameters_from_telemetry(self):
-        raw_response = self.get_raw_response()
-        
-        print(raw_response)
-        if raw_response == None: 
+        if not waypoints_list: 
             return
         else: 
-            requests.delete(TELEMETRY_SERVER_URL + "api/wp/deleteAll")
+            # TODO eventually fix this so that we don't have to depend on deleting the waypoints
+            # deleting the waypoints makes it so that we can't access it in the future from this route which is not entirely desirable    
+            requests.post(TELEMETRY_SERVER_URL + "/waypoints/delete")
     
-        response_dict = dict(json.loads(raw_response["w"]))
-        
-        # parse waypoints
-        waypoints_list = response_dict["waypoints"]
-        
+        # parse waypoints        
         waypoints_nav_sat_fix_list = []
         for waypoint in waypoints_list:
             if not waypoint: continue
@@ -210,25 +207,27 @@ class TelemetryNode(Node):
             
             waypoints_nav_sat_fix_list.append(NavSatFix(latitude=float(lat), longitude=float(lon)))
             
+
         waypoint_list = WaypointList(waypoints=waypoints_nav_sat_fix_list)
-        
-        
-        # parse parameters
-        parameters = AutopilotParameters()
-        parameters.sail_lookup_table_wind_angles = response_dict["sail_lookup_table_wind_angles"]
-        parameters.sail_lookup_table_sail_positions = response_dict["sail_lookup_table_sail_positions"]
-        parameters.forced_jibe_only = bool(response_dict["forced_jibe_only"])
-        parameters.waypoint_accuracy = float(response_dict["waypoint_accuracy"])
-        parameters.no_sail_zone_size = float(response_dict["no_sail_zone_size"])
-        parameters.tack_distance = float(response_dict["tack_distance"])
-        
-        parameters.rudder_p_gain = float(response_dict["rudder_p_gain"])
-        parameters.rudder_i_gain = float(response_dict["rudder_i_gain"])
-        parameters.rudder_d_gain = float(response_dict["rudder_d_gain"])
-        parameters.rudder_n_gain = float(response_dict["rudder_n_gain"])
-        
         self.waypoints_list_publisher.publish(waypoint_list)
-        self.autopilot_parameters_publisher.publish(parameters)
+        
+        
+    def update_autopilot_parameters_from_telemetry(self):
+        autopilot_parameters = self.get_raw_response("/autopilot_parameters/get")
+        print(f"autopilot_parameters: {autopilot_parameters}")
+
+        if not autopilot_parameters: 
+            return
+        else: 
+            # TODO eventually fix this so that we don't have to depend on deleting the waypoints
+            # deleting the waypoints makes it so that we can't access it in the future from this route which is not entirely desirable
+            requests.post(TELEMETRY_SERVER_URL + "/autopilot_parameters/delete")
+     
+        # parse parameters
+        serialized_parameters_string = String(data=json.dumps(autopilot_parameters))  # we already removed waypoints so all that are left are the parameters
+        self.autopilot_parameters_publisher.publish(serialized_parameters_string)
+        
+        self.autopilot_parameters = autopilot_parameters
 
 
 def main():

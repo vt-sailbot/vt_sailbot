@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'compass_node = compass.compass_node:main'
+            'compass = compass.compass_node:main'
         ],
     },
 )

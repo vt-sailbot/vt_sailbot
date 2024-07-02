@@ -4,8 +4,8 @@ from enum import Enum
 import geopy
 import geopy.distance
 import pyproj
+import math
 
-from . import constants
 from .position import Position
 
 
@@ -20,10 +20,10 @@ class AutopilotMode(Enum):
     
 class States(Enum):
     NORMAL = 0
-    CW_TACK = 1
-    CCW_TACK = 2
+    CW_TACKING = 1
+    CCW_TACKING = 2
     STALL = 3
-    JIBE = 4
+    # JIBE = 4
 
 class Maneuvers(Enum):
     AUTOPILOT_DISABLED = 0
@@ -37,7 +37,7 @@ class Maneuvers(Enum):
   
     
 def check_float_equivalence(float1, float2):
-    return abs(float1 - float2) <= constants.FLOAT_EQUIVALENCE_TOLERANCE
+    return abs(float1 - float2) <= 0.001
 
 
 def cartesian_vector_to_polar(x, y):
@@ -45,6 +45,9 @@ def cartesian_vector_to_polar(x, y):
         Converts a cartesian vector (x and y coordinates) to polar form (magnitude and direction).
         Outputs a tuple of magnitude and direction of the inputted vector
     """
+    # arctan2 doesn't like when we pass 2 zeros into it so we should cover that case
+    if x == 0. and y == 0.:
+        return 0., 0.
     magnitude = np.sqrt(x**2 + y**2)
     direction = np.arctan2(y, x) # radians
     direction = direction * (180/np.pi)  # angle from -180 to 180 degrees
@@ -77,7 +80,7 @@ def get_distance_between_positions(pos1: Position, pos2: Position):
 
 
 
-def does_line_intersect_obstacle(start_point: list, end_point: list, obstacle_position: list):
+def does_line_intersect_obstacle(start_point: list, end_point: list, obstacle_position: list, obstacle_sizes):
     """
     Adapted from top answer of this stack overflow post: https://stackoverflow.com/questions/1073336/circle-line-segment-collision-detection-algorithm.
     It is assumed that all obstacles are spheres with a size of the obstacle_size constant.
@@ -87,7 +90,7 @@ def does_line_intersect_obstacle(start_point: list, end_point: list, obstacle_po
     e = np.array(start_point)
     l = np.array(end_point)
     c = np.array(obstacle_position)
-    r = constants.obstacle_size
+    r = obstacle_sizes
     
     d = l - e
     f = e - c
@@ -115,7 +118,7 @@ def does_line_intersect_any_obstacles(start_point: list, end_point: list, obstac
     return False
 
         
-def does_line_violate_no_sail_zone(start_point: list, end_point: list, true_wind_angle):
+def does_line_violate_no_sail_zone(start_point: list, end_point: list, true_wind_angle: float, no_sail_zone_size: float):
     """wind direction is ccw from true north"""
     displacement = np.array(end_point) - np.array(start_point)
     displacement_magnitude = np.sqrt(displacement[0]**2 + displacement[1]**2 + displacement[2]**2)
@@ -129,7 +132,7 @@ def does_line_violate_no_sail_zone(start_point: list, end_point: list, true_wind
     # find the angle between these two vectors
     angle_between = np.arccos(np.dot(up_wind_vector, normalized_displacement))
     
-    if -constants.NO_SAIL_ZONE_SIZE < angle_between < constants.NO_SAIL_ZONE_SIZE:
+    if -no_sail_zone_size < angle_between < no_sail_zone_size:
         return True
     
     return False
@@ -153,15 +156,11 @@ def is_angle_between_boundaries(angle, boundary1, boundary2):
     angle_vector = np.array([np.cos(angle), np.sin(angle)])
     boundary1_vector = np.array([np.cos(boundary1), np.sin(boundary1)])
     boundary2_vector = np.array([np.cos(boundary2), np.sin(boundary2)])
-    
-    print(f"angle vector: {angle_vector}")
-    print(f"boundary1 vector: {boundary1_vector}")
-    print(f"boundary2 vector: {boundary2_vector}")
-    print(f"(a, n) + (n, b): {angle_between_vectors(boundary1_vector, angle_vector) + angle_between_vectors(angle_vector, boundary2_vector)}")
-    print(f"(a, b): {angle_between_vectors(boundary1_vector, boundary2_vector)}")
-    print()
-    
-    return check_float_equivalence(angle_between_vectors(boundary1_vector, angle_vector) + angle_between_vectors(angle_vector, boundary2_vector), angle_between_vectors(boundary1_vector, boundary2_vector))
+  
+    return check_float_equivalence(
+        angle_between_vectors(boundary1_vector, angle_vector) + angle_between_vectors(angle_vector, boundary2_vector), 
+        angle_between_vectors(boundary1_vector, boundary2_vector)
+    )
     
     
 def get_maneuver_from_desired_heading(heading, desired_heading, true_wind_angle):
@@ -174,13 +173,6 @@ def get_maneuver_from_desired_heading(heading, desired_heading, true_wind_angle)
     #median into wind angle       180   225   270  315  359 | 0    45   90   135  180
     polar_upwind_angle = (polar_downwind_angle + 180) % 360
 
-    print()
-    print(f"previous course angle: {heading}")
-    print(f"new course angle: {desired_heading}")
-    print(f"downwind angle: {polar_downwind_angle}")
-    print(f"upwind_angle: {polar_upwind_angle}")
-    print()
-    
     if is_angle_between_boundaries(polar_downwind_angle, heading, desired_heading): 
         return Maneuvers.JIBE
     

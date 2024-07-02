@@ -1,4 +1,5 @@
-from setuptools import find_packages, setup, glob
+from setuptools import find_packages, setup
+from glob import glob
 
 
 package_name = 'autopilot'
@@ -12,11 +13,8 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         
-        ('lib/' + package_name, ['./nodes/autopilot_node.py']),
-        ('lib/' + package_name, ['./nodes/telemetry_node.py'])
-        # ('lib/' + package_name, ['./autopilot/']),
-        # ('lib/' + package_name, ['./utils/']),
-        
+        ('lib/' + package_name, glob('nodes/*')),
+        ('lib/' + package_name, glob('config/*'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,8 +25,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'autopilot_node = autopilot_node:main',
-            'telemetry_node = telemetry_node:main'
+            'autopilot = autopilot_node:main',
+            'telemetry = telemetry_node:main'
         ],
     },
 )

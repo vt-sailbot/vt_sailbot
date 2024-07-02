@@ -1,9 +1,14 @@
 class Discrete_PID:
     """
-    Adam just sent me this: https://www.scilab.org/discrete-time-pid-controller-implementation.
-    Idk anymore mannn...
+    Main resource: https://www.scilab.org/discrete-time-pid-controller-implementation.
+    
+    Modified discrete PID controller using a low pass filter only for the derivative term.
+    The equations in this file were derived from the z-transform of a PID controller with a low pass filter on the derivative term.
+    
+    n is used instead of just calling it the low_pass_filter_cutoff_frequency so the equations are more legible but that is all that term is.
     """
     def __init__(self, sample_period, Kp=1, Ki=0, Kd=0, n=0):
+        """n represents the cutoff frequency for the low pass filter applied to the derivative term of the pid controller"""
         
         self.sample_period = sample_period
         self.Kp = Kp
@@ -16,10 +21,28 @@ class Discrete_PID:
         
         self.prev_error1 = 0.
         self.prev_error2 = 0.
-        
     
-    def __call__(self, error):
+    
+    def set_gains(self, Kp=None, Ki=None, Kd=None, n=None, sample_period=None):
+        """
+        Sets gains to specified value. If input is None then they are set as the already existing value.
+        So if Kp is None for instance then its value just doesn't change.
         
+        n represents the cutoff frequency for the low pass filter applied to the derivative term of the pid controller
+        """
+        
+        self.Kp = Kp or self.Kp
+        self.Ki = Ki or self.Ki
+        self.Kd = Kd or self.Kd
+        self.n =  n  or self.n
+        self.sample_period = sample_period or self.sample_period
+        
+        
+    def reset(self):
+        self.__init__(self.sample_period, self.Kp, self.Ki, self.Kd, self.n, self.sample_period)
+        
+        
+    def step(self, error):
         a0 = 1 + self.n * self.sample_period
         a1 = - (2 + self.n * self.sample_period)
         a2 = 1
@@ -36,4 +59,8 @@ class Discrete_PID:
         self.prev_error1 = error
 
         return output
+    
+    
+    def __call__(self, error):
+        return self.step(error)
     

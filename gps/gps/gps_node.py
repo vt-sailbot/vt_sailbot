@@ -11,7 +11,7 @@ from serial.tools import list_ports
 from rclpy.node import Node
 from ublox_gps import UbloxGps
 from sensor_msgs.msg import NavSatFix
-from geometry_msgs.msg import Vector3
+from geometry_msgs.msg import Vector3, Twist
 
 import numpy as np
 from collections import deque
@@ -62,7 +62,7 @@ class GPSPublisher(Node):
             depth=1
         )
         self.position_publisher = self.create_publisher(NavSatFix, '/position', sensor_qos_profile)
-        self.velocity_publisher = self.create_publisher(Vector3, '/velocity', sensor_qos_profile)
+        self.velocity_publisher = self.create_publisher(Twist, '/velocity', sensor_qos_profile)
 
         self.create_timer(1/REFRESH_RATE, self.publish)
 
@@ -87,7 +87,8 @@ class GPSPublisher(Node):
         velE, velN = linear_moving_weighted_average(self.gps_velocity_data_queue)
         
         gps_msg = NavSatFix(longitude=geo.lon, latitude=geo.lat)
-        velocity_msg = Vector3(x=float(velE/1000), y=float(velN/1000))
+        linear_velocity_msg = Vector3(x=float(velE/1000), y=float(velN/1000))
+        velocity_msg = Twist(linear=linear_velocity_msg)
         
         velE_mph = velE * 2.2369/ 1000 # mm/s to mph
         velN_mph = velN * 2.2369/ 1000 # mm/s to mph

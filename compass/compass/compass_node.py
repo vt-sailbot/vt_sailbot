@@ -5,7 +5,6 @@ from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 from serial.tools import list_ports
 from rclpy.node import Node
 from std_msgs.msg import Float32
-from .globals import *
 
 import serial
 import time
@@ -16,6 +15,10 @@ import time
 ARDUINO_UNO_VID = 0x2341
 ARDUINO_UNO_PID = 0x0043
 BAUD_RATE = 115200
+
+MAGNETIC_DECLINATION = 14.2
+MAGNETOMETER_CALIBRATION = 0
+
 
 def getPort(vid, pid) -> str:
     device_list = list_ports.comports()
@@ -43,8 +46,6 @@ class MagnetometerPublisher(Node):
 
         serial_port = getPort(ARDUINO_UNO_VID, ARDUINO_UNO_PID)
         self.sensor_serial = serial.Serial(serial_port, baudrate=BAUD_RATE, timeout=1)
-            
-        self.last_time = time.time()
     
 
     def publish(self):
@@ -69,8 +70,6 @@ class MagnetometerPublisher(Node):
         true_heading_ccw_east = (90 - true_heading_cw_north) % 360
         
         self.heading_publisher.publish(Float32(data=true_heading_ccw_east))
-        
-        self.last_time = time.time()
         
             
 

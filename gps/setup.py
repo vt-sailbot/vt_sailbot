@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'gps_node = gps.gps_node:main'
+            'gps = gps.gps_node:main'
         ],
     },
 )

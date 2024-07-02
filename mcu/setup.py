@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'mcu_node = mcu.mcu_node:main'
+            'mcu = mcu.mcu_node:main'
         ],
     },
 )

@@ -12,10 +12,6 @@ TEENSY_VID = 0x16c0
 TEENSY_PID = 0x0483
 BAUD_RATE = 115200
 
-# TEST_ARDUINO_VID = 0x2341
-# TEST_ARDUINO_PID = 0x0043
-
-
 def getPort(vid, pid) -> str:
     device_list = list_ports.comports()
     for device in device_list:
