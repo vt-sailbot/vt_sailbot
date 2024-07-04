@@ -1,0 +1,59 @@
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1malbumentations: [39m[22mBlur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01), CLAHE(p=0.01, clip_limit=(1, 4.0), tile_grid_size=(8, 8))
+[34m[1mtrain: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/train/labels.cache... 12816 images, 1474 backgrounds, 0 corrupt: 100%|██████████| 12816/12816 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/valid/labels.cache... 1845 images, 211 backgrounds, 0 corrupt: 100%|██████████| 1845/1845 [00:00<?, ?it/s]
+Plotting labels to runs/detect/train16/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.002, momentum=0.9) with parameter groups 185 weight(decay=0.0), 198 weight(decay=0.00046875), 197 bias(decay=0.0)
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train16
+Starting training for 4 epochs...
+      Epoch    GPU_mem     box_om     cls_om     dfl_om     box_oo     cls_oo     dfl_oo  Instances       Size
+
+
+
+
+
+
+
+        1/4      13.1G      1.307      1.116      1.385      1.545      1.611      1.399         36        640:   1%|          | 7/1282 [01:33<4:43:57, 13.36s/it]
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py", line 4, in <module>
+    model.train(
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/model.py", line 657, in train
+    self.trainer.train()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 213, in train
+    self._do_train(world_size)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 393, in _do_train
+    self.optimizer_step()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 536, in optimizer_step
+    self.scaler.step(self.optimizer)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/cuda/amp/grad_scaler.py", line 374, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/cuda/amp/grad_scaler.py", line 289, in _maybe_opt_step
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/cuda/amp/grad_scaler.py", line 289, in <genexpr>
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py", line 4, in <module>
+    model.train(
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/model.py", line 657, in train
+    self.trainer.train()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 213, in train
+    self._do_train(world_size)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 393, in _do_train
+    self.optimizer_step()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 536, in optimizer_step
+    self.scaler.step(self.optimizer)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/cuda/amp/grad_scaler.py", line 374, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/cuda/amp/grad_scaler.py", line 289, in _maybe_opt_step
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/cuda/amp/grad_scaler.py", line 289, in <genexpr>
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+KeyboardInterrupt

@@ -1,0 +1,68 @@
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1malbumentations: [39m[22mBlur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01), CLAHE(p=0.01, clip_limit=(1, 4.0), tile_grid_size=(8, 8))
+[34m[1mtrain: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/train/labels.cache... 12816 images, 1474 backgrounds, 0 corrupt: 100%|██████████| 12816/12816 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/valid/labels.cache... 1845 images, 211 backgrounds, 0 corrupt: 100%|██████████| 1845/1845 [00:00<?, ?it/s]
+Plotting labels to runs/detect/train15/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.002, momentum=0.9) with parameter groups 185 weight(decay=0.0), 198 weight(decay=0.00046875), 197 bias(decay=0.0)
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train15
+Starting training for 4 epochs...
+      Epoch    GPU_mem     box_om     cls_om     dfl_om     box_oo     cls_oo     dfl_oo  Instances       Size
+
+
+
+
+
+        1/4        13G      1.276      1.044      1.384      1.507      1.415      1.387         29        640:   0%|          | 5/1282 [01:10<5:01:47, 14.18s/it]
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py", line 4, in <module>
+    model.train(
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 643, in write
+    cb(data)
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2042, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1389, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 657, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 79, in _publish_output_raw
+    self._publish(rec)
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py", line 4, in <module>
+    model.train(
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/model.py", line 657, in train
+    self.trainer.train()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 213, in train
+    self._do_train(world_size)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 381, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 93, in forward
+    return self.loss(x, *args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 275, in loss
+    return self.criterion(preds, batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/utils/loss.py", line 724, in __call__
+    loss_one2many = self.one2many(one2many, batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/utils/loss.py", line 209, in __call__
+    imgsz = torch.tensor(feats[0].shape[2:], device=self.device, dtype=dtype) * self.stride[0]  # image size (h,w)
+KeyboardInterrupt

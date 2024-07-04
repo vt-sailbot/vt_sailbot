@@ -1,0 +1,903 @@
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mtrain: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/train/labels... 1415 images, 0 backgrounds, 0 corrupt:  11%|█
+
+
+
+
+
+[34m[1mtrain: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/train/labels... 12816 images, 1474 backgrounds, 0 corrupt: 100%
+[34m[1mval: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/valid/labels...:   0%|          | 0/1845 [00:00<?, ?it/s]
+[34m[1mtrain: [39m[22mNew cache created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/train/labels.cache
+
+[34m[1mval: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/valid/labels... 1845 images, 211 backgrounds, 0 corrupt: 100%|███
+[34m[1mval: [39m[22mNew cache created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/valid/labels.cache
+Plotting labels to runs/detect/train7/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.002, momentum=0.9) with parameter groups 185 weight(decay=0.0), 198 weight(decay=0.0005), 197 bias(decay=0.0)
+  0%|          | 0/3204 [00:00<?, ?it/s]
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train7
+Starting training for 2 epochs...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        1/2      5.52G      1.219     0.7797      1.228      1.436     0.9845      1.228         12        640: 100%|██████████| 3204/3204 [24:16<00:00,  2.20it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  99%|█████████▊| 228/231 [01:30<00:01,  2.46it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 231/231 [01:31<00:00,  2.53it/s]
+      Epoch    GPU_mem     box_om     cls_om     dfl_om     box_oo     cls_oo     dfl_oo  Instances       Size
+        2/2      5.29G      1.098     0.6873      1.221      1.325     0.8633      1.285         12        640:   0%|          | 4/3204 [00:02<27:37,  1.93it/s]
+Exception in thread Thread-18 (_pin_memory_loop):
+Traceback (most recent call last):
+  File "/home/animated/miniforge3/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/animated/miniforge3/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/utils/data/_utils/pin_memory.py", line 51, in _pin_memory_loop
+    do_one_step()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in do_one_step
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/home/animated/miniforge3/lib/python3.10/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/multiprocessing/reductions.py", line 307, in rebuild_storage_fd
+    fd = df.detach()
+  File "/home/animated/miniforge3/lib/python3.10/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/home/animated/miniforge3/lib/python3.10/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/home/animated/miniforge3/lib/python3.10/multiprocessing/connection.py", line 502, in Client
+    c = SocketClient(address)
+  File "/home/animated/miniforge3/lib/python3.10/multiprocessing/connection.py", line 630, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py", line 4, in <module>
+    model.train(data='datasets/SailbotVT-4/data.yaml', epochs=2, batch=4, imgsz=640, dropout=0.05)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/model.py", line 657, in train
+    self.trainer.train()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 213, in train
+    self._do_train(world_size)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 381, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 93, in forward
+    return self.loss(x, *args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 274, in loss
+    preds = self.forward(batch["img"]) if preds is None else preds
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 94, in forward
+    return self.predict(x, *args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 112, in predict
+    return self._predict_once(x, profile, visualize, embed)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 133, in _predict_once
+    x = m(x)  # run
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/modules/head.py", line 514, in forward
+    one2many = super().forward(x)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/modules/head.py", line 81, in forward
+    y = self.forward_feat(x, self.cv2, self.cv3)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/modules/head.py", line 76, in forward_feat
+    y.append(torch.cat((cv2[i](x[i]), cv3[i](x[i])), 1))
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py", line 4, in <module>
+    model.train(data='datasets/SailbotVT-4/data.yaml', epochs=2, batch=4, imgsz=640, dropout=0.05)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/model.py", line 657, in train
+    self.trainer.train()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 213, in train
+    self._do_train(world_size)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 381, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 93, in forward
+    return self.loss(x, *args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 274, in loss
+    preds = self.forward(batch["img"]) if preds is None else preds
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 94, in forward
+    return self.predict(x, *args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 112, in predict
+    return self._predict_once(x, profile, visualize, embed)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 133, in _predict_once
+    x = m(x)  # run
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/modules/head.py", line 514, in forward
+    one2many = super().forward(x)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/modules/head.py", line 81, in forward
+    y = self.forward_feat(x, self.cv2, self.cv3)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/modules/head.py", line 76, in forward_feat
+    y.append(torch.cat((cv2[i](x[i]), cv3[i](x[i])), 1))
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

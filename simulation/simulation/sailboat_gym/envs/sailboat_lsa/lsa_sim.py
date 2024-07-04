@@ -1,4 +1,5 @@
 import docker
+from docker.types import DeviceRequest
 import zmq
 import msgpack
 import time
@@ -245,11 +246,15 @@ class LSASim(metaclass=ProfilingMeta):
 
             # launch a new container if none found or the existing container is not running
             try:
+                print("launching new container")
                 container = client.containers.run(
                     self.DOCKER_IMAGE_NAME,
                     name=name,
                     detach=True,
                     auto_remove=True,
+                    device_requests=[
+                        DeviceRequest(device_ids=["0"], capabilities=[['gpu']])
+                    ],
                     ports={
                         f'{self.DEFAULT_PORT}/tcp': port,
                         '22/tcp': None,

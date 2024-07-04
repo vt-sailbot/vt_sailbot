@@ -7,7 +7,16 @@ Additionally, this node publishes data that is useful for telemetry and debuggin
 
 In order for us to be able to control and tune parameters for the autopilot from the groundstation, this node also listens for autopilot_parameters. These are jsons (serialized as strings) which detail all of the new parameters and what their values should be. These values are sent from the groundstation to the telemetry server, then to the telemetry node and then finally to the autopilot.
 
-An important thing to note is that this node also controls basic RC override, which is why it needs to listen into the raw RC data.
+An important thing to note is that this node also controls basic RC override, which is why it needs to listen into the raw RC data. There are several different types of RC override listed below:  
+`- Fully Disabled`  
+`- Full RC Control`  
+`- Autopilot Holds "Best" Sail Angle; RC Controlled Rudder`  
+`- Autopilot Holds the Current Heading with the Rudder; RC Controlled Sail`  
+`- Autopilot Holds "Best" Sail Angle; Autopilot Holds the Current Heading with the Rudder`  
+`- Autopilot Waypoint Mission`  
+
+These different modes can be switched into with different combinations of switches on the controller. Heres a snapshot of the code used to determine the current mode: ![Code for Switching Modes](../images/image.png)
+
 
 TODO: There are various modes related to RC override that the autopilot can "switch into". Depending 
 

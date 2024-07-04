@@ -14,7 +14,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 from std_msgs.msg import Float32, Bool
-from geometry_msgs.msg import Vector3
+from geometry_msgs.msg import Vector3, Twist
 from sensor_msgs.msg import NavSatFix
 from sailbot_msgs.msg import WaypointList
 import navpy
@@ -22,7 +22,7 @@ import navpy
 
 # this is the wind direction measured as (what seems like) counter clockwise from true east
 WIND_DIRECTION = np.deg2rad(-90)
-WIND_SPEED = 5
+WIND_SPEED = 1
 
 sim_time = 0
 
@@ -55,7 +55,7 @@ class SimNode(Node):
         self.desired_route_listener = self.create_subscription(WaypointList, '/desired_route', self.desired_route_callback, 10)
         
         self.position_publisher = self.create_publisher(msg_type=NavSatFix, topic="/position", qos_profile=sensor_qos_profile)
-        self.velocity_publisher = self.create_publisher(msg_type=Vector3, topic="/velocity", qos_profile=sensor_qos_profile)
+        self.velocity_publisher = self.create_publisher(msg_type=Twist, topic="/velocity", qos_profile=sensor_qos_profile)
         self.heading_publisher = self.create_publisher(msg_type=Float32, topic="/heading", qos_profile=sensor_qos_profile)
         self.apparent_wind_vector_publisher = self.create_publisher(msg_type=Vector3, topic="/apparent_wind_vector", qos_profile=sensor_qos_profile)
         
@@ -72,7 +72,7 @@ class SimNode(Node):
             keep_sim_alive=True
         )
         
-        self.episode_length = self.env.NB_STEPS_PER_SECONDS * 60 * 400
+        self.episode_length = self.env.NB_STEPS_PER_SECONDS * 60 * 400000000
         sim_time = 0
 
         self.env = TimeLimit(self.env, max_episode_steps=self.episode_length)
@@ -132,14 +132,26 @@ class SimNode(Node):
         gps_position = NavSatFix()
         
         # TODO: lat ref could be: 37.229572, lon ref: -80.413940
-        latitude, longitude, _ = navpy.ned2lla([position.y, position.x, position.z], lat_ref=0., lon_ref=0., alt_ref=0)
+        if position.x == 0. and position.y == 0.:
+            latitude, longitude = 0., 0.
+        else:
+            # navpy ned2lla throws a nan whenever x=0 and y=0 so we need to catch that
+            latitude, longitude, _ = navpy.ned2lla([position.y, position.x, position.z], lat_ref=0., lon_ref=0., alt_ref=0)
+        
         gps_position.latitude = latitude
         gps_position.longitude = longitude
+    
+    
+        # saves the current velocity vector
+        if np.isnan(obs["dt_p_boat"][0]) or np.isnan(obs["dt_p_boat"][1]) or np.isnan(obs["dt_p_boat"][2]):
+            print("WARNING: VELOCITY IS NAN")
+            boat_linear_velocity_vector = Vector3()
+        else:
+            boat_linear_velocity_vector = Vector3(x=obs["dt_p_boat"][0].item(), y=obs["dt_p_boat"][1].item(), z=obs["dt_p_boat"][2].item())
+            
+        boat_velocity = Twist(linear=boat_linear_velocity_vector)
         
-        # saves the current velocity vector and speed 
-        boat_velocity_vector = Vector3(x=obs["dt_p_boat"][0].item(), y=obs["dt_p_boat"][1].item(), z=obs["dt_p_boat"][2].item())
-        boat_speed = Float32(data=np.sqrt(boat_velocity_vector.x**2 + boat_velocity_vector.y**2 + boat_velocity_vector.z**2))
-
+        
         roll, pitch, yaw = obs["theta_boat"]
         # standard heading calculations from pitch, yaw, and roll
         
@@ -157,16 +169,13 @@ class SimNode(Node):
         true_wind_speed, global_wind_angle = self.cartesian_vector_to_polar(obs["wind"][0].item(), obs["wind"][1].item())
         true_wind_angle = global_wind_angle - heading_angle.data
         self.true_wind_vector = Vector3(x= (true_wind_speed * np.cos(np.deg2rad(true_wind_angle))), y= (true_wind_speed * np.sin(np.deg2rad(true_wind_angle))))
-        self.apparent_wind_vector = Vector3(x= (self.true_wind_vector.x - boat_velocity_vector.x), y= (self.true_wind_vector.y - boat_velocity_vector.y)) 
+        self.apparent_wind_vector = Vector3(x= (self.true_wind_vector.x - boat_linear_velocity_vector.x), y= (self.true_wind_vector.y - boat_linear_velocity_vector.y)) 
         
         self.position_publisher.publish(gps_position)
-        self.velocity_publisher.publish(boat_velocity_vector)
+        self.velocity_publisher.publish(boat_velocity)
         self.heading_publisher.publish(heading_angle)
         self.apparent_wind_vector_publisher.publish(self.apparent_wind_vector)
-        
         print()
-        print(f"true wind angle: {true_wind_angle}")
-        print(f"true wind speed: {true_wind_speed}")
         print(f'current rudder angle: {np.rad2deg(obs["theta_rudder"])[0]}; current sail angle: {np.rad2deg(obs["theta_sail"])[0]}')
 
 
@@ -184,11 +193,25 @@ class SimNode(Node):
 
         sim_time += 1
 
-        if terminated or truncated: rclpy.shutdown()
+        # if terminated or truncated: rclpy.shutdown()
 
         # if self.route == None: self.display_image(self.env.render())
         self.display_image(self.env.render())
 
+        # self.publish_observation_data(
+        #     Observation(
+        #         p_boat=np.zeros(3),
+        #         dt_p_boat=np.zeros(3),
+        #         theta_boat=np.zeros(3),
+        #         dt_theta_boat=np.zeros(3),
+        #         theta_rudder=np.zeros(3),
+        #         dt_theta_rudder=np.zeros(3),
+        #         theta_sail=np.zeros(3),
+        #         dt_theta_sail=np.zeros(3),
+        #         wind=np.zeros(3),
+        #         water=np.zeros(3)
+        #     )
+        # )
         self.publish_observation_data(obs)
 
 
@@ -196,9 +219,13 @@ class SimNode(Node):
 
     def cartesian_vector_to_polar(self, x, y):
         """
-            Converts a cartesian vector (x and y coordinates) to polar form (magnitude and direction).
-            Outputs a tuple of magnitude and direction of the inputted vector
+        Converts a cartesian vector (x and y coordinates) to polar form (magnitude and direction).
+        Outputs a tuple of magnitude and direction of the inputted vector
         """
+        # arctan2 doesn't like when we pass 2 zeros into it so we should cover that case
+        if x == 0. and y == 0.:
+            return 0., 0.
+        
         magnitude = np.sqrt(x**2 + y**2)
         direction = np.arctan2(y, x) # radians
         direction = direction * (180/np.pi)  # angle from -180 to 180 degrees

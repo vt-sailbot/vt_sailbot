@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'wind_sensor_node = wind_sensor.wind_sensor_node:main'
+            'wind_sensor = wind_sensor.wind_sensor_node:main'
         ],
     },
 )

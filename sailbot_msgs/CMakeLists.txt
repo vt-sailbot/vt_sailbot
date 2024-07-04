@@ -12,9 +12,9 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
-  "msgs/RCData.msg"
-  "msgs/WaypointList.msg"
-  "msgs/AutopilotParameters.msg"
+  "msg/RCData.msg"
+  "msg/WaypointList.msg"
+  "msg/ObjectDetectionResults.msg"
   DEPENDENCIES sensor_msgs
 )
 rosidl_generate_interfaces(${PROJECT_NAME}

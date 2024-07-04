@@ -1,0 +1,876 @@
+2024-06-22 00:43:12,095 INFO    StreamThr :4420 [internal.py:wandb_internal():87] W&B internal server running at pid: 4420, started at: 2024-06-22 00:43:12.094723
+2024-06-22 00:43:12,098 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status
+2024-06-22 00:43:12,098 INFO    WriterThread:4420 [datastore.py:open_for_write():85] open: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/run-tlktcbx7.wandb
+2024-06-22 00:43:12,099 DEBUG   SenderThread:4420 [sender.py:send():336] send: header
+2024-06-22 00:43:12,099 DEBUG   SenderThread:4420 [sender.py:send():336] send: run
+2024-06-22 00:43:12,552 INFO    SenderThread:4420 [dir_watcher.py:__init__():219] watching files in: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files
+2024-06-22 00:43:12,552 INFO    SenderThread:4420 [sender.py:_start_run_threads():1078] run started: tlktcbx7 with start time 1719031392.093962
+2024-06-22 00:43:12,552 DEBUG   SenderThread:4420 [sender.py:send_request():363] send_request: summary_record
+2024-06-22 00:43:12,552 INFO    SenderThread:4420 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-06-22 00:43:12,552 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: check_version
+2024-06-22 00:43:12,552 DEBUG   SenderThread:4420 [sender.py:send_request():363] send_request: check_version
+2024-06-22 00:43:12,653 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: run_start
+2024-06-22 00:43:12,667 DEBUG   HandlerThread:4420 [system_info.py:__init__():31] System info init
+2024-06-22 00:43:12,667 DEBUG   HandlerThread:4420 [system_info.py:__init__():46] System info init done
+2024-06-22 00:43:12,667 INFO    HandlerThread:4420 [system_monitor.py:start():183] Starting system monitor
+2024-06-22 00:43:12,667 INFO    SystemMonitor:4420 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2024-06-22 00:43:12,668 INFO    HandlerThread:4420 [system_monitor.py:probe():204] Collecting system info
+2024-06-22 00:43:12,668 INFO    SystemMonitor:4420 [interfaces.py:start():187] Started cpu monitoring
+2024-06-22 00:43:12,669 INFO    SystemMonitor:4420 [interfaces.py:start():187] Started disk monitoring
+2024-06-22 00:43:12,670 INFO    SystemMonitor:4420 [interfaces.py:start():187] Started gpu monitoring
+2024-06-22 00:43:12,671 INFO    SystemMonitor:4420 [interfaces.py:start():187] Started memory monitoring
+2024-06-22 00:43:12,672 INFO    SystemMonitor:4420 [interfaces.py:start():187] Started network monitoring
+2024-06-22 00:43:12,679 DEBUG   HandlerThread:4420 [system_info.py:probe():195] Probing system
+2024-06-22 00:43:12,714 DEBUG   HandlerThread:4420 [system_info.py:_probe_git():180] Probing git
+2024-06-22 00:43:12,717 DEBUG   HandlerThread:4420 [system_info.py:_probe_git():188] Probing git done
+2024-06-22 00:43:12,717 DEBUG   HandlerThread:4420 [system_info.py:probe():240] Probing system done
+2024-06-22 00:43:12,717 DEBUG   HandlerThread:4420 [system_monitor.py:probe():213] {'os': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.10.14', 'heartbeatAt': '2024-06-22T04:43:12.679615', 'startedAt': '2024-06-22T04:43:12.090005', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py', 'codePath': 'object_detection/object_detection/train_buoy_classifier.py', 'git': {'remote': 'https://github.com/vt-sailbot/vt_sailbot', 'commit': 'c12ca3112519a93d67bf730d5da26b109845ac0f'}, 'email': 'chrisjnassif@gmail.com', 'root': '/home/animated/Projects/Sailbot/src', 'host': 'ChrisNassif', 'username': 'animated', 'executable': '/home/animated/miniforge3/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2687.998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}, {'current': 2687.998, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 1006.853931427002, 'used': 88.79307556152344}, 'gpu': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'memory_total': 8585740288}], 'memory': {'total': 7.5745697021484375}}
+2024-06-22 00:43:12,717 INFO    HandlerThread:4420 [system_monitor.py:probe():214] Finished collecting system info
+2024-06-22 00:43:12,717 INFO    HandlerThread:4420 [system_monitor.py:probe():217] Publishing system info
+2024-06-22 00:43:12,717 DEBUG   HandlerThread:4420 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-06-22 00:43:12,717 DEBUG   HandlerThread:4420 [system_info.py:_save_pip():67] Saving pip packages done
+2024-06-22 00:43:12,717 DEBUG   HandlerThread:4420 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-06-22 00:43:13,552 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_created():278] file/dir created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/conda-environment.yaml
+2024-06-22 00:43:13,553 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_created():278] file/dir created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/requirements.txt
+2024-06-22 00:43:13,553 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_created():278] file/dir created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/wandb-summary.json
+2024-06-22 00:43:19,499 DEBUG   HandlerThread:4420 [system_info.py:_save_conda():86] Saving conda packages done
+2024-06-22 00:43:19,499 INFO    HandlerThread:4420 [system_monitor.py:probe():219] Finished publishing system info
+2024-06-22 00:43:19,501 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:43:19,501 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:43:19,502 DEBUG   SenderThread:4420 [sender.py:send():336] send: files
+2024-06-22 00:43:19,502 INFO    SenderThread:4420 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2024-06-22 00:43:19,504 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-22 00:43:19,504 DEBUG   SenderThread:4420 [sender.py:send_request():363] send_request: stop_status
+2024-06-22 00:43:19,554 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/conda-environment.yaml
+2024-06-22 00:43:19,554 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_created():278] file/dir created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/wandb-metadata.json
+2024-06-22 00:43:19,963 DEBUG   SenderThread:4420 [sender.py:send():336] send: telemetry
+2024-06-22 00:43:20,403 INFO    wandb-upload_0:4420 [upload_job.py:push():138] Uploaded file /tmp/tmpu2rvc4q5wandb/cncbt4hq-wandb-metadata.json
+2024-06-22 00:43:20,555 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_created():278] file/dir created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:21,337 DEBUG   SenderThread:4420 [sender.py:send():336] send: telemetry
+2024-06-22 00:43:21,460 DEBUG   SenderThread:4420 [sender.py:send():336] send: telemetry
+2024-06-22 00:43:21,501 DEBUG   SenderThread:4420 [sender.py:send():336] send: telemetry
+2024-06-22 00:43:22,556 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:22,714 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:43:23,558 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:24,557 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:28,559 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:28,586 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:43:33,588 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:43:35,729 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:43:35,732 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:43:38,562 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:38,889 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:43:39,562 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:40,766 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:43:41,584 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:43,563 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:44,354 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:43:45,564 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:45,564 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/config.yaml
+2024-06-22 00:43:46,128 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:43:47,564 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:49,565 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:49,923 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:43:51,211 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:43:51,566 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:53,566 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:55,484 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:43:55,567 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:57,249 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:43:57,568 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:43:59,568 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:00,896 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:01,569 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:03,226 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:44:03,571 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:05,572 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:06,251 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:07,573 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:09,232 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:44:09,575 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:11,574 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:11,721 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:12,675 DEBUG   SystemMonitor:4420 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2024-06-22 00:44:12,693 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:44:13,575 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:14,716 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:44:15,575 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:17,140 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:17,576 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:19,576 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:20,724 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:44:21,578 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:22,617 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:23,580 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:25,579 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:26,161 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:44:27,580 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:27,935 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:29,584 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:31,525 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:44:31,586 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:33,430 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:33,596 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:35,605 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:36,572 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:44:37,611 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:38,760 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:41,828 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:44:41,950 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:45,110 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:45,842 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:44:46,786 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:44:49,011 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:50,243 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:51,015 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:51,805 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:44:53,416 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:44:56,137 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:44:57,289 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:01,377 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:01,969 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:04,457 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:06,461 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:07,160 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:07,243 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:08,470 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:10,483 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:12,319 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:12,528 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:15,841 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:45:17,289 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:17,312 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:18,211 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:19,466 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:22,058 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:22,663 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:23,823 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:27,758 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:28,502 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:29,737 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:32,866 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:34,575 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:37,738 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:38,330 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:40,118 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:42,687 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:46,058 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:47,119 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:48,190 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:48,192 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:45:51,727 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:52,203 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:52,855 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:52,855 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:45:54,203 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:56,204 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:56,993 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:45:58,205 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:45:58,750 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:00,205 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:02,206 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:02,302 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:04,206 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:04,623 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:06,207 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:07,569 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:08,207 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:10,208 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:10,334 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:10,334 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:12,208 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:12,959 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:14,209 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:15,347 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:16,209 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:18,196 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:46:18,196 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:18,210 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:20,211 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:20,565 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:22,211 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:23,351 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:24,212 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:26,212 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:26,324 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:28,213 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:28,807 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:30,214 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:31,326 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:32,214 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:34,215 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:34,257 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:36,216 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:36,420 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:38,216 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:39,694 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:40,220 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:41,620 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:42,223 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:44,229 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:44,720 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:46,231 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:46,719 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:48,204 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:46:48,234 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:50,238 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:50,400 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:51,727 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:52,242 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:54,246 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:55,629 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:46:56,250 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:46:56,733 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:46:58,252 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:00,256 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:01,131 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:01,825 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:02,629 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:06,455 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:06,883 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:09,866 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:11,876 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:12,167 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:12,212 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:13,881 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:15,891 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:17,184 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:17,219 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:17,902 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:18,207 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:47:19,913 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:22,354 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:22,589 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:23,899 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:27,402 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:28,142 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:29,129 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:32,610 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:33,320 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:37,835 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:39,261 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:39,855 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:42,603 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:45,285 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:46,082 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:48,221 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:49,374 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:47:51,380 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:52,798 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:47:54,336 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:47:56,928 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:47:58,066 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:02,826 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:03,226 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:04,224 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:07,900 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:08,032 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:11,694 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:12,965 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:13,056 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:13,929 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:15,928 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:18,139 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:18,910 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:19,378 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:48:22,370 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:23,055 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:24,069 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:24,374 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:26,383 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:28,059 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:28,394 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:29,909 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:30,399 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:32,406 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:33,061 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:34,413 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:35,704 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:36,419 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:38,084 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:38,423 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:40,575 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:41,943 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:43,123 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:44,109 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:47,517 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:48,379 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:49,381 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:48:49,498 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:51,500 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:52,648 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:53,234 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:53,501 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:55,501 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:57,502 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:48:57,985 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:48:58,235 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:48:59,504 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:01,507 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:03,382 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:03,505 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:03,543 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:05,506 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:07,507 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:08,384 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:08,802 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:09,507 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:11,508 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:13,385 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:13,509 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:14,122 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:15,509 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:17,510 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:18,488 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:19,383 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:49:19,384 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:19,510 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:21,511 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:23,512 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:23,549 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:24,756 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:25,512 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:27,513 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:28,550 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:29,514 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:30,098 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:31,514 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:33,515 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:33,686 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:35,453 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:35,516 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:37,517 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:38,800 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:39,518 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:40,792 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:41,518 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:43,520 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:43,801 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:45,521 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:46,137 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:47,521 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:48,951 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:49,383 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:49:49,522 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:51,481 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:51,523 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:53,524 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:54,053 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:54,053 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:55,524 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:56,761 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:49:57,525 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:49:59,176 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:49:59,526 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:01,526 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:02,203 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:03,527 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:04,178 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:05,527 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:07,528 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:07,616 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:09,208 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:09,208 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:09,529 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:11,529 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:13,030 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:13,530 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:14,209 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:15,531 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:17,532 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:18,563 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:19,309 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:19,386 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:50:19,532 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:21,533 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:23,533 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:24,063 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:24,309 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:25,534 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:27,534 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:29,498 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:29,522 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:29,535 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:31,536 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:33,537 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:34,727 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:35,008 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:35,537 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:37,538 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:39,539 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:39,729 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:40,462 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:41,539 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:43,540 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:44,911 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:45,541 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:46,015 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:47,542 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:49,384 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:50:49,542 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:49,912 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:51,522 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:51,543 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:53,544 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:55,159 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:50:55,544 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:57,108 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:50:57,545 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:50:59,546 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:00,160 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:01,547 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:02,634 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:03,551 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:05,212 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:05,552 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:07,552 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:08,058 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:09,553 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:10,213 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:11,554 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:13,555 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:13,587 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:15,344 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:15,555 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:17,556 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:18,609 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:19,385 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:51:19,557 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:20,345 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:21,557 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:23,558 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:23,625 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:25,558 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:25,569 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:27,559 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:29,230 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:29,559 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:30,570 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:31,560 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:33,561 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:34,808 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:35,561 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:35,765 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:37,562 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:39,563 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:39,822 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:40,766 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:41,563 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:43,564 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:45,407 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:45,565 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:45,767 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:47,566 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:49,385 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:51:49,567 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:50,850 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:50,922 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:51,567 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:53,568 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:55,569 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:55,851 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:51:56,409 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:51:57,569 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:51:59,570 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:01,003 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:01,571 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:01,915 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:52:03,571 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:05,572 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:06,195 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:06,195 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:07,432 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:52:07,573 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:09,574 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:11,197 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:11,574 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:12,973 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:52:13,575 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:15,576 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:16,414 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:17,576 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:18,507 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:52:19,386 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:52:19,577 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:21,415 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:21,578 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:23,579 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:24,030 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:52:25,579 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:26,487 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:27,580 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:29,555 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:52:29,580 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:31,488 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:31,581 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:33,582 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:35,061 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:52:35,582 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:36,677 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:37,584 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:39,584 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:40,550 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:52:41,585 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:41,676 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:43,585 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:45,586 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:46,016 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:52:46,784 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:52:47,587 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:49,386 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:52:49,587 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:49,613 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-22 00:52:49,614 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-22 00:52:51,590 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:52:51,623 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:52:55,964 ERROR   gpu       :4420 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2024-06-22 00:52:56,625 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:01,627 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:06,629 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:11,630 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:16,631 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:17,543 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:53:17,551 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:53:19,409 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:53:19,601 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:53:22,412 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:27,413 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:32,414 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:37,416 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:40,084 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:53:40,097 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:53:41,609 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:53:43,358 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:48,360 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:49,412 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:53:53,413 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:53:58,414 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:02,787 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:54:02,797 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:54:04,044 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:05,618 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:54:09,045 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:14,046 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:19,050 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:19,415 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:54:24,416 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:25,619 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:54:25,628 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:54:27,626 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:54:29,887 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:34,889 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:39,890 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:44,891 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:48,411 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:54:49,420 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:54:49,633 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:54:50,421 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:54:55,422 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:00,425 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:05,424 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:10,426 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:11,575 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:55:11,595 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:55:13,644 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:55:16,037 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:19,422 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:55:21,423 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:26,424 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:31,424 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:35,349 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:55:36,630 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:37,653 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:55:41,617 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:46,619 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:49,425 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:55:52,426 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:57,427 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:55:58,141 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:55:59,664 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:56:03,375 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:56:08,376 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:56:13,377 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:56:18,378 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:56:19,427 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:56:20,813 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:56:20,818 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:56:23,673 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:56:24,047 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:56:29,048 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:56:34,049 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:56:39,050 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:56:43,418 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:56:44,653 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:56:45,681 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:56:49,430 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:56:50,431 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:56:55,432 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:00,433 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:05,434 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:06,046 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:57:07,690 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:57:11,283 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:16,284 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:19,433 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:57:21,434 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:26,435 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:28,642 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:57:29,698 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:57:31,868 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:36,870 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:41,873 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:46,872 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:49,436 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:57:51,233 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:57:51,242 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:57:52,420 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:57:53,716 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:57:57,421 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:02,422 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:07,424 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:12,425 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:13,744 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:58:15,726 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:58:17,978 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:19,438 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:58:23,439 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:28,440 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:33,441 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:36,233 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:58:36,234 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:58:39,096 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:39,984 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:58:44,377 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:49,378 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:49,442 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:58:54,443 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:58:59,201 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:59:00,382 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:59:00,486 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:05,505 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:10,506 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:15,507 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:19,446 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:59:21,446 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:22,010 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:59:22,018 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:59:25,415 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:59:27,200 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:32,200 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:37,201 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:42,202 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:45,033 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:59:45,040 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 00:59:47,249 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:47,379 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 00:59:49,448 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 00:59:52,449 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 00:59:57,450 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:02,451 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:07,452 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:07,505 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:00:07,512 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:00:10,268 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:00:12,882 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:17,883 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:19,453 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:00:23,454 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:28,455 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:30,409 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:00:31,577 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:00:33,692 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:38,693 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:43,694 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:48,695 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:49,455 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:00:52,823 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:00:52,824 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:00:53,584 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:00:54,027 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:00:59,027 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:04,028 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:09,029 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:14,030 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:14,464 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:01:14,471 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:01:15,593 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:01:19,471 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:01:19,472 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:24,472 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:29,473 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:34,475 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:36,175 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:01:36,184 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:01:37,602 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:01:40,407 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:45,410 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:49,474 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:01:50,475 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:55,476 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:01:57,830 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:01:57,831 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:01:59,610 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:02:01,066 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:06,065 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:11,066 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:16,067 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:19,455 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:02:19,475 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:02:21,619 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:02:21,702 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:26,704 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:31,705 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:36,705 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:41,098 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:02:41,106 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:02:42,323 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:44,626 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:02:47,324 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:49,479 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:02:52,480 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:02:57,481 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:02,482 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:02,691 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:03:02,698 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:03:04,635 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:03:07,920 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:12,921 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:17,922 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:19,482 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:03:23,483 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:24,302 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:03:26,644 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:03:28,541 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:33,542 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:38,543 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:43,544 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:45,919 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:03:45,930 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:03:48,652 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:03:49,139 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:49,486 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:03:54,488 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:03:59,489 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:04,490 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:07,540 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:04:09,655 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:10,660 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:04:14,656 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:19,490 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:04:20,491 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:25,492 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:29,009 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:04:29,009 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:04:30,668 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:04:31,129 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:36,131 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:41,131 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:46,133 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:49,492 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:04:50,486 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:04:51,596 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:04:52,675 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:04:56,596 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:01,597 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:06,598 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:11,600 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:12,023 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:05:12,024 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:05:14,679 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:05:17,170 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:19,494 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:05:22,495 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:27,496 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:32,497 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:33,551 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:05:36,688 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:05:37,684 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:42,685 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:47,686 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:49,497 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:05:53,498 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:05:55,063 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:05:56,697 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:05:59,205 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:04,206 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:09,207 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:14,209 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:16,673 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:06:18,706 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:06:19,500 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:06:19,503 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:24,501 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:29,502 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:34,504 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:38,265 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:06:38,266 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:06:40,378 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:40,714 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:06:45,379 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:49,502 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:06:50,503 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:06:55,507 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:00,015 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:07:01,126 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:02,723 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:07:06,127 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:11,130 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:16,129 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:19,505 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:07:21,506 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:21,756 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:07:24,731 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:07:26,888 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:31,890 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:36,891 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:41,893 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:43,368 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:07:44,738 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:07:47,496 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:49,507 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:07:52,508 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:07:57,508 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:02,510 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:05,036 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:08:06,748 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:08:08,149 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:13,150 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:18,151 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:19,507 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:08:23,508 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:26,584 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:08:26,585 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:08:28,732 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:28,758 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:08:33,734 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:38,735 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:43,736 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:48,563 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:08:48,565 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:08:48,737 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:49,513 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:08:50,766 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:08:54,515 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:08:59,516 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:04,517 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:09,518 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:10,144 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:09:12,772 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:09:15,298 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:19,515 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:09:20,515 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:25,517 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:30,518 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:31,977 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:09:34,783 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:09:36,111 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:41,112 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:46,113 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:49,517 DEBUG   SenderThread:4420 [sender.py:send():336] send: stats
+2024-06-22 01:09:51,518 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: status_report
+2024-06-22 01:09:53,490 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:09:53,490 DEBUG   HandlerThread:4420 [handler.py:handle_request():144] handle_request: keepalive
+2024-06-22 01:09:54,660 ERROR   memory    :4420 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=4358)
+2024-06-22 01:09:54,660 ERROR   memory    :4420 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=4358)
+2024-06-22 01:09:54,790 INFO    Thread-12 :4420 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_004312-tlktcbx7/files/output.log
+2024-06-22 01:09:55,783 INFO    MainThread:4420 [internal.py:handle_exit():77] Internal process exited

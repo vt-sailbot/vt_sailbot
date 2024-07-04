@@ -1,0 +1,815 @@
+Freezing layer 'model.0.conv.weight'
+Freezing layer 'model.0.bn.weight'
+Freezing layer 'model.0.bn.bias'
+Freezing layer 'model.1.conv.weight'
+Freezing layer 'model.1.bn.weight'
+Freezing layer 'model.1.bn.bias'
+Freezing layer 'model.2.cv1.conv.weight'
+Freezing layer 'model.2.cv1.bn.weight'
+Freezing layer 'model.2.cv1.bn.bias'
+Freezing layer 'model.2.cv2.conv.weight'
+Freezing layer 'model.2.cv2.bn.weight'
+Freezing layer 'model.2.cv2.bn.bias'
+Freezing layer 'model.2.m.0.cv1.conv.weight'
+Freezing layer 'model.2.m.0.cv1.bn.weight'
+Freezing layer 'model.2.m.0.cv1.bn.bias'
+Freezing layer 'model.2.m.0.cv2.conv.weight'
+Freezing layer 'model.2.m.0.cv2.bn.weight'
+Freezing layer 'model.2.m.0.cv2.bn.bias'
+Freezing layer 'model.2.m.1.cv1.conv.weight'
+Freezing layer 'model.2.m.1.cv1.bn.weight'
+Freezing layer 'model.2.m.1.cv1.bn.bias'
+Freezing layer 'model.2.m.1.cv2.conv.weight'
+Freezing layer 'model.2.m.1.cv2.bn.weight'
+Freezing layer 'model.2.m.1.cv2.bn.bias'
+Freezing layer 'model.2.m.2.cv1.conv.weight'
+Freezing layer 'model.2.m.2.cv1.bn.weight'
+Freezing layer 'model.2.m.2.cv1.bn.bias'
+Freezing layer 'model.2.m.2.cv2.conv.weight'
+Freezing layer 'model.2.m.2.cv2.bn.weight'
+Freezing layer 'model.2.m.2.cv2.bn.bias'
+Freezing layer 'model.3.conv.weight'
+Freezing layer 'model.3.bn.weight'
+Freezing layer 'model.3.bn.bias'
+Freezing layer 'model.4.cv1.conv.weight'
+Freezing layer 'model.4.cv1.bn.weight'
+Freezing layer 'model.4.cv1.bn.bias'
+Freezing layer 'model.4.cv2.conv.weight'
+Freezing layer 'model.4.cv2.bn.weight'
+Freezing layer 'model.4.cv2.bn.bias'
+Freezing layer 'model.4.m.0.cv1.conv.weight'
+Freezing layer 'model.4.m.0.cv1.bn.weight'
+Freezing layer 'model.4.m.0.cv1.bn.bias'
+Freezing layer 'model.4.m.0.cv2.conv.weight'
+Freezing layer 'model.4.m.0.cv2.bn.weight'
+Freezing layer 'model.4.m.0.cv2.bn.bias'
+Freezing layer 'model.4.m.1.cv1.conv.weight'
+Freezing layer 'model.4.m.1.cv1.bn.weight'
+Freezing layer 'model.4.m.1.cv1.bn.bias'
+Freezing layer 'model.4.m.1.cv2.conv.weight'
+Freezing layer 'model.4.m.1.cv2.bn.weight'
+Freezing layer 'model.4.m.1.cv2.bn.bias'
+Freezing layer 'model.4.m.2.cv1.conv.weight'
+Freezing layer 'model.4.m.2.cv1.bn.weight'
+Freezing layer 'model.4.m.2.cv1.bn.bias'
+Freezing layer 'model.4.m.2.cv2.conv.weight'
+Freezing layer 'model.4.m.2.cv2.bn.weight'
+Freezing layer 'model.4.m.2.cv2.bn.bias'
+Freezing layer 'model.4.m.3.cv1.conv.weight'
+Freezing layer 'model.4.m.3.cv1.bn.weight'
+Freezing layer 'model.4.m.3.cv1.bn.bias'
+Freezing layer 'model.4.m.3.cv2.conv.weight'
+Freezing layer 'model.4.m.3.cv2.bn.weight'
+Freezing layer 'model.4.m.3.cv2.bn.bias'
+Freezing layer 'model.4.m.4.cv1.conv.weight'
+Freezing layer 'model.4.m.4.cv1.bn.weight'
+Freezing layer 'model.4.m.4.cv1.bn.bias'
+Freezing layer 'model.4.m.4.cv2.conv.weight'
+Freezing layer 'model.4.m.4.cv2.bn.weight'
+Freezing layer 'model.4.m.4.cv2.bn.bias'
+Freezing layer 'model.4.m.5.cv1.conv.weight'
+Freezing layer 'model.4.m.5.cv1.bn.weight'
+Freezing layer 'model.4.m.5.cv1.bn.bias'
+Freezing layer 'model.4.m.5.cv2.conv.weight'
+Freezing layer 'model.4.m.5.cv2.bn.weight'
+Freezing layer 'model.4.m.5.cv2.bn.bias'
+Freezing layer 'model.5.cv1.conv.weight'
+Freezing layer 'model.5.cv1.bn.weight'
+Freezing layer 'model.5.cv1.bn.bias'
+Freezing layer 'model.5.cv2.conv.weight'
+Freezing layer 'model.5.cv2.bn.weight'
+Freezing layer 'model.5.cv2.bn.bias'
+Freezing layer 'model.6.cv1.conv.weight'
+Freezing layer 'model.6.cv1.bn.weight'
+Freezing layer 'model.6.cv1.bn.bias'
+Freezing layer 'model.6.cv2.conv.weight'
+Freezing layer 'model.6.cv2.bn.weight'
+Freezing layer 'model.6.cv2.bn.bias'
+Freezing layer 'model.6.m.0.cv1.0.conv.weight'
+Freezing layer 'model.6.m.0.cv1.0.bn.weight'
+Freezing layer 'model.6.m.0.cv1.0.bn.bias'
+Freezing layer 'model.6.m.0.cv1.1.conv.weight'
+Freezing layer 'model.6.m.0.cv1.1.bn.weight'
+Freezing layer 'model.6.m.0.cv1.1.bn.bias'
+Freezing layer 'model.6.m.0.cv1.2.conv.weight'
+Freezing layer 'model.6.m.0.cv1.2.bn.weight'
+Freezing layer 'model.6.m.0.cv1.2.bn.bias'
+Freezing layer 'model.6.m.0.cv1.3.conv.weight'
+Freezing layer 'model.6.m.0.cv1.3.bn.weight'
+Freezing layer 'model.6.m.0.cv1.3.bn.bias'
+Freezing layer 'model.6.m.0.cv1.4.conv.weight'
+Freezing layer 'model.6.m.0.cv1.4.bn.weight'
+Freezing layer 'model.6.m.0.cv1.4.bn.bias'
+Freezing layer 'model.6.m.1.cv1.0.conv.weight'
+Freezing layer 'model.6.m.1.cv1.0.bn.weight'
+Freezing layer 'model.6.m.1.cv1.0.bn.bias'
+Freezing layer 'model.6.m.1.cv1.1.conv.weight'
+Freezing layer 'model.6.m.1.cv1.1.bn.weight'
+Freezing layer 'model.6.m.1.cv1.1.bn.bias'
+Freezing layer 'model.6.m.1.cv1.2.conv.weight'
+Freezing layer 'model.6.m.1.cv1.2.bn.weight'
+Freezing layer 'model.6.m.1.cv1.2.bn.bias'
+Freezing layer 'model.6.m.1.cv1.3.conv.weight'
+Freezing layer 'model.6.m.1.cv1.3.bn.weight'
+Freezing layer 'model.6.m.1.cv1.3.bn.bias'
+Freezing layer 'model.6.m.1.cv1.4.conv.weight'
+Freezing layer 'model.6.m.1.cv1.4.bn.weight'
+Freezing layer 'model.6.m.1.cv1.4.bn.bias'
+Freezing layer 'model.6.m.2.cv1.0.conv.weight'
+Freezing layer 'model.6.m.2.cv1.0.bn.weight'
+Freezing layer 'model.6.m.2.cv1.0.bn.bias'
+Freezing layer 'model.6.m.2.cv1.1.conv.weight'
+Freezing layer 'model.6.m.2.cv1.1.bn.weight'
+Freezing layer 'model.6.m.2.cv1.1.bn.bias'
+Freezing layer 'model.6.m.2.cv1.2.conv.weight'
+Freezing layer 'model.6.m.2.cv1.2.bn.weight'
+Freezing layer 'model.6.m.2.cv1.2.bn.bias'
+Freezing layer 'model.6.m.2.cv1.3.conv.weight'
+Freezing layer 'model.6.m.2.cv1.3.bn.weight'
+Freezing layer 'model.6.m.2.cv1.3.bn.bias'
+Freezing layer 'model.6.m.2.cv1.4.conv.weight'
+Freezing layer 'model.6.m.2.cv1.4.bn.weight'
+Freezing layer 'model.6.m.2.cv1.4.bn.bias'
+Freezing layer 'model.6.m.3.cv1.0.conv.weight'
+Freezing layer 'model.6.m.3.cv1.0.bn.weight'
+Freezing layer 'model.6.m.3.cv1.0.bn.bias'
+Freezing layer 'model.6.m.3.cv1.1.conv.weight'
+Freezing layer 'model.6.m.3.cv1.1.bn.weight'
+Freezing layer 'model.6.m.3.cv1.1.bn.bias'
+Freezing layer 'model.6.m.3.cv1.2.conv.weight'
+Freezing layer 'model.6.m.3.cv1.2.bn.weight'
+Freezing layer 'model.6.m.3.cv1.2.bn.bias'
+Freezing layer 'model.6.m.3.cv1.3.conv.weight'
+Freezing layer 'model.6.m.3.cv1.3.bn.weight'
+Freezing layer 'model.6.m.3.cv1.3.bn.bias'
+Freezing layer 'model.6.m.3.cv1.4.conv.weight'
+Freezing layer 'model.6.m.3.cv1.4.bn.weight'
+Freezing layer 'model.6.m.3.cv1.4.bn.bias'
+Freezing layer 'model.6.m.4.cv1.0.conv.weight'
+Freezing layer 'model.6.m.4.cv1.0.bn.weight'
+Freezing layer 'model.6.m.4.cv1.0.bn.bias'
+Freezing layer 'model.6.m.4.cv1.1.conv.weight'
+Freezing layer 'model.6.m.4.cv1.1.bn.weight'
+Freezing layer 'model.6.m.4.cv1.1.bn.bias'
+Freezing layer 'model.6.m.4.cv1.2.conv.weight'
+Freezing layer 'model.6.m.4.cv1.2.bn.weight'
+Freezing layer 'model.6.m.4.cv1.2.bn.bias'
+Freezing layer 'model.6.m.4.cv1.3.conv.weight'
+Freezing layer 'model.6.m.4.cv1.3.bn.weight'
+Freezing layer 'model.6.m.4.cv1.3.bn.bias'
+Freezing layer 'model.6.m.4.cv1.4.conv.weight'
+Freezing layer 'model.6.m.4.cv1.4.bn.weight'
+Freezing layer 'model.6.m.4.cv1.4.bn.bias'
+Freezing layer 'model.6.m.5.cv1.0.conv.weight'
+Freezing layer 'model.6.m.5.cv1.0.bn.weight'
+Freezing layer 'model.6.m.5.cv1.0.bn.bias'
+Freezing layer 'model.6.m.5.cv1.1.conv.weight'
+Freezing layer 'model.6.m.5.cv1.1.bn.weight'
+Freezing layer 'model.6.m.5.cv1.1.bn.bias'
+Freezing layer 'model.6.m.5.cv1.2.conv.weight'
+Freezing layer 'model.6.m.5.cv1.2.bn.weight'
+Freezing layer 'model.6.m.5.cv1.2.bn.bias'
+Freezing layer 'model.6.m.5.cv1.3.conv.weight'
+Freezing layer 'model.6.m.5.cv1.3.bn.weight'
+Freezing layer 'model.6.m.5.cv1.3.bn.bias'
+Freezing layer 'model.6.m.5.cv1.4.conv.weight'
+Freezing layer 'model.6.m.5.cv1.4.bn.weight'
+Freezing layer 'model.6.m.5.cv1.4.bn.bias'
+Freezing layer 'model.7.cv1.conv.weight'
+Freezing layer 'model.7.cv1.bn.weight'
+Freezing layer 'model.7.cv1.bn.bias'
+Freezing layer 'model.7.cv2.conv.weight'
+Freezing layer 'model.7.cv2.bn.weight'
+Freezing layer 'model.7.cv2.bn.bias'
+Freezing layer 'model.8.cv1.conv.weight'
+Freezing layer 'model.8.cv1.bn.weight'
+Freezing layer 'model.8.cv1.bn.bias'
+Freezing layer 'model.8.cv2.conv.weight'
+Freezing layer 'model.8.cv2.bn.weight'
+Freezing layer 'model.8.cv2.bn.bias'
+Freezing layer 'model.8.m.0.cv1.0.conv.weight'
+Freezing layer 'model.8.m.0.cv1.0.bn.weight'
+Freezing layer 'model.8.m.0.cv1.0.bn.bias'
+Freezing layer 'model.8.m.0.cv1.1.conv.weight'
+Freezing layer 'model.8.m.0.cv1.1.bn.weight'
+Freezing layer 'model.8.m.0.cv1.1.bn.bias'
+Freezing layer 'model.8.m.0.cv1.2.conv.weight'
+Freezing layer 'model.8.m.0.cv1.2.bn.weight'
+Freezing layer 'model.8.m.0.cv1.2.bn.bias'
+Freezing layer 'model.8.m.0.cv1.3.conv.weight'
+Freezing layer 'model.8.m.0.cv1.3.bn.weight'
+Freezing layer 'model.8.m.0.cv1.3.bn.bias'
+Freezing layer 'model.8.m.0.cv1.4.conv.weight'
+Freezing layer 'model.8.m.0.cv1.4.bn.weight'
+Freezing layer 'model.8.m.0.cv1.4.bn.bias'
+Freezing layer 'model.8.m.1.cv1.0.conv.weight'
+Freezing layer 'model.8.m.1.cv1.0.bn.weight'
+Freezing layer 'model.8.m.1.cv1.0.bn.bias'
+Freezing layer 'model.8.m.1.cv1.1.conv.weight'
+Freezing layer 'model.8.m.1.cv1.1.bn.weight'
+Freezing layer 'model.8.m.1.cv1.1.bn.bias'
+Freezing layer 'model.8.m.1.cv1.2.conv.weight'
+Freezing layer 'model.8.m.1.cv1.2.bn.weight'
+Freezing layer 'model.8.m.1.cv1.2.bn.bias'
+Freezing layer 'model.8.m.1.cv1.3.conv.weight'
+Freezing layer 'model.8.m.1.cv1.3.bn.weight'
+Freezing layer 'model.8.m.1.cv1.3.bn.bias'
+Freezing layer 'model.8.m.1.cv1.4.conv.weight'
+Freezing layer 'model.8.m.1.cv1.4.bn.weight'
+Freezing layer 'model.8.m.1.cv1.4.bn.bias'
+Freezing layer 'model.8.m.2.cv1.0.conv.weight'
+Freezing layer 'model.8.m.2.cv1.0.bn.weight'
+Freezing layer 'model.8.m.2.cv1.0.bn.bias'
+Freezing layer 'model.8.m.2.cv1.1.conv.weight'
+Freezing layer 'model.8.m.2.cv1.1.bn.weight'
+Freezing layer 'model.8.m.2.cv1.1.bn.bias'
+Freezing layer 'model.8.m.2.cv1.2.conv.weight'
+Freezing layer 'model.8.m.2.cv1.2.bn.weight'
+Freezing layer 'model.8.m.2.cv1.2.bn.bias'
+Freezing layer 'model.8.m.2.cv1.3.conv.weight'
+Freezing layer 'model.8.m.2.cv1.3.bn.weight'
+Freezing layer 'model.8.m.2.cv1.3.bn.bias'
+Freezing layer 'model.8.m.2.cv1.4.conv.weight'
+Freezing layer 'model.8.m.2.cv1.4.bn.weight'
+Freezing layer 'model.8.m.2.cv1.4.bn.bias'
+Freezing layer 'model.9.cv1.conv.weight'
+Freezing layer 'model.9.cv1.bn.weight'
+Freezing layer 'model.9.cv1.bn.bias'
+Freezing layer 'model.9.cv2.conv.weight'
+Freezing layer 'model.9.cv2.bn.weight'
+Freezing layer 'model.9.cv2.bn.bias'
+Freezing layer 'model.10.cv1.conv.weight'
+Freezing layer 'model.10.cv1.bn.weight'
+Freezing layer 'model.10.cv1.bn.bias'
+Freezing layer 'model.10.cv2.conv.weight'
+Freezing layer 'model.10.cv2.bn.weight'
+Freezing layer 'model.10.cv2.bn.bias'
+Freezing layer 'model.10.attn.qkv.conv.weight'
+Freezing layer 'model.10.attn.qkv.bn.weight'
+Freezing layer 'model.10.attn.qkv.bn.bias'
+Freezing layer 'model.10.attn.proj.conv.weight'
+Freezing layer 'model.10.attn.proj.bn.weight'
+Freezing layer 'model.10.attn.proj.bn.bias'
+Freezing layer 'model.10.attn.pe.conv.weight'
+Freezing layer 'model.10.attn.pe.bn.weight'
+Freezing layer 'model.10.attn.pe.bn.bias'
+Freezing layer 'model.10.ffn.0.conv.weight'
+Freezing layer 'model.10.ffn.0.bn.weight'
+Freezing layer 'model.10.ffn.0.bn.bias'
+Freezing layer 'model.10.ffn.1.conv.weight'
+Freezing layer 'model.10.ffn.1.bn.weight'
+Freezing layer 'model.10.ffn.1.bn.bias'
+Freezing layer 'model.13.cv1.conv.weight'
+Freezing layer 'model.13.cv1.bn.weight'
+Freezing layer 'model.13.cv1.bn.bias'
+Freezing layer 'model.13.cv2.conv.weight'
+Freezing layer 'model.13.cv2.bn.weight'
+Freezing layer 'model.13.cv2.bn.bias'
+Freezing layer 'model.13.m.0.cv1.0.conv.weight'
+Freezing layer 'model.13.m.0.cv1.0.bn.weight'
+Freezing layer 'model.13.m.0.cv1.0.bn.bias'
+Freezing layer 'model.13.m.0.cv1.1.conv.weight'
+Freezing layer 'model.13.m.0.cv1.1.bn.weight'
+Freezing layer 'model.13.m.0.cv1.1.bn.bias'
+Freezing layer 'model.13.m.0.cv1.2.conv.weight'
+Freezing layer 'model.13.m.0.cv1.2.bn.weight'
+Freezing layer 'model.13.m.0.cv1.2.bn.bias'
+Freezing layer 'model.13.m.0.cv1.3.conv.weight'
+Freezing layer 'model.13.m.0.cv1.3.bn.weight'
+Freezing layer 'model.13.m.0.cv1.3.bn.bias'
+Freezing layer 'model.13.m.0.cv1.4.conv.weight'
+Freezing layer 'model.13.m.0.cv1.4.bn.weight'
+Freezing layer 'model.13.m.0.cv1.4.bn.bias'
+Freezing layer 'model.13.m.1.cv1.0.conv.weight'
+Freezing layer 'model.13.m.1.cv1.0.bn.weight'
+Freezing layer 'model.13.m.1.cv1.0.bn.bias'
+Freezing layer 'model.13.m.1.cv1.1.conv.weight'
+Freezing layer 'model.13.m.1.cv1.1.bn.weight'
+Freezing layer 'model.13.m.1.cv1.1.bn.bias'
+Freezing layer 'model.13.m.1.cv1.2.conv.weight'
+Freezing layer 'model.13.m.1.cv1.2.bn.weight'
+Freezing layer 'model.13.m.1.cv1.2.bn.bias'
+Freezing layer 'model.13.m.1.cv1.3.conv.weight'
+Freezing layer 'model.13.m.1.cv1.3.bn.weight'
+Freezing layer 'model.13.m.1.cv1.3.bn.bias'
+Freezing layer 'model.13.m.1.cv1.4.conv.weight'
+Freezing layer 'model.13.m.1.cv1.4.bn.weight'
+Freezing layer 'model.13.m.1.cv1.4.bn.bias'
+Freezing layer 'model.13.m.2.cv1.0.conv.weight'
+Freezing layer 'model.13.m.2.cv1.0.bn.weight'
+Freezing layer 'model.13.m.2.cv1.0.bn.bias'
+Freezing layer 'model.13.m.2.cv1.1.conv.weight'
+Freezing layer 'model.13.m.2.cv1.1.bn.weight'
+Freezing layer 'model.13.m.2.cv1.1.bn.bias'
+Freezing layer 'model.13.m.2.cv1.2.conv.weight'
+Freezing layer 'model.13.m.2.cv1.2.bn.weight'
+Freezing layer 'model.13.m.2.cv1.2.bn.bias'
+Freezing layer 'model.13.m.2.cv1.3.conv.weight'
+Freezing layer 'model.13.m.2.cv1.3.bn.weight'
+Freezing layer 'model.13.m.2.cv1.3.bn.bias'
+Freezing layer 'model.13.m.2.cv1.4.conv.weight'
+Freezing layer 'model.13.m.2.cv1.4.bn.weight'
+Freezing layer 'model.13.m.2.cv1.4.bn.bias'
+Freezing layer 'model.16.cv1.conv.weight'
+Freezing layer 'model.16.cv1.bn.weight'
+Freezing layer 'model.16.cv1.bn.bias'
+Freezing layer 'model.16.cv2.conv.weight'
+Freezing layer 'model.16.cv2.bn.weight'
+Freezing layer 'model.16.cv2.bn.bias'
+Freezing layer 'model.16.m.0.cv1.conv.weight'
+Freezing layer 'model.16.m.0.cv1.bn.weight'
+Freezing layer 'model.16.m.0.cv1.bn.bias'
+Freezing layer 'model.16.m.0.cv2.conv.weight'
+Freezing layer 'model.16.m.0.cv2.bn.weight'
+Freezing layer 'model.16.m.0.cv2.bn.bias'
+Freezing layer 'model.16.m.1.cv1.conv.weight'
+Freezing layer 'model.16.m.1.cv1.bn.weight'
+Freezing layer 'model.16.m.1.cv1.bn.bias'
+Freezing layer 'model.16.m.1.cv2.conv.weight'
+Freezing layer 'model.16.m.1.cv2.bn.weight'
+Freezing layer 'model.16.m.1.cv2.bn.bias'
+Freezing layer 'model.16.m.2.cv1.conv.weight'
+Freezing layer 'model.16.m.2.cv1.bn.weight'
+Freezing layer 'model.16.m.2.cv1.bn.bias'
+Freezing layer 'model.16.m.2.cv2.conv.weight'
+Freezing layer 'model.16.m.2.cv2.bn.weight'
+Freezing layer 'model.16.m.2.cv2.bn.bias'
+Freezing layer 'model.17.conv.weight'
+Freezing layer 'model.17.bn.weight'
+Freezing layer 'model.17.bn.bias'
+Freezing layer 'model.19.cv1.conv.weight'
+Freezing layer 'model.19.cv1.bn.weight'
+Freezing layer 'model.19.cv1.bn.bias'
+Freezing layer 'model.19.cv2.conv.weight'
+Freezing layer 'model.19.cv2.bn.weight'
+Freezing layer 'model.19.cv2.bn.bias'
+Freezing layer 'model.19.m.0.cv1.0.conv.weight'
+Freezing layer 'model.19.m.0.cv1.0.bn.weight'
+Freezing layer 'model.19.m.0.cv1.0.bn.bias'
+Freezing layer 'model.19.m.0.cv1.1.conv.weight'
+Freezing layer 'model.19.m.0.cv1.1.bn.weight'
+Freezing layer 'model.19.m.0.cv1.1.bn.bias'
+Freezing layer 'model.19.m.0.cv1.2.conv.weight'
+Freezing layer 'model.19.m.0.cv1.2.bn.weight'
+Freezing layer 'model.19.m.0.cv1.2.bn.bias'
+Freezing layer 'model.19.m.0.cv1.3.conv.weight'
+Freezing layer 'model.19.m.0.cv1.3.bn.weight'
+Freezing layer 'model.19.m.0.cv1.3.bn.bias'
+Freezing layer 'model.19.m.0.cv1.4.conv.weight'
+Freezing layer 'model.19.m.0.cv1.4.bn.weight'
+Freezing layer 'model.19.m.0.cv1.4.bn.bias'
+Freezing layer 'model.19.m.1.cv1.0.conv.weight'
+Freezing layer 'model.19.m.1.cv1.0.bn.weight'
+Freezing layer 'model.19.m.1.cv1.0.bn.bias'
+Freezing layer 'model.19.m.1.cv1.1.conv.weight'
+Freezing layer 'model.19.m.1.cv1.1.bn.weight'
+Freezing layer 'model.19.m.1.cv1.1.bn.bias'
+Freezing layer 'model.19.m.1.cv1.2.conv.weight'
+Freezing layer 'model.19.m.1.cv1.2.bn.weight'
+Freezing layer 'model.19.m.1.cv1.2.bn.bias'
+Freezing layer 'model.19.m.1.cv1.3.conv.weight'
+Freezing layer 'model.19.m.1.cv1.3.bn.weight'
+Freezing layer 'model.19.m.1.cv1.3.bn.bias'
+Freezing layer 'model.19.m.1.cv1.4.conv.weight'
+Freezing layer 'model.19.m.1.cv1.4.bn.weight'
+Freezing layer 'model.19.m.1.cv1.4.bn.bias'
+Freezing layer 'model.19.m.2.cv1.0.conv.weight'
+Freezing layer 'model.19.m.2.cv1.0.bn.weight'
+Freezing layer 'model.19.m.2.cv1.0.bn.bias'
+Freezing layer 'model.19.m.2.cv1.1.conv.weight'
+Freezing layer 'model.19.m.2.cv1.1.bn.weight'
+Freezing layer 'model.19.m.2.cv1.1.bn.bias'
+Freezing layer 'model.19.m.2.cv1.2.conv.weight'
+Freezing layer 'model.19.m.2.cv1.2.bn.weight'
+Freezing layer 'model.19.m.2.cv1.2.bn.bias'
+Freezing layer 'model.19.m.2.cv1.3.conv.weight'
+Freezing layer 'model.19.m.2.cv1.3.bn.weight'
+Freezing layer 'model.19.m.2.cv1.3.bn.bias'
+Freezing layer 'model.19.m.2.cv1.4.conv.weight'
+Freezing layer 'model.19.m.2.cv1.4.bn.weight'
+Freezing layer 'model.19.m.2.cv1.4.bn.bias'
+Freezing layer 'model.20.cv1.conv.weight'
+Freezing layer 'model.20.cv1.bn.weight'
+Freezing layer 'model.20.cv1.bn.bias'
+Freezing layer 'model.20.cv2.conv.weight'
+Freezing layer 'model.20.cv2.bn.weight'
+Freezing layer 'model.20.cv2.bn.bias'
+Freezing layer 'model.22.cv1.conv.weight'
+Freezing layer 'model.22.cv1.bn.weight'
+Freezing layer 'model.22.cv1.bn.bias'
+Freezing layer 'model.22.cv2.conv.weight'
+Freezing layer 'model.22.cv2.bn.weight'
+Freezing layer 'model.22.cv2.bn.bias'
+Freezing layer 'model.22.m.0.cv1.0.conv.weight'
+Freezing layer 'model.22.m.0.cv1.0.bn.weight'
+Freezing layer 'model.22.m.0.cv1.0.bn.bias'
+Freezing layer 'model.22.m.0.cv1.1.conv.weight'
+Freezing layer 'model.22.m.0.cv1.1.bn.weight'
+Freezing layer 'model.22.m.0.cv1.1.bn.bias'
+Freezing layer 'model.22.m.0.cv1.2.conv.weight'
+Freezing layer 'model.22.m.0.cv1.2.bn.weight'
+Freezing layer 'model.22.m.0.cv1.2.bn.bias'
+Freezing layer 'model.22.m.0.cv1.3.conv.weight'
+Freezing layer 'model.22.m.0.cv1.3.bn.weight'
+Freezing layer 'model.22.m.0.cv1.3.bn.bias'
+Freezing layer 'model.22.m.0.cv1.4.conv.weight'
+Freezing layer 'model.22.m.0.cv1.4.bn.weight'
+Freezing layer 'model.22.m.0.cv1.4.bn.bias'
+Freezing layer 'model.22.m.1.cv1.0.conv.weight'
+Freezing layer 'model.22.m.1.cv1.0.bn.weight'
+Freezing layer 'model.22.m.1.cv1.0.bn.bias'
+Freezing layer 'model.22.m.1.cv1.1.conv.weight'
+Freezing layer 'model.22.m.1.cv1.1.bn.weight'
+Freezing layer 'model.22.m.1.cv1.1.bn.bias'
+Freezing layer 'model.22.m.1.cv1.2.conv.weight'
+Freezing layer 'model.22.m.1.cv1.2.bn.weight'
+Freezing layer 'model.22.m.1.cv1.2.bn.bias'
+Freezing layer 'model.22.m.1.cv1.3.conv.weight'
+Freezing layer 'model.22.m.1.cv1.3.bn.weight'
+Freezing layer 'model.22.m.1.cv1.3.bn.bias'
+Freezing layer 'model.22.m.1.cv1.4.conv.weight'
+Freezing layer 'model.22.m.1.cv1.4.bn.weight'
+Freezing layer 'model.22.m.1.cv1.4.bn.bias'
+Freezing layer 'model.22.m.2.cv1.0.conv.weight'
+Freezing layer 'model.22.m.2.cv1.0.bn.weight'
+Freezing layer 'model.22.m.2.cv1.0.bn.bias'
+Freezing layer 'model.22.m.2.cv1.1.conv.weight'
+Freezing layer 'model.22.m.2.cv1.1.bn.weight'
+Freezing layer 'model.22.m.2.cv1.1.bn.bias'
+Freezing layer 'model.22.m.2.cv1.2.conv.weight'
+Freezing layer 'model.22.m.2.cv1.2.bn.weight'
+Freezing layer 'model.22.m.2.cv1.2.bn.bias'
+Freezing layer 'model.22.m.2.cv1.3.conv.weight'
+Freezing layer 'model.22.m.2.cv1.3.bn.weight'
+Freezing layer 'model.22.m.2.cv1.3.bn.bias'
+Freezing layer 'model.22.m.2.cv1.4.conv.weight'
+Freezing layer 'model.22.m.2.cv1.4.bn.weight'
+Freezing layer 'model.22.m.2.cv1.4.bn.bias'
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1malbumentations: [39m[22mBlur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01), CLAHE(p=0.01, clip_limit=(1, 4.0), tile_grid_size=(8, 8))
+[34m[1mtrain: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/train/labels.cache... 12816 images, 1474 backgrou
+[34m[1mval: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/valid/labels.cache... 1845 images, 211 backgrounds,
+Plotting labels to runs/detect/train28/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.002, momentum=0.9) with parameter groups 185 weight(decay=0.0), 198 weight(decay=0.00046875), 197 bias(decay=0.0)
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train28
+Starting training for 4 epochs...
+      Epoch    GPU_mem     box_om     cls_om     dfl_om     box_oo     cls_oo     dfl_oo  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        1/4      4.65G      1.248     0.8687      1.317      1.538      1.126      1.334         59        640: 100%|██████████| 1068/1068 [08:24<00:00,  2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  99%|█████████▊| 76/77 [01:11<00:00,  1.06it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 77/77 [01:11<00:00,  1.07it/s]
+  0%|          | 0/1068 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        2/4      4.65G      1.181     0.7168      1.268      1.496     0.8416      1.296         45        640:   8%|▊         | 89/1068 [00:43<07:55,  2.06
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py", line 5, in <module>
+    model.train(
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/model.py", line 657, in train
+    self.trainer.train()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 213, in train
+    self._do_train(world_size)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 381, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 93, in forward
+    return self.loss(x, *args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 275, in loss
+    return self.criterion(preds, batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/utils/loss.py", line 724, in __call__
+    loss_one2many = self.one2many(one2many, batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/utils/loss.py", line 209, in __call__
+    imgsz = torch.tensor(feats[0].shape[2:], device=self.device, dtype=dtype) * self.stride[0]  # image size (h,w)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py", line 5, in <module>
+    model.train(
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/model.py", line 657, in train
+    self.trainer.train()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 213, in train
+    self._do_train(world_size)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 381, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 93, in forward
+    return self.loss(x, *args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 275, in loss
+    return self.criterion(preds, batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/utils/loss.py", line 724, in __call__
+    loss_one2many = self.one2many(one2many, batch)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/utils/loss.py", line 209, in __call__
+    imgsz = torch.tensor(feats[0].shape[2:], device=self.device, dtype=dtype) * self.stride[0]  # image size (h,w)
+KeyboardInterrupt

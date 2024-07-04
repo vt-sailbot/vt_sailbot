@@ -1,0 +1,1275 @@
+Freezing layer 'model.0.conv.weight'
+Freezing layer 'model.0.bn.weight'
+Freezing layer 'model.0.bn.bias'
+Freezing layer 'model.1.conv.weight'
+Freezing layer 'model.1.bn.weight'
+Freezing layer 'model.1.bn.bias'
+Freezing layer 'model.2.cv1.conv.weight'
+Freezing layer 'model.2.cv1.bn.weight'
+Freezing layer 'model.2.cv1.bn.bias'
+Freezing layer 'model.2.cv2.conv.weight'
+Freezing layer 'model.2.cv2.bn.weight'
+Freezing layer 'model.2.cv2.bn.bias'
+Freezing layer 'model.2.m.0.cv1.conv.weight'
+Freezing layer 'model.2.m.0.cv1.bn.weight'
+Freezing layer 'model.2.m.0.cv1.bn.bias'
+Freezing layer 'model.2.m.0.cv2.conv.weight'
+Freezing layer 'model.2.m.0.cv2.bn.weight'
+Freezing layer 'model.2.m.0.cv2.bn.bias'
+Freezing layer 'model.2.m.1.cv1.conv.weight'
+Freezing layer 'model.2.m.1.cv1.bn.weight'
+Freezing layer 'model.2.m.1.cv1.bn.bias'
+Freezing layer 'model.2.m.1.cv2.conv.weight'
+Freezing layer 'model.2.m.1.cv2.bn.weight'
+Freezing layer 'model.2.m.1.cv2.bn.bias'
+Freezing layer 'model.2.m.2.cv1.conv.weight'
+Freezing layer 'model.2.m.2.cv1.bn.weight'
+Freezing layer 'model.2.m.2.cv1.bn.bias'
+Freezing layer 'model.2.m.2.cv2.conv.weight'
+Freezing layer 'model.2.m.2.cv2.bn.weight'
+Freezing layer 'model.2.m.2.cv2.bn.bias'
+Freezing layer 'model.3.conv.weight'
+Freezing layer 'model.3.bn.weight'
+Freezing layer 'model.3.bn.bias'
+Freezing layer 'model.4.cv1.conv.weight'
+Freezing layer 'model.4.cv1.bn.weight'
+Freezing layer 'model.4.cv1.bn.bias'
+Freezing layer 'model.4.cv2.conv.weight'
+Freezing layer 'model.4.cv2.bn.weight'
+Freezing layer 'model.4.cv2.bn.bias'
+Freezing layer 'model.4.m.0.cv1.conv.weight'
+Freezing layer 'model.4.m.0.cv1.bn.weight'
+Freezing layer 'model.4.m.0.cv1.bn.bias'
+Freezing layer 'model.4.m.0.cv2.conv.weight'
+Freezing layer 'model.4.m.0.cv2.bn.weight'
+Freezing layer 'model.4.m.0.cv2.bn.bias'
+Freezing layer 'model.4.m.1.cv1.conv.weight'
+Freezing layer 'model.4.m.1.cv1.bn.weight'
+Freezing layer 'model.4.m.1.cv1.bn.bias'
+Freezing layer 'model.4.m.1.cv2.conv.weight'
+Freezing layer 'model.4.m.1.cv2.bn.weight'
+Freezing layer 'model.4.m.1.cv2.bn.bias'
+Freezing layer 'model.4.m.2.cv1.conv.weight'
+Freezing layer 'model.4.m.2.cv1.bn.weight'
+Freezing layer 'model.4.m.2.cv1.bn.bias'
+Freezing layer 'model.4.m.2.cv2.conv.weight'
+Freezing layer 'model.4.m.2.cv2.bn.weight'
+Freezing layer 'model.4.m.2.cv2.bn.bias'
+Freezing layer 'model.4.m.3.cv1.conv.weight'
+Freezing layer 'model.4.m.3.cv1.bn.weight'
+Freezing layer 'model.4.m.3.cv1.bn.bias'
+Freezing layer 'model.4.m.3.cv2.conv.weight'
+Freezing layer 'model.4.m.3.cv2.bn.weight'
+Freezing layer 'model.4.m.3.cv2.bn.bias'
+Freezing layer 'model.4.m.4.cv1.conv.weight'
+Freezing layer 'model.4.m.4.cv1.bn.weight'
+Freezing layer 'model.4.m.4.cv1.bn.bias'
+Freezing layer 'model.4.m.4.cv2.conv.weight'
+Freezing layer 'model.4.m.4.cv2.bn.weight'
+Freezing layer 'model.4.m.4.cv2.bn.bias'
+Freezing layer 'model.4.m.5.cv1.conv.weight'
+Freezing layer 'model.4.m.5.cv1.bn.weight'
+Freezing layer 'model.4.m.5.cv1.bn.bias'
+Freezing layer 'model.4.m.5.cv2.conv.weight'
+Freezing layer 'model.4.m.5.cv2.bn.weight'
+Freezing layer 'model.4.m.5.cv2.bn.bias'
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mtrain: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/train/labels.cache... 12816 images, 1474 backgrounds, 0 corrupt: 100%|██████████| 12816/12816 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-4/valid/labels.cache... 1845 images, 211 backgrounds, 0 corrupt: 100%|██████████| 1845/1845 [00:00<?, ?it/s]
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1malbumentations: [39m[22mBlur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01), CLAHE(p=0.01, clip_limit=(1, 4.0), tile_grid_size=(8, 8))
+Plotting labels to runs/detect/train18/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.002, momentum=0.9) with parameter groups 185 weight(decay=0.0), 198 weight(decay=0.00046875), 197 bias(decay=0.0)
+  0%|          | 0/1282 [00:00<?, ?it/s]
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train18
+Starting training for 4 epochs...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        1/4      9.71G      1.118     0.5989      1.208      1.349     0.6951      1.215         24        640: 100%|██████████| 1282/1282 [37:09<00:00,  1.74s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  30%|███       | 28/93 [09:10<21:17, 19.66s/it]
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py", line 4, in <module>
+    model.train(
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/model.py", line 657, in train
+    self.trainer.train()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 213, in train
+    self._do_train(world_size)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 430, in _do_train
+    self.metrics, self.fitness = self.validate()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 552, in validate
+    metrics = self.validator(self)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/validator.py", line 177, in __call__
+    with dt[1]:
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/utils/ops.py", line 52, in __exit__
+    self.dt = self.time() - self.start  # delta-time
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/utils/ops.py", line 62, in time
+    torch.cuda.synchronize(self.device)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/cuda/__init__.py", line 688, in synchronize
+    return torch._C._cuda_synchronize()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py", line 4, in <module>
+    model.train(
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/model.py", line 657, in train
+    self.trainer.train()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 213, in train
+    self._do_train(world_size)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 430, in _do_train
+    self.metrics, self.fitness = self.validate()
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 552, in validate
+    metrics = self.validator(self)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/engine/validator.py", line 177, in __call__
+    with dt[1]:
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/utils/ops.py", line 52, in __exit__
+    self.dt = self.time() - self.start  # delta-time
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/ultralytics/utils/ops.py", line 62, in time
+    torch.cuda.synchronize(self.device)
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/cuda/__init__.py", line 688, in synchronize
+    return torch._C._cuda_synchronize()
+KeyboardInterrupt

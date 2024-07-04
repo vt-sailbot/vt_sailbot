@@ -6,6 +6,7 @@
 
 # should only be build on the jetson
 
+
 ARG ROS_DISTRO=humble
 
 FROM ros:${ROS_DISTRO} as base
@@ -30,11 +31,9 @@ RUN sudo apt install ros-humble-librealsense2* -y
 
 RUN sudo apt install ros-humble-realsense2-* -y
 
+RUN sudo apt update -y && sudo apt upgrade -y
+
 # RUN source /opt/ros/${ROS_DISTRO}/setup.bash \ 
 #     && source install/setup.bash \
 #     && ros2 run realsense2_camera realsense2_camera_node
 # RUN sudo apt-get install librealsense2-utils -y && sudo apt-get install librealsense2-dev -y
-
-# RUN sudo apt update -y && sudo apt upgrade -y
-
-# RUN sudo apt install ros-humble-realsense2-* -y

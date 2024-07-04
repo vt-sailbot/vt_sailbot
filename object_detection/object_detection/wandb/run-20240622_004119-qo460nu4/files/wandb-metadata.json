@@ -1,0 +1,145 @@
+{
+    "os": "Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-06-22T04:41:20.800921",
+    "startedAt": "2024-06-22T04:41:19.973603",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py",
+    "codePath": "object_detection/object_detection/train_buoy_classifier.py",
+    "git": {
+        "remote": "https://github.com/vt-sailbot/vt_sailbot",
+        "commit": "c12ca3112519a93d67bf730d5da26b109845ac0f"
+    },
+    "email": "chrisjnassif@gmail.com",
+    "root": "/home/animated/Projects/Sailbot/src",
+    "host": "ChrisNassif",
+    "username": "animated",
+    "executable": "/home/animated/miniforge3/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2687.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 1006.853931427002,
+        "used": 88.79123306274414
+    },
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+            "memory_total": 8585740288
+        }
+    ],
+    "memory": {
+        "total": 7.5745697021484375
+    }
+}

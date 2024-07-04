@@ -18,6 +18,8 @@ sailboat_gym/envs/sailboat_lsa/lsa_sim.py
 sailboat_gym/helpers/__init__.py
 sailboat_gym/helpers/get_best_sail.py
 sailboat_gym/helpers/get_vmc.py
+sailboat_gym/pkl/SailboatLSAEnv-v0_bounds_v_wind_1.pkl
+sailboat_gym/pkl/SailboatLSAEnv-v0_bounds_v_wind_2.pkl
 sailboat_gym/renderers/__init__.py
 sailboat_gym/renderers/cv_2d_renderer.py
 tests/__init__.py

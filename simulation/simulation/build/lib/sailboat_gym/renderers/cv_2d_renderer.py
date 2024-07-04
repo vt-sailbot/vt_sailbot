@@ -230,13 +230,18 @@ class CV2DRenderer(AbcRender):
     def _draw_boat_pos_velocity(self, img: np.ndarray, obs: RendererObservation):
         dt_p_boat_start = obs.p_boat
         dt_p_boat_end = dt_p_boat_start + obs.dt_p_boat * self.vector_scale
-        cv2.arrowedLine(img,
+        
+        try:
+            cv2.arrowedLine(img,
                         tuple(dt_p_boat_start.astype(int)),
                         tuple(dt_p_boat_end.astype(int)),
                         self.style["boat"]["dt_p"]["color"],
                         self.style["boat"]["dt_p"]["width"],
                         tipLength=.2,
                         line_type=cv2.LINE_AA)
+        except:
+            print("WARNING: Failed to render boat pos velocity likely because of a bug in the sim")
+
 
     def _draw_boat_heading_velocity(self, img: np.ndarray, obs: RendererObservation):
         spike_coeff = self.style["boat"]["spike_coef"]
@@ -246,13 +251,17 @@ class CV2DRenderer(AbcRender):
         obs.dt_p_boat
         dt_theta_boat_start = front_of_boat
         dt_theta_boat_end = dt_theta_boat_start + obs.dt_theta_boat * self.vector_scale
-        cv2.arrowedLine(img,
-                        tuple(dt_theta_boat_start.astype(int)),
-                        tuple(dt_theta_boat_end.astype(int)),
-                        self.style["boat"]["dt_theta"]["color"],
-                        self.style["boat"]["dt_theta"]["width"],
-                        tipLength=.2,
-                        line_type=cv2.LINE_AA)
+        
+        try:
+            cv2.arrowedLine(img,
+                            tuple(dt_theta_boat_start.astype(int)),
+                            tuple(dt_theta_boat_end.astype(int)),
+                            self.style["boat"]["dt_theta"]["color"],
+                            self.style["boat"]["dt_theta"]["width"],
+                            tipLength=.2,
+                            line_type=cv2.LINE_AA)
+        except:
+            print("WARNING: Failed to render boat heading velocity likely because of a bug in the sim")
 
     def _draw_rudder_velocity(self, img: np.ndarray, obs: RendererObservation):
         boat_phi = self.style["boat"]["phi"]
@@ -264,26 +273,36 @@ class CV2DRenderer(AbcRender):
         dt_rudder_start = back_of_boat + \
             angle_to_vec(obs.theta_rudder) * rudder_height
         dt_rudder_end = dt_rudder_start + obs.dt_rudder
-        cv2.arrowedLine(img,
-                        tuple(dt_rudder_start.astype(int)),
-                        tuple(dt_rudder_end.astype(int)),
-                        self.style["rudder"]["dt_theta"]["color"],
-                        self.style["rudder"]["dt_theta"]["width"],
-                        tipLength=.2,
-                        line_type=cv2.LINE_AA)
+        
+        try:
+            cv2.arrowedLine(img,
+                            tuple(dt_rudder_start.astype(int)),
+                            tuple(dt_rudder_end.astype(int)),
+                            self.style["rudder"]["dt_theta"]["color"],
+                            self.style["rudder"]["dt_theta"]["width"],
+                            tipLength=.2,
+                            line_type=cv2.LINE_AA)
+        except:
+            print("WARNING: Failed to render rudder velocity likely because of a bug in the sim")
+
 
     def _draw_sail_velocity(self, img: np.ndarray, obs: RendererObservation):
         sail_height = self.style["sail"]["height"]
         dt_sail_start = obs.p_boat + \
             angle_to_vec(obs.theta_sail) * sail_height
         dt_sail_end = dt_sail_start + obs.dt_sail
-        cv2.arrowedLine(img,
-                        tuple(dt_sail_start.astype(int)),
-                        tuple(dt_sail_end.astype(int)),
-                        self.style["sail"]["dt_theta"]["color"],
-                        self.style["sail"]["dt_theta"]["width"],
-                        tipLength=.2,
-                        line_type=cv2.LINE_AA)
+        
+        try:
+            cv2.arrowedLine(img,
+                            tuple(dt_sail_start.astype(int)),
+                            tuple(dt_sail_end.astype(int)),
+                            self.style["sail"]["dt_theta"]["color"],
+                            self.style["sail"]["dt_theta"]["width"],
+                            tipLength=.2,
+                            line_type=cv2.LINE_AA)
+        except:
+            print("WARNING: Failed to render sail velocity likely because of a bug in the sim")
+
 
     def _draw_boat_center(self, img: np.ndarray, obs: RendererObservation):
         cv2.circle(img,

@@ -1,0 +1,56 @@
+site_name: SailbotVT Documentation
+site_url: https://localhost:8000
+
+nav:
+  - Home: index.md
+  - Getting Started: 
+    - Installing Docker: getting_started/installing_docker.md
+    - Setting Up the Development Container: getting_started/setting_up_dev_environment.md
+    - What Did You Just Install?: getting_started/what_did_you_just_install.md
+  - Examples:
+    - Running the Simulation: running_simulation.md
+    - Running Individual Nodes for Testing: running_individual_nodes.md
+  - Nodes/ Messages:
+    - Autopilot: nodes/autopilot.md
+    - Telemetry: nodes/telemetry.md
+    - Compass: nodes/compass.md
+    - GPS: nodes/gps.md
+    - MCU (Micro Controller Unit): nodes/mcu.md
+    - RC (Remote Controller): nodes/rc.md
+    - Sailbot Messages: nodes/sailbot_msgs.md
+    - Simulation: nodes/simulation.md
+    - Wind Sensor: nodes/wind_sensor.md
+  - Misc:
+    - Potential Security Risks: misc/potential_security_risks.md
+    - Known Issues: misc/known_issues.md
+    - TODO: misc/todo.md
+
+theme: 
+  name: material
+  palette:
+    scheme: slate
+  features:
+    - content.code.copy
+    - content.code.select
+# theme:
+#   name: readthedocs
+
+markdown_extensions:
+  # - pymdownx.highlight:
+  #   anchor_linenums: true
+  #   line_spans: __span
+  #   pygments_lang_class: true:
+    # - toc:
+    #     toc_depth : "1-1"
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+    - admonition
+
+
+

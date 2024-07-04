@@ -1,0 +1,31 @@
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_setup.py:_flush():76] Configure stats pid to 1842
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_setup.py:_flush():76] Loading settings from /home/animated/.config/wandb/settings
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_setup.py:_flush():76] Loading settings from /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/settings
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'object_detection/object_detection/train_buoy_classifier.py', 'program': '/home/animated/Projects/Sailbot/src/object_detection/object_detection/train_buoy_classifier.py'}
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_init.py:_log_setup():506] Logging user logs to /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_020601-0ourhjwm/logs/debug.log
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_init.py:_log_setup():507] Logging internal logs to /home/animated/Projects/Sailbot/src/object_detection/object_detection/wandb/run-20240622_020601-0ourhjwm/logs/debug-internal.log
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_init.py:init():546] calling init triggers
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {'task': 'detect', 'mode': 'train', 'model': 'weights/yolov10b.pt', 'data': 'datasets/SailbotVT-4/data.yaml', 'epochs': 4, 'time': None, 'patience': 100, 'batch': 20, 'imgsz': 640, 'save': True, 'save_period': -1, 'val_period': 1, 'cache': False, 'device': 'cuda:0', 'workers': 8, 'project': None, 'name': 'train40', 'exist_ok': False, 'pretrained': True, 'optimizer': 'auto', 'verbose': True, 'seed': 0, 'deterministic': True, 'single_cls': False, 'rect': False, 'cos_lr': False, 'close_mosaic': 10, 'resume': False, 'amp': True, 'fraction': 1.0, 'profile': False, 'freeze': 10, 'multi_scale': False, 'overlap_mask': True, 'mask_ratio': 4, 'dropout': 0.05, 'val': True, 'split': 'val', 'save_json': False, 'save_hybrid': False, 'conf': None, 'iou': 0.7, 'max_det': 300, 'half': False, 'dnn': False, 'plots': True, 'source': None, 'vid_stride': 1, 'stream_buffer': False, 'visualize': False, 'augment': False, 'agnostic_nms': False, 'classes': None, 'retina_masks': False, 'embed': None, 'show': False, 'save_frames': False, 'save_txt': False, 'save_conf': False, 'save_crop': False, 'show_labels': True, 'show_conf': True, 'show_boxes': True, 'line_width': None, 'format': 'torchscript', 'keras': False, 'optimize': False, 'int8': False, 'dynamic': False, 'simplify': False, 'opset': None, 'workspace': 4, 'nms': False, 'lr0': 0.01, 'lrf': 0.01, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 0.5, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 7.5, 'cls': 0.5, 'dfl': 1.5, 'pose': 12.0, 'kobj': 1.0, 'label_smoothing': 0.0, 'nbs': 64, 'hsv_h': 0.015, 'hsv_s': 0.3, 'hsv_v': 0.3, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 1, 'fliplr': 1, 'bgr': 0.0, 'mosaic': 0.0, 'mixup': 0.0, 'copy_paste': 0.0, 'auto_augment': 'randaugment', 'erasing': 0.1, 'crop_fraction': 0.0, 'cfg': None, 'tracker': 'botsort.yaml', 'save_dir': 'runs/detect/train40'}
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_init.py:init():602] starting backend
+2024-06-22 02:06:01,720 INFO    MainThread:1842 [wandb_init.py:init():606] setting up manager
+2024-06-22 02:06:01,721 INFO    MainThread:1842 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-06-22 02:06:01,722 INFO    MainThread:1842 [wandb_init.py:init():613] backend started and connected
+2024-06-22 02:06:01,724 INFO    MainThread:1842 [wandb_init.py:init():701] updated telemetry
+2024-06-22 02:06:01,727 INFO    MainThread:1842 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2024-06-22 02:06:02,023 INFO    MainThread:1842 [wandb_run.py:_on_init():2131] communicating current version
+2024-06-22 02:06:02,126 INFO    MainThread:1842 [wandb_run.py:_on_init():2140] got version response upgrade_message: "wandb version 0.17.2 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-06-22 02:06:02,127 INFO    MainThread:1842 [wandb_init.py:init():789] starting run threads in backend
+2024-06-22 02:06:07,106 WARNING MsgRouterThr:1842 [router.py:message_loop():77] message_loop has been closed
+2024-06-22 02:06:12,136 ERROR   MainThread:1842 [wandb_init.py:init():1171] error
+Traceback (most recent call last):
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1144, in init
+    run = wi.init()
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 801, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+  File "/home/animated/.local/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 281, in wait
+    raise MailboxError("transport failed")
+wandb.sdk.lib.mailbox.MailboxError: transport failed

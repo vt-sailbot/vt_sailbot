@@ -116,7 +116,7 @@ class AutopilotNode(Node):
         self.toggle_c = joystick_msg.toggle_c
         self.toggle_f = joystick_msg.toggle_f
         
-        
+        # kill switch
         if self.toggle_b != 0:
             self.autopilot_mode = AutopilotMode.Disabled
             
@@ -138,8 +138,9 @@ class AutopilotNode(Node):
 
         # remote controlled
         elif self.toggle_f == 0:
-            self.autopilot_mode = AutopilotMode.Disabled
+            self.autopilot_mode = AutopilotMode.Full_RC
         
+        # this should never happen
         else:
             print("WARNING: INCORRECT COMBINATION OF RC SWITCHES USED")
 
