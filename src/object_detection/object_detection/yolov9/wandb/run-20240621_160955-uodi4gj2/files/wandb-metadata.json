@@ -1,0 +1,164 @@
+{
+    "os": "Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-06-21T20:09:56.389388",
+    "startedAt": "2024-06-21T20:09:55.657176",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--batch",
+        "4",
+        "--epochs",
+        "4",
+        "--img",
+        "640",
+        "--device",
+        "cuda:0",
+        "--data",
+        "SailbotVT-3/data.yaml",
+        "--weights",
+        "weights/yolov9-c.pt",
+        "--cfg",
+        "models/detect/yolov9-c.yaml",
+        "--hyp",
+        "hyp.scratch-high.yaml",
+        "--freeze",
+        "20"
+    ],
+    "state": "running",
+    "program": "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/train_dual.py",
+    "codePath": "train_dual.py",
+    "git": {
+        "remote": "https://github.com/WongKinYiu/yolov9.git",
+        "commit": "5b1ea9a8b3f0ffe4fe0e203ec6232d788bb3fcff"
+    },
+    "email": "chrisjnassif@gmail.com",
+    "root": "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9",
+    "host": "ChrisNassif",
+    "username": "animated",
+    "executable": "/home/animated/miniforge3/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2687.9970000000008,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.997,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 1006.853931427002,
+        "used": 82.7088623046875
+    },
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+            "memory_total": 8585740288
+        }
+    ],
+    "memory": {
+        "total": 7.574573516845703
+    }
+}

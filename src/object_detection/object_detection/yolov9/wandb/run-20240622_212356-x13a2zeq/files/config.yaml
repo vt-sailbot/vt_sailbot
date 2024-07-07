@@ -1,0 +1,216 @@
+wandb_version: 1
+
+weights:
+  desc: null
+  value: ../weights/best_finetuned_9c2.pt
+cfg:
+  desc: null
+  value: models/detect/yolov9-c.yaml
+data:
+  desc: null
+  value: SailbotVT-4/data.yaml
+hyp:
+  desc: null
+  value:
+    lr0: 0.0003
+    lrf: 0.0002
+    momentum: 0.95
+    weight_decay: 0.01
+    warmup_epochs: 1
+    warmup_momentum: 0.8
+    warmup_bias_lr: 0.005
+    box: 2.5
+    cls: 1
+    cls_pw: 1.0
+    obj: 1
+    obj_pw: 1.0
+    dfl: 1.0
+    iou_t: 0.5
+    anchor_t: 5.0
+    fl_gamma: 0.0
+    hsv_h: 0.015
+    hsv_s: 0.1
+    hsv_v: 0.1
+    degrees: 10
+    translate: 0.1
+    scale: 0.0
+    shear: 0.1
+    perspective: 0.0
+    flipud: 0.8
+    fliplr: 0.8
+    mosaic: 0
+    mixup: 0.0
+    copy_paste: 0.0
+epochs:
+  desc: null
+  value: 2
+batch_size:
+  desc: null
+  value: 4
+imgsz:
+  desc: null
+  value: 640
+rect:
+  desc: null
+  value: false
+resume:
+  desc: null
+  value: false
+nosave:
+  desc: null
+  value: false
+noval:
+  desc: null
+  value: false
+noautoanchor:
+  desc: null
+  value: false
+noplots:
+  desc: null
+  value: false
+evolve:
+  desc: null
+  value: null
+bucket:
+  desc: null
+  value: ''
+cache:
+  desc: null
+  value: null
+image_weights:
+  desc: null
+  value: false
+device:
+  desc: null
+  value: cuda:0
+multi_scale:
+  desc: null
+  value: false
+single_cls:
+  desc: null
+  value: false
+optimizer:
+  desc: null
+  value: SGD
+sync_bn:
+  desc: null
+  value: false
+workers:
+  desc: null
+  value: 8
+project:
+  desc: null
+  value: runs/train
+name:
+  desc: null
+  value: exp
+exist_ok:
+  desc: null
+  value: false
+quad:
+  desc: null
+  value: false
+cos_lr:
+  desc: null
+  value: false
+flat_cos_lr:
+  desc: null
+  value: false
+fixed_lr:
+  desc: null
+  value: false
+label_smoothing:
+  desc: null
+  value: 0.0
+patience:
+  desc: null
+  value: 100
+freeze:
+  desc: null
+  value:
+  - 0
+save_period:
+  desc: null
+  value: -1
+seed:
+  desc: null
+  value: 0
+local_rank:
+  desc: null
+  value: -1
+min_items:
+  desc: null
+  value: 0
+close_mosaic:
+  desc: null
+  value: 0
+entity:
+  desc: null
+  value: null
+upload_dataset:
+  desc: null
+  value: false
+bbox_interval:
+  desc: null
+  value: -1
+artifact_alias:
+  desc: null
+  value: latest
+save_dir:
+  desc: null
+  value: runs/train/exp67
+_wandb:
+  desc: null
+  value:
+    bounding_box/class_labels:
+      BoundingBoxDebugger_wandb_delimeter_predictions:
+        type: bounding_box/class_labels
+        key: BoundingBoxDebugger_wandb_delimeter_predictions
+        value:
+          '0': buoy
+    python_version: 3.10.14
+    cli_version: 0.17.2
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1719105836
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      - 105
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 80
+      - 105
+      3:
+      - 2
+      - 16
+      - 23
+      - 62
+      4: 3.10.14
+      5: 0.17.2
+      8:
+      - 5
+      13: linux-x86_64
+data_dict:
+  desc: null
+  value:
+    train: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/SailbotVT-4/train/images
+    val: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/SailbotVT-4/test/images
+    test: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/SailbotVT-4/test/images
+    nc: 1
+    names:
+      '0': buoy
+    roboflow:
+      workspace: chris-nhkcz
+      project: sailbotvt
+      version: 9
+      license: CC BY 4.0
+      url: https://universe.roboflow.com/chris-nhkcz/sailbotvt/dataset/9
+    path: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9

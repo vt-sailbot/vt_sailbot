@@ -1,0 +1,189 @@
+2024-06-22 16:15:33,308 INFO    StreamThr :144855 [internal.py:wandb_internal():85] W&B internal server running at pid: 144855, started at: 2024-06-22 16:15:33.307985
+2024-06-22 16:15:33,310 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: status
+2024-06-22 16:15:33,311 INFO    WriterThread:144855 [datastore.py:open_for_write():87] open: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/run-7iu0n6hm.wandb
+2024-06-22 16:15:33,312 DEBUG   SenderThread:144855 [sender.py:send():379] send: header
+2024-06-22 16:15:33,313 DEBUG   SenderThread:144855 [sender.py:send():379] send: run
+2024-06-22 16:15:33,317 INFO    SenderThread:144855 [sender.py:_setup_resume():749] checking resume status for None/YOLOv5/7iu0n6hm
+2024-06-22 16:15:33,822 INFO    SenderThread:144855 [dir_watcher.py:__init__():211] watching files in: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files
+2024-06-22 16:15:33,822 INFO    SenderThread:144855 [sender.py:_start_run_threads():1188] run started: 7iu0n6hm with start time 1719087333.30797
+2024-06-22 16:15:33,824 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: check_version
+2024-06-22 16:15:33,825 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: check_version
+2024-06-22 16:15:34,242 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: run_start
+2024-06-22 16:15:34,257 DEBUG   HandlerThread:144855 [system_info.py:__init__():26] System info init
+2024-06-22 16:15:34,258 DEBUG   HandlerThread:144855 [system_info.py:__init__():41] System info init done
+2024-06-22 16:15:34,258 INFO    HandlerThread:144855 [system_monitor.py:start():194] Starting system monitor
+2024-06-22 16:15:34,258 INFO    SystemMonitor:144855 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-22 16:15:34,258 INFO    HandlerThread:144855 [system_monitor.py:probe():214] Collecting system info
+2024-06-22 16:15:34,260 INFO    SystemMonitor:144855 [interfaces.py:start():188] Started cpu monitoring
+2024-06-22 16:15:34,260 INFO    SystemMonitor:144855 [interfaces.py:start():188] Started disk monitoring
+2024-06-22 16:15:34,261 INFO    SystemMonitor:144855 [interfaces.py:start():188] Started gpu monitoring
+2024-06-22 16:15:34,262 INFO    SystemMonitor:144855 [interfaces.py:start():188] Started memory monitoring
+2024-06-22 16:15:34,263 INFO    SystemMonitor:144855 [interfaces.py:start():188] Started network monitoring
+2024-06-22 16:15:34,271 ERROR   HandlerThread:144855 [gpu.py:probe():414] Error Probing GPU: 'utf-8' codec can't decode byte 0xf8 in position 0: invalid start byte
+2024-06-22 16:15:34,271 DEBUG   HandlerThread:144855 [system_info.py:probe():152] Probing system
+2024-06-22 16:15:34,316 DEBUG   HandlerThread:144855 [system_info.py:_probe_git():137] Probing git
+2024-06-22 16:15:34,319 DEBUG   HandlerThread:144855 [system_info.py:_probe_git():145] Probing git done
+2024-06-22 16:15:34,319 DEBUG   HandlerThread:144855 [system_info.py:probe():200] Probing system done
+2024-06-22 16:15:34,319 DEBUG   HandlerThread:144855 [system_monitor.py:probe():223] {'os': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.10.14', 'heartbeatAt': '2024-06-22T20:15:34.271988', 'startedAt': '2024-06-22T20:15:33.305318', 'docker': None, 'cuda': None, 'args': ('--weights', '../weights/best_finetuned_9c.pt', '--data', '/home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-OG/data.yaml', '--device', 'cuda:0', '--workers', '8', '--batch', '8', '--epochs', '5', '--cfg', 'models/detect/yolov9-c.yaml', '--hyp', 'hyp.scratch-high.yaml'), 'state': 'running', 'program': '/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/train_dual.py', 'codePathLocal': 'train_dual.py', 'codePath': 'train_dual.py', 'git': {'remote': 'https://github.com/WongKinYiu/yolov9.git', 'commit': '5b1ea9a8b3f0ffe4fe0e203ec6232d788bb3fcff'}, 'email': 'chrisjnassif@gmail.com', 'root': '/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9', 'host': 'ChrisNassif', 'username': 'animated', 'executable': '/home/animated/miniforge3/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2688.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 91.10074996948242}}, 'memory': {'total': 7.574573516845703}}
+2024-06-22 16:15:34,319 INFO    HandlerThread:144855 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-22 16:15:34,319 INFO    HandlerThread:144855 [system_monitor.py:probe():227] Publishing system info
+2024-06-22 16:15:34,319 DEBUG   HandlerThread:144855 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-06-22 16:15:34,822 INFO    Thread-12 :144855 [dir_watcher.py:_on_file_created():271] file/dir created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/conda-environment.yaml
+2024-06-22 16:15:40,824 INFO    Thread-12 :144855 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/conda-environment.yaml
+2024-06-22 16:15:40,857 DEBUG   HandlerThread:144855 [system_info.py:_save_conda():224] Saving conda packages done
+2024-06-22 16:15:40,857 INFO    HandlerThread:144855 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-22 16:15:40,859 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: status_report
+2024-06-22 16:15:40,860 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-22 16:15:40,860 DEBUG   SenderThread:144855 [sender.py:send():379] send: files
+2024-06-22 16:15:40,860 INFO    SenderThread:144855 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-06-22 16:15:41,081 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-22 16:15:41,081 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: python_packages
+2024-06-22 16:15:41,082 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-22 16:15:41,082 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-22 16:15:41,082 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: stop_status
+2024-06-22 16:15:41,165 DEBUG   SenderThread:144855 [sender.py:send():379] send: telemetry
+2024-06-22 16:15:41,167 DEBUG   SenderThread:144855 [sender.py:send():379] send: exit
+2024-06-22 16:15:41,167 INFO    SenderThread:144855 [sender.py:send_exit():586] handling exit code: 1
+2024-06-22 16:15:41,167 INFO    SenderThread:144855 [sender.py:send_exit():588] handling runtime: 6
+2024-06-22 16:15:41,167 INFO    SenderThread:144855 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-22 16:15:41,167 INFO    SenderThread:144855 [sender.py:send_exit():594] send defer
+2024-06-22 16:15:41,168 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:41,168 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-22 16:15:41,168 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:41,168 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-06-22 16:15:41,168 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 1
+2024-06-22 16:15:41,168 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:41,168 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-22 16:15:41,168 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:41,168 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-06-22 16:15:41,168 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 2
+2024-06-22 16:15:41,169 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:41,169 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-22 16:15:41,169 INFO    HandlerThread:144855 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-22 16:15:41,169 DEBUG   SystemMonitor:144855 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-22 16:15:41,169 DEBUG   SystemMonitor:144855 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-22 16:15:41,169 DEBUG   SystemMonitor:144855 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-22 16:15:41,170 INFO    HandlerThread:144855 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-22 16:15:41,170 INFO    HandlerThread:144855 [interfaces.py:finish():200] Joined disk monitor
+2024-06-22 16:15:41,177 INFO    HandlerThread:144855 [interfaces.py:finish():200] Joined gpu monitor
+2024-06-22 16:15:41,177 INFO    HandlerThread:144855 [interfaces.py:finish():200] Joined memory monitor
+2024-06-22 16:15:41,177 INFO    HandlerThread:144855 [interfaces.py:finish():200] Joined network monitor
+2024-06-22 16:15:41,177 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:41,177 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-06-22 16:15:41,177 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 3
+2024-06-22 16:15:41,178 DEBUG   SenderThread:144855 [sender.py:send():379] send: stats
+2024-06-22 16:15:41,178 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:41,178 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-22 16:15:41,178 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:41,178 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-06-22 16:15:41,178 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 4
+2024-06-22 16:15:41,178 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:41,178 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-22 16:15:41,178 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:41,178 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-06-22 16:15:41,178 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 5
+2024-06-22 16:15:41,178 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:41,178 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-22 16:15:41,179 DEBUG   SenderThread:144855 [sender.py:send():379] send: summary
+2024-06-22 16:15:41,179 INFO    SenderThread:144855 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-22 16:15:41,179 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:41,179 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-06-22 16:15:41,179 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 6
+2024-06-22 16:15:41,179 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:41,179 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-22 16:15:41,179 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:41,179 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-06-22 16:15:41,181 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: status_report
+2024-06-22 16:15:41,226 INFO    wandb-upload_0:144855 [upload_job.py:push():130] Uploaded file /tmp/tmp8h_9phe6wandb/vebd3zpz-wandb-metadata.json
+2024-06-22 16:15:41,251 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 7
+2024-06-22 16:15:41,252 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:41,252 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-22 16:15:41,252 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:41,252 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-06-22 16:15:41,824 INFO    Thread-12 :144855 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/config.yaml
+2024-06-22 16:15:41,824 INFO    Thread-12 :144855 [dir_watcher.py:_on_file_created():271] file/dir created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/output.log
+2024-06-22 16:15:41,824 INFO    Thread-12 :144855 [dir_watcher.py:_on_file_created():271] file/dir created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/wandb-summary.json
+2024-06-22 16:15:41,825 INFO    Thread-12 :144855 [dir_watcher.py:_on_file_created():271] file/dir created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/wandb-metadata.json
+2024-06-22 16:15:41,825 INFO    Thread-12 :144855 [dir_watcher.py:_on_file_created():271] file/dir created: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/requirements.txt
+2024-06-22 16:15:42,134 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-22 16:15:43,173 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 8
+2024-06-22 16:15:43,174 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: poll_exit
+2024-06-22 16:15:43,174 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:43,174 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-22 16:15:43,174 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:43,174 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-06-22 16:15:43,174 INFO    SenderThread:144855 [job_builder.py:build():440] Attempting to build job artifact
+2024-06-22 16:15:43,174 INFO    SenderThread:144855 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-06-22 16:15:43,185 INFO    SenderThread:144855 [job_builder.py:build():545] adding wandb-job metadata file
+2024-06-22 16:15:43,189 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 9
+2024-06-22 16:15:43,189 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:43,189 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-22 16:15:43,189 DEBUG   SenderThread:144855 [sender.py:send():379] send: artifact
+2024-06-22 16:15:43,695 INFO    SenderThread:144855 [sender.py:send_artifact():1530] sent artifact job-https___github.com_WongKinYiu_yolov9.git_train_dual.py - {'id': 'QXJ0aWZhY3Q6OTEyMTcwNDk4', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIxNzAyMTQ5Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTEyMTcwNDk4', 'versionIndex': 4}}}
+2024-06-22 16:15:43,696 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:43,696 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-06-22 16:15:43,696 INFO    SenderThread:144855 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-22 16:15:43,825 INFO    Thread-12 :144855 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/output.log
+2024-06-22 16:15:43,826 INFO    SenderThread:144855 [dir_watcher.py:finish():388] scan: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files
+2024-06-22 16:15:43,826 INFO    SenderThread:144855 [dir_watcher.py:finish():402] scan save: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/conda-environment.yaml conda-environment.yaml
+2024-06-22 16:15:43,826 INFO    SenderThread:144855 [dir_watcher.py:finish():402] scan save: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/output.log output.log
+2024-06-22 16:15:43,828 INFO    SenderThread:144855 [dir_watcher.py:finish():402] scan save: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/requirements.txt requirements.txt
+2024-06-22 16:15:43,829 INFO    SenderThread:144855 [dir_watcher.py:finish():402] scan save: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/wandb-metadata.json wandb-metadata.json
+2024-06-22 16:15:43,829 INFO    SenderThread:144855 [dir_watcher.py:finish():402] scan save: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/config.yaml config.yaml
+2024-06-22 16:15:43,829 INFO    SenderThread:144855 [dir_watcher.py:finish():402] scan save: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/wandb-summary.json wandb-summary.json
+2024-06-22 16:15:43,829 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 10
+2024-06-22 16:15:43,829 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:43,831 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-22 16:15:43,833 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:43,833 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-06-22 16:15:43,833 INFO    SenderThread:144855 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-22 16:15:44,135 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-22 16:15:44,136 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: poll_exit
+2024-06-22 16:15:44,225 INFO    wandb-upload_0:144855 [upload_job.py:push():130] Uploaded file /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/conda-environment.yaml
+2024-06-22 16:15:44,481 INFO    wandb-upload_3:144855 [upload_job.py:push():130] Uploaded file /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/config.yaml
+2024-06-22 16:15:44,481 INFO    wandb-upload_4:144855 [upload_job.py:push():130] Uploaded file /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/wandb-summary.json
+2024-06-22 16:15:44,482 INFO    wandb-upload_1:144855 [upload_job.py:push():130] Uploaded file /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/output.log
+2024-06-22 16:15:44,482 INFO    wandb-upload_2:144855 [upload_job.py:push():130] Uploaded file /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/files/requirements.txt
+2024-06-22 16:15:44,683 INFO    Thread-11 (_thread_body):144855 [sender.py:transition_state():614] send defer: 11
+2024-06-22 16:15:44,683 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:44,683 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-22 16:15:44,684 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:44,684 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-06-22 16:15:44,684 INFO    SenderThread:144855 [file_pusher.py:join():175] waiting for file pusher
+2024-06-22 16:15:44,684 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 12
+2024-06-22 16:15:44,684 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:44,684 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-22 16:15:44,684 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:44,684 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-06-22 16:15:44,684 INFO    SenderThread:144855 [file_stream.py:finish():601] file stream finish called
+2024-06-22 16:15:44,751 INFO    SenderThread:144855 [file_stream.py:finish():605] file stream finish is done
+2024-06-22 16:15:44,751 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 13
+2024-06-22 16:15:44,752 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:44,752 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-22 16:15:44,752 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:44,752 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-06-22 16:15:44,752 INFO    SenderThread:144855 [sender.py:transition_state():614] send defer: 14
+2024-06-22 16:15:44,752 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:15:44,752 INFO    HandlerThread:144855 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-22 16:15:44,752 DEBUG   SenderThread:144855 [sender.py:send():379] send: final
+2024-06-22 16:15:44,752 DEBUG   SenderThread:144855 [sender.py:send():379] send: footer
+2024-06-22 16:15:44,752 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:15:44,752 INFO    SenderThread:144855 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-06-22 16:15:44,753 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-22 16:15:44,753 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: poll_exit
+2024-06-22 16:15:44,753 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: server_info
+2024-06-22 16:15:44,754 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: server_info
+2024-06-22 16:15:44,755 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-22 16:15:44,755 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-22 16:15:44,756 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-22 16:15:44,756 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-22 16:15:44,813 DEBUG   SenderThread:144855 [sender.py:send_request():406] send_request: poll_exit
+2024-06-22 16:15:44,814 INFO    MainThread:144855 [wandb_run.py:_footer_history_summary_info():3988] rendering history
+2024-06-22 16:15:44,814 INFO    MainThread:144855 [wandb_run.py:_footer_history_summary_info():4020] rendering summary
+2024-06-22 16:15:44,814 INFO    MainThread:144855 [wandb_run.py:_footer_sync_info():3947] logging synced files
+2024-06-22 16:15:44,814 DEBUG   HandlerThread:144855 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-22 16:15:44,814 INFO    HandlerThread:144855 [handler.py:finish():882] shutting down handler
+2024-06-22 16:15:45,755 INFO    WriterThread:144855 [datastore.py:close():296] close: /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/wandb/run-20240622_161533-7iu0n6hm/run-7iu0n6hm.wandb
+2024-06-22 16:15:45,814 INFO    SenderThread:144855 [sender.py:finish():1608] shutting down sender
+2024-06-22 16:15:45,814 INFO    SenderThread:144855 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-22 16:15:45,814 INFO    SenderThread:144855 [file_pusher.py:join():175] waiting for file pusher

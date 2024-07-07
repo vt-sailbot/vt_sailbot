@@ -1,0 +1,109 @@
+Overriding model.yaml nc=80 with nc=1
+                 from  n    params  module                                  arguments
+  0                -1  1         0  models.common.Silence                   []
+  1                -1  1      1856  models.common.Conv                      [3, 64, 3, 2]
+  2                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  3                -1  1    212864  models.common.RepNCSPELAN4              [128, 256, 128, 64, 1]
+  4                -1  1    164352  models.common.ADown                     [256, 256]
+  5                -1  1    847616  models.common.RepNCSPELAN4              [256, 512, 256, 128, 1]
+  6                -1  1    656384  models.common.ADown                     [512, 512]
+  7                -1  1   2857472  models.common.RepNCSPELAN4              [512, 512, 512, 256, 1]
+  8                -1  1    656384  models.common.ADown                     [512, 512]
+  9                -1  1   2857472  models.common.RepNCSPELAN4              [512, 512, 512, 256, 1]
+ 10                -1  1    656896  models.common.SPPELAN                   [512, 512, 256]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 7]  1         0  models.common.Concat                    [1]
+ 13                -1  1   3119616  models.common.RepNCSPELAN4              [1024, 512, 512, 256, 1]
+ 14                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 15           [-1, 5]  1         0  models.common.Concat                    [1]
+ 16                -1  1    912640  models.common.RepNCSPELAN4              [1024, 256, 256, 128, 1]
+ 17                -1  1    164352  models.common.ADown                     [256, 256]
+ 18          [-1, 13]  1         0  models.common.Concat                    [1]
+ 19                -1  1   2988544  models.common.RepNCSPELAN4              [768, 512, 512, 256, 1]
+ 20                -1  1    656384  models.common.ADown                     [512, 512]
+ 21          [-1, 10]  1         0  models.common.Concat                    [1]
+ 22                -1  1   3119616  models.common.RepNCSPELAN4              [1024, 512, 512, 256, 1]
+ 23                 5  1    131328  models.common.CBLinear                  [512, [256]]
+ 24                 7  1    393984  models.common.CBLinear                  [512, [256, 512]]
+ 25                 9  1    656640  models.common.CBLinear                  [512, [256, 512, 512]]
+ 26                 0  1      1856  models.common.Conv                      [3, 64, 3, 2]
+ 27                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+ 28                -1  1    212864  models.common.RepNCSPELAN4              [128, 256, 128, 64, 1]
+ 29                -1  1    164352  models.common.ADown                     [256, 256]
+ 30  [23, 24, 25, -1]  1         0  models.common.CBFuse                    [[0, 0, 0]]
+ 31                -1  1    847616  models.common.RepNCSPELAN4              [256, 512, 256, 128, 1]
+ 32                -1  1    656384  models.common.ADown                     [512, 512]
+ 33      [24, 25, -1]  1         0  models.common.CBFuse                    [[1, 1]]
+ 34                -1  1   2857472  models.common.RepNCSPELAN4              [512, 512, 512, 256, 1]
+ 35                -1  1    656384  models.common.ADown                     [512, 512]
+ 36          [25, -1]  1         0  models.common.CBFuse                    [[2]]
+ 37                -1  1   2857472  models.common.RepNCSPELAN4              [512, 512, 512, 256, 1]
+ 38[31, 34, 37, 16, 19, 22]  1  21542822  models.yolo.DualDDetect                 [1, [512, 512, 512, 256, 512, 512]]
+yolov9-c summary: 962 layers, 50999590 parameters, 50999558 gradients, 238.9 GFLOPs
+Transferred 1460/1460 items from ../weights/best_finetuned_9c3.pt
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1moptimizer:[39m[22m SGD(lr=0.005) with parameter groups 238 weight(decay=0.0), 255 weight(decay=0.0005), 253 bias
+[34m[1malbumentations: [39m[22mBlur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01), CLAHE(p=0.01, clip_limit=(1, 4.0), tile_grid_size=(8, 8))
+[34m[1mtrain: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/SailbotVT-4/train/labels.cache... 12816 images, 1474 backgrounds, 0 corrupt: 100%|██████████| 1
+[34m[1mval: [39m[22mScanning /home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/SailbotVT-4/test/labels.cache... 931 images, 93 backgrounds, 0 corrupt: 100%|██████████| 931/931
+Plotting labels to runs/train/exp72/labels.jpg...
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1mruns/train/exp72
+Starting training for 20 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       0/19      5.24G      1.871      1.199      1.691         21        640:   0%|          | 0/3204 00:01Exception in thread Thread-7 (plot_images):
+Traceback (most recent call last):
+  File "/home/animated/miniforge3/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/animated/miniforge3/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/utils/plots.py", line 300, in plot_images
+    annotator.box_label(box, label, color=color)
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/utils/plots.py", line 86, in box_label
+    w, h = self.font.getsize(label)  # text width, height
+AttributeError: 'FreeTypeFont' object has no attribute 'getsize'
+WARNING ⚠️ TensorBoard graph visualization failure Only tensors, lists, tuples of tensors, or dictionary of tensors can be output from traced functions
+       0/19      5.27G      1.612     0.9899      1.525         17        640:   0%|          | 2/3204 00:03Exception in thread Thread-8 (plot_images):
+Traceback (most recent call last):
+  File "/home/animated/miniforge3/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/animated/miniforge3/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/utils/plots.py", line 300, in plot_images
+    annotator.box_label(box, label, color=color)
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/utils/plots.py", line 86, in box_label
+    w, h = self.font.getsize(label)  # text width, height
+AttributeError: 'FreeTypeFont' object has no attribute 'getsize'
+       0/19      5.27G      1.681     0.9477      1.415         28        640:   0%|          | 3/3204 00:04Exception in thread Thread-9 (plot_images):
+Traceback (most recent call last):
+  File "/home/animated/miniforge3/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/animated/miniforge3/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/utils/plots.py", line 300, in plot_images
+    annotator.box_label(box, label, color=color)
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/utils/plots.py", line 86, in box_label
+    w, h = self.font.getsize(label)  # text width, height
+AttributeError: 'FreeTypeFont' object has no attribute 'getsize'
+       0/19      5.29G      1.708      0.929      1.478         43        640:   0%|          | 5/3204 00:05
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/train_dual.py", line 644, in <module>
+    main(opt)
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/train_dual.py", line 538, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/train_dual.py", line 327, in train
+    torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=10.0)  # clip gradients
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/utils/clip_grad.py", line 76, in clip_grad_norm_
+    torch._foreach_mul_(grads, clip_coef_clamped.to(device))  # type: ignore[call-overload]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/train_dual.py", line 644, in <module>
+    main(opt)
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/train_dual.py", line 538, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/train_dual.py", line 327, in train
+    torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=10.0)  # clip gradients
+  File "/home/animated/miniforge3/lib/python3.10/site-packages/torch/nn/utils/clip_grad.py", line 76, in clip_grad_norm_
+    torch._foreach_mul_(grads, clip_coef_clamped.to(device))  # type: ignore[call-overload]
+KeyboardInterrupt

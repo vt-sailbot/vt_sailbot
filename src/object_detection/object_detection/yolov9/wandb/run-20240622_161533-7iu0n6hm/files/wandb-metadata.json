@@ -1,0 +1,157 @@
+{
+    "os": "Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-06-22T20:15:34.271988",
+    "startedAt": "2024-06-22T20:15:33.305318",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--weights",
+        "../weights/best_finetuned_9c.pt",
+        "--data",
+        "/home/animated/Projects/Sailbot/src/object_detection/object_detection/datasets/SailbotVT-OG/data.yaml",
+        "--device",
+        "cuda:0",
+        "--workers",
+        "8",
+        "--batch",
+        "8",
+        "--epochs",
+        "5",
+        "--cfg",
+        "models/detect/yolov9-c.yaml",
+        "--hyp",
+        "hyp.scratch-high.yaml"
+    ],
+    "state": "running",
+    "program": "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9/train_dual.py",
+    "codePathLocal": "train_dual.py",
+    "codePath": "train_dual.py",
+    "git": {
+        "remote": "https://github.com/WongKinYiu/yolov9.git",
+        "commit": "5b1ea9a8b3f0ffe4fe0e203ec6232d788bb3fcff"
+    },
+    "email": "chrisjnassif@gmail.com",
+    "root": "/home/animated/Projects/Sailbot/src/object_detection/object_detection/yolov9",
+    "host": "ChrisNassif",
+    "username": "animated",
+    "executable": "/home/animated/miniforge3/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2688.0,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 91.10074996948242
+        }
+    },
+    "memory": {
+        "total": 7.574573516845703
+    }
+}
