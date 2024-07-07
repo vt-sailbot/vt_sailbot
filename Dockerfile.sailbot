@@ -2,6 +2,7 @@
 # and then creating a custom entrypoint where we build the ros project and open the bash terminal
 # Ideally installing things like pip packages should be done when building the image and building the ros project should happen while running the container
 
+
 ARG ROS_DISTRO=humble
 
 FROM ros:${ROS_DISTRO} as base
@@ -27,6 +28,7 @@ RUN pip3 install setuptools==58.2.0
 
 COPY requirements.txt /sailbot_ws/src/requirements.txt
 RUN pip3 install -r /sailbot_ws/src/requirements.txt
+
 # Copy in all the rest of the packages required for the current node
 # COPY . /sailbot_ws/src/
 

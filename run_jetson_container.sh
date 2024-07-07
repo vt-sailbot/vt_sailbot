@@ -1,4 +1,4 @@
-# NOTE: this script is very much a work in progress.
+# NOTE: this script is VERY MUCH A WORK IN PROGRESS.
 # The ultimate goal is to be able to be able to run a docker container on the jetson 
 # that has everything we would need to automatically launch the project with the latest version on github.
 # We cannot prebuild an image because that would mean that we would need to build an image every time we have a new version on github.

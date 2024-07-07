@@ -1,1 +1,0 @@
-{"train/box_om": 1.11829, "train/cls_om": 0.59886, "train/dfl_om": 1.20768, "train/box_oo": 1.34855, "train/cls_oo": 0.69512, "train/dfl_oo": 1.2146, "_timestamp": 1719021842.9425552, "lr/pg0": 0.002, "lr/pg1": 0.002, "lr/pg2": 0.002, "_runtime": 2257.6554350852966, "_step": 1, "_wandb": {"runtime": 2807}}
