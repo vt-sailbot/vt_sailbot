@@ -10,7 +10,7 @@
         }
     },
     "workspaceFolder": "/home/ws",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/ws/src,type=bind",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/ws/,type=bind",
     "customizations": {
         "vscode": {
             "extensions":[
@@ -33,14 +33,16 @@
     "runArgs": [
         "--net=host",
         "-e", "DISPLAY=${env:DISPLAY}",
+
+        // required to run docker inside of the dev environment
         "-v", "/var/run/docker.sock:/var/run/docker.sock", 
-        "-v", "/usr/bin/docker:/usr/bin/docker"
+        "-v", "/usr/bin/docker:/usr/bin/docker",
+        
+        // // required setup scripts that I would rather exist in .devcontainer/ (I just think its neater this way)
+        "-v", "${localWorkspaceFolder}/.devcontainer/docker_dev_environment_setup.sh:/home/ws/docker_dev_environment_setup.sh",
     ],
     "mounts": [
         "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
         "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
     ]
-    // "postAttachCommand": "cd src && bash setup.sh && source ~/.bashrc"
-    // "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/",
-    // "onCreateCommand": "cd src && sudo chmod -R 777 /home/ && bash setup.sh && source ~/.bashrc"
 }
