@@ -1,4 +1,4 @@
 build
 install
 log
-src/object_detection
+src/object_detection/object_detection/datasets
