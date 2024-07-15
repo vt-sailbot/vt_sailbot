@@ -123,7 +123,7 @@ class AutopilotNode(Node):
         elif self.toggle_f == 2:
             self.autopilot_mode = AutopilotMode.Waypoint_Mission
             
-        # hold heading to the direction that we started this mode in. the rudder is controlled via RC
+        # hold heading to the direction that we started this mode in. the sail is controlled via RC
         elif self.toggle_f == 1 and self.toggle_c == 0:
             self.autopilot_mode = AutopilotMode.Hold_Heading
             
@@ -165,7 +165,7 @@ class AutopilotNode(Node):
         for new_parameter_name, new_parameter_value in new_parameters_json.items():
             if new_parameter_name not in self.parameters.keys():
                 print("WARNING: Attempted to set an autopilot parameter that the autopilot doesn't know")
-                print("If you would like to make a new autopilot parameter, please edit parameters.yaml")
+                print("If you would like to make a new autopilot parameter, please edit default_parameters.yaml")
                 continue
             
             self.parameters[new_parameter_name] = new_parameter_value

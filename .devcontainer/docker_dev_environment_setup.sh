@@ -3,6 +3,7 @@
 echo sudo chmod 777 /var/run/docker.sock >> "/home/sailbot_user/.bashrc"
 echo sudo chmod -R 777 /home/ >> "/home/sailbot_user/.bashrc"
 
+
 pip install -r requirements.txt
 
 source /opt/ros/humble/setup.bash
@@ -17,3 +18,11 @@ source /home/sailbot_user/.bashrc
 
 colcon build
 
+
+cd ground_station 
+pip install -r requirements.txt
+
+
+cd ..
+
+echo 'alias python="python3"' >> /home/sailbot_user/.bashrc

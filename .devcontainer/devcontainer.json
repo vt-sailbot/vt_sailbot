@@ -39,7 +39,7 @@
         "-v", "/usr/bin/docker:/usr/bin/docker",
         
         // // required setup scripts that I would rather exist in .devcontainer/ (I just think its neater this way)
-        "-v", "${localWorkspaceFolder}/.devcontainer/docker_dev_environment_setup.sh:/home/ws/docker_dev_environment_setup.sh",
+        "-v", "${localWorkspaceFolder}/.devcontainer/docker_dev_environment_setup.sh:/home/ws/docker_dev_environment_setup.sh"
     ],
     "mounts": [
         "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
